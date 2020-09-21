@@ -1,0 +1,26 @@
+@import "./btn.css";
+@import "./reset.css";
+@import "./common.css";
+@import "./utils.css";
+@import "./header.css";
+@import "./intro.css";
+@import "./popup.css";
+@import "./mypage.css";
+
+:root {
+  --primary: #1769ff;
+  --primary50: rgba(23, 105, 255, 0.5);
+  --color-gray: #91909a;
+  --naver-green: #1ace60;
+  --kakao-yellow: #fae102;
+  --fb-blue: #3a559f;
+  --gray: #333333;
+  --check-gray: #777777;
+  --border-gray: #c1c0c8;
+  --fontgray2: #6c6c6c;
+  --like-white: #f9f9f9;
+  --darkblack: #02010e;
+  --gray50: rgba(119, 119, 119, 0.5);
+  --mainBlack: #222222;
+  --gray-back: #fcfcfc;
+}

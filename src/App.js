@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import RouterLink from "./Router";
+import Drawer from "components/Drawer";
 
-function App() {
+export default function App() {
+  const [isActive, setIsActive] = useState(false);
+  const openDrawer = (val) => {
+    setIsActive(!isActive);
+  };
+  const closeDrawer = () => {
+    setIsActive(false);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Drawer isActive={isActive} closeDrawer={closeDrawer} />
+      <div className={isActive ? "main no-scroll" : "main"}>
+        {isActive ? (
+          <div className="drawer-dim" onClick={() => closeDrawer()} />
+        ) : null}
+
+        <RouterLink openDrawer={openDrawer} />
+      </div>
+    </>
   );
 }
-
-export default App;

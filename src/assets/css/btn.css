@@ -1,0 +1,131 @@
+.btn-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 5px 22px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 22px;
+  height: 44px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main-back {
+  background: #1769ff;
+}
+
+.btn-con:after {
+  position: absolute;
+  content: "";
+}
+
+.left-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-icon img {
+  width: 17px;
+  height: 17px;
+}
+
+.btn-con.naver {
+  background-color: var(--naver-green);
+}
+
+.btn-con.kakako {
+  background-color: var(--kakao-yellow);
+}
+
+.btn-con.fb {
+  background-color: var(--fb-blue);
+}
+
+.btn-con.naver .btn-font,
+.btn-con.fb .btn-font,
+.btn-con.google .btn-font {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.btn-con.kakako .btn-font,
+.btn-con.google .btn-font {
+  font-size: 14px;
+  color: var(--gray);
+  font-weight: 300;
+}
+
+.main-back .btn-font {
+  color: "white";
+}
+
+.btn-font {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.checkbox-wrap {
+  margin-bottom: 30px;
+}
+
+.check-con {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.check-con:last-child {
+  margin-bottom: 0px;
+}
+
+.check-con input + label {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--check-gray);
+  padding-left: 29px;
+  background-image: url("../img/ic-empty-check.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 16px;
+  min-height: 18px;
+}
+
+.check-con input:checked + label {
+  color: #000000;
+  font-weight: 500;
+  padding-left: 29px;
+  background-image: url("../img/ic-checked.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 16px;
+}
+
+.btn-con.anser {
+  border: 1px solid var(--border-gray);
+  margin-bottom: 15px;
+}
+
+.btn-con.anser:last-child {
+  margin-bottom: 0;
+}
+
+.btn-con.anser .btn-font {
+  font-weight: normal;
+  color: black;
+}
+.btn-con.anser.active {
+  border-color: var(--primary);
+}
+
+.btn-con.anser.active .btn-font {
+  color: var(--primary);
+}
+
+.inner-empty {
+  border: 1px solid black;
+  min-width: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
