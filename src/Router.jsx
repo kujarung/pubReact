@@ -20,7 +20,7 @@ import MypagePro from "Mypage/MypagePro";
 export default function RouterLink(props) {
   const { openDrawer } = props;
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/signupResult">
           <SignupResult />
