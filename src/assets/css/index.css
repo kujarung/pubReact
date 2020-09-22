@@ -1,5 +1,6 @@
-@import "./btn.css";
 @import "./reset.css";
+@import "./font.css";
+@import "./btn.css";
 @import "./common.css";
 @import "./utils.css";
 @import "./header.css";
@@ -18,9 +19,11 @@
   --check-gray: #777777;
   --border-gray: #c1c0c8;
   --fontgray2: #6c6c6c;
-  --like-white: #f9f9f9;
+  --like-white: #070606;
   --darkblack: #02010e;
   --gray50: rgba(119, 119, 119, 0.5);
+  --gray10: rgba(193, 192, 200, 0.1);
   --mainBlack: #222222;
   --gray-back: #fcfcfc;
+  --borderGrayReal: #d8d8d8;
 }

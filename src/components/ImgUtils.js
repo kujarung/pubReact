@@ -1,3 +1,20 @@
+export const intro = require("../assets/realImg/intro.png");
+export const signin = require("../assets/realImg/signin.png");
+export const signupResult = require("../assets/realImg/signupResult.png");
+export const signup = require("../assets/realImg/signup.png");
+export const pretestIntro = require("../assets/realImg/pretestIntro.png");
+export const pretest1 = require("../assets/realImg/pretest1.png");
+export const pretest2 = require("../assets/realImg/pretest2.png");
+export const pretest3 = require("../assets/realImg/pretest3.png");
+export const pretestResult = require("../assets/realImg/pretestResult.png");
+export const interest1 = require("../assets/realImg/interest1.png");
+export const interest2 = require("../assets/realImg/interest2.png");
+export const recommend = require("../assets/realImg/recommend.png");
+export const daily1 = require("../assets/realImg/daily1.png");
+export const dailyLong = require("../assets/realImg/dailyLong.png");
+export const home = require("../assets/realImg/home.png");
+export const homeMyLevel = require("../assets/realImg/homeMyLevel.png");
+
 export const activity = require("../assets/img/activity.png");
 export const avatar = require("../assets/img/avatar.png");
 export const backBtn = require("../assets/img/back-btn.png");
@@ -5,6 +22,7 @@ export const backBtn = require("../assets/img/back-btn.png");
 export const back = require("../assets/img/back.png");
 export const base = require("../assets/img/base.png");
 export const base2 = require("../assets/img/base2.png");
+export const base3 = require("../assets/img/base3.png");
 export const bottomBack = require("../assets/img/bottom-back.png");
 
 export const icPercent = require("../assets/img/ic_percent.png");

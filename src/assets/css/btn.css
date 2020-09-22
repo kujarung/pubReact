@@ -81,7 +81,7 @@
 }
 
 .check-con input + label {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
   color: var(--check-gray);
   padding-left: 29px;

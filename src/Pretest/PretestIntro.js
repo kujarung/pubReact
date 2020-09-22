@@ -38,7 +38,7 @@ export default function PretestIntro() {
             </div>
             <div className="tc">
               <p className="primary-underline color-primary h7">
-                먼저 둘러보기
+                그냥 둘러보기
               </p>
             </div>
           </div>

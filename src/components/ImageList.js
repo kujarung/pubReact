@@ -1,11 +1,13 @@
 import React from "react";
 
 export default function ImageList(props) {
+  const { long } = props;
   return (
     <div
-      className="img-list-container"
+      className={long ? "img-list-container long" : "img-list-container"}
       style={{
-        backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.00) 0%, #000000 100%), url(${props.imgPath})`,
+        backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.00) 0%, #000000 100%), 
+        url(${props.imgPath})`,
       }}
     >
       <div className="bottom-container">

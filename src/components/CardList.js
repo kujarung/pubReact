@@ -7,13 +7,15 @@ export default function CardList(props) {
     <div className="card-wrap">
       <div className="card-list-inner">
         {list.map((item) => (
-          <div className="card-list-container">
-            <h4 className="fontAvenirBold color-primary">{item.percent}</h4>
+          <div className="card-list-container" key={item.id}>
+            <div className="percent-text">
+              <h4 className="fontAvenirBold color-primary">{item.percent}</h4>
+            </div>
             <div className="">
               <h5 className="small">{item.title}</h5>
               <p className="h7 color-gray">{item.desc}</p>
             </div>
-            <div className="default-icon">
+            <div className="arrow default-icon">
               <img src={icCirArrow} alt="" />
             </div>
           </div>

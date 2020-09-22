@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import { Start } from "Intro/Start";
 import "assets/css/index.css";
 import Main from "Main/Main";
@@ -16,18 +16,45 @@ import Interest2 from "Interest/Interest2";
 import Recomment from "Interest/Recomment";
 import Mylevel from "Mypage/Mylevel";
 import MypagePro from "Mypage/MypagePro";
+import MypageFree from "Mypage/MypageFree";
+import MypageMypercent from "Mypage/MypageMypercent";
+import MypageReviewRead from "Mypage/MypageReviewRead";
+import MypageReviewVoca from "Mypage/MypageReviewVoca";
+import Guide from "guide/Guide";
+import Daily from "daily/Daily";
+import DailyLong from "daily/DailyLong";
 
 export default function RouterLink(props) {
   const { openDrawer } = props;
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/signupResult">
           <SignupResult />
         </Route>
+        <Route path="/Daily">
+          <Daily openDrawer={openDrawer} />
+        </Route>
+        <Route path="/DailyLong">
+          <DailyLong openDrawer={openDrawer} />
+        </Route>
+
         <Route path="/MypagePro">
           <MypagePro />
         </Route>
+        <Route path="/MypageReviewRead">
+          <MypageReviewRead />
+        </Route>
+        <Route path="/MypageReviewVoca">
+          <MypageReviewVoca />
+        </Route>
+        <Route path="/MypageFree">
+          <MypageFree />
+        </Route>
+        <Route path="/MypageMypercent">
+          <MypageMypercent />
+        </Route>
+
         <Route path="/Mylevel">
           <Mylevel openDrawer={openDrawer} />
         </Route>
@@ -67,11 +94,13 @@ export default function RouterLink(props) {
         <Route path="/PretestResult">
           <PretestResult />
         </Route>
-
         <Route path="/">
+          <Guide openDrawer={openDrawer} />
+        </Route>
+        <Route path="/Main">
           <Main openDrawer={openDrawer} />
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }

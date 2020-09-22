@@ -11,10 +11,10 @@ export default function Header(props) {
           <img src={sidelist} alt="sidelist" />
         </div>
         <div className="d-flex">
-          <div className="icon-img-con">
+          <div className="icon-img-con x-end">
             <img src={activity} alt="activity" />
           </div>
-          <div className="icon-img-con">
+          <div className="icon-img-con x-end">
             <img src={search} alt="search" />
           </div>
         </div>

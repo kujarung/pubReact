@@ -33,16 +33,19 @@ export default function MypagePro(props) {
   ]);
   const list = [
     {
+      id: 11,
       percent: "40%",
       title: "상위 40%",
       desc: "당신의 순위를 확인하세요!",
     },
     {
+      id: 12,
       percent: "100%",
       title: "출석률",
       desc: "출석 점수를 획득하세요!",
     },
     {
+      id: 13,
       percent: "82%",
       title: "도전과제 달성률",
       desc: "다음 과제에 도전하세요!",
@@ -65,7 +68,7 @@ export default function MypagePro(props) {
     "#design2",
     "#computer2",
     "#weather2",
-    "#bio2",
+    "#bio21",
   ];
 
   return (
@@ -74,7 +77,7 @@ export default function MypagePro(props) {
 
       <div className="mb32 pt2">
         <div className="d-flex x-eq mb3 bothSpace">
-          <div className="">
+          <div>
             <h6 className="color-primary weight500 mb3">PRO</h6>
             <h2 className="small fontAvenirBold">@mybrains</h2>
           </div>
@@ -93,16 +96,23 @@ export default function MypagePro(props) {
 
         <div className="info-box-wrap bothSpace">
           <div className="info-box">
-            <h3 className="big mb22 weight500">
+            <h3 className="big mb22 weight400">
               12<span className="small-desc">개월</span>
             </h3>
             <p className="h7 mb7 color-gray">구독중입니다.</p>
-            <div class="tag-item small no-margin">
-              <p class="tag-txt color-primary">256일 남음</p>
+            <div className="tag-item small no-margin">
+              <p className="tag-txt color-primary">256일 남음</p>
             </div>
           </div>
 
           <div className="info-box mb50">
+            <div className="pos-info-icon">
+              <img
+                src={info}
+                alt=""
+                style={{ width: "15px", height: "15px" }}
+              />
+            </div>
             <div className="mb12 pos-rel">
               <CircleProgress width={"82"} percent={"42"} small={true} />
               <div className="circle-label-con">
@@ -111,8 +121,8 @@ export default function MypagePro(props) {
                 </div>
               </div>
             </div>
-            <div className="">
-              <h5 className="small weight500">약 12,123,123 개</h5>
+            <div>
+              <h5 className="small weight300">약 12,123,123 개</h5>
               <p className="h7 color-gray">내가 읽을 수 있는 콘텐츠</p>
             </div>
           </div>
@@ -128,7 +138,7 @@ export default function MypagePro(props) {
 
         <div className="mb35 bothSpace">
           <div className="d-flex x-eq y-center">
-            <div className="">
+            <div>
               <h5 className="weight500">일일 학습 기록</h5>
             </div>
             <div className="small-icon">
@@ -141,8 +151,8 @@ export default function MypagePro(props) {
           <RenderTab tabList={tabList2} />
         </div>
 
-        <div className="d-flex x-eq pl33 pr33 mb50">
-          <div className="">
+        <div className="d-flex x-eq pl33 pr33 pb20 pt10 mb30">
+          <div>
             <div className="pos-rel">
               <CircleProgress width={"70"} percent={"81"} small={true} />
               <div className="circle-label-con">
@@ -151,9 +161,9 @@ export default function MypagePro(props) {
                 </div>
               </div>
             </div>
-            <h6 className="mt8 tc weight500">Reading</h6>
+            <h6 className="mt8 tc weight400">Reading</h6>
           </div>
-          <div className="">
+          <div>
             <div className="pos-rel">
               <CircleProgress width={"70"} percent={"67"} small={true} />
               <div className="circle-label-con">
@@ -162,9 +172,9 @@ export default function MypagePro(props) {
                 </div>
               </div>
             </div>
-            <h6 className="mt8 tc weight500">Vocabulary</h6>
+            <h6 className="mt8 tc weight400">Vocabulary</h6>
           </div>
-          <div className="">
+          <div>
             <div className="pos-rel">
               <CircleProgress width={"70"} percent={"17"} small={true} />
               <div className="circle-label-con">
@@ -173,16 +183,16 @@ export default function MypagePro(props) {
                 </div>
               </div>
             </div>
-            <h6 className="mt8 tc weight500">Review</h6>
+            <h6 className="mt8 tc weight400">Review</h6>
           </div>
         </div>
 
         <div className="bothSpace">
           <div className="d-flex x-eq y-center mb10">
-            <div className="">
+            <div>
               <h5 className="weight500">주간 성장 그래프</h5>
             </div>
-            <div className="">
+            <div>
               <p className="smallFont color-primary weight500">+123.4개</p>
             </div>
           </div>
@@ -191,16 +201,21 @@ export default function MypagePro(props) {
             <ReactEcharts
               option={{
                 grid: {
-                  left: 0,
+                  left: 30,
                   top: 10,
                 },
-                width: "95%",
+                width: "85%",
                 height: "85%",
                 color: "#1769ff",
                 xAxis: {
+                  boundaryGap: false,
                   data: ["월", "화", "수", "목", "금", "토", "일"],
+                  minorSplitLine: {
+                    show: false,
+                  },
                   splitLine: {
                     show: true,
+                    interval: "auto",
                     lineStyle: {
                       color: "#F0F0F0",
                     },
@@ -220,6 +235,24 @@ export default function MypagePro(props) {
                 },
                 series: [
                   {
+                    markPoint: {
+                      data: [
+                        {
+                          type: "max",
+                          symbolSize: [46, 27],
+                          symbolOffset: [0, -25],
+                          symbol:
+                            "path://M42,57.7941176 C44.209139,57.7941176 46,59.5849786 46,61.7941176 L46,76.7941176 C46,79.0032566 44.209139,80.7941176 42,80.7941176 L26.047,80.7941176 L22.9183673,84.7941176 L19.669,80.7941176 L4,80.7941176 C1.790861,80.7941176 2.705415e-16,79.0032566 0,76.7941176 L0,61.7941176 C-2.705415e-16,59.5849786 1.790861,57.7941176 4,57.7941176 L42,57.7941176 Z",
+                          itemStyle: {
+                            color: "#EFEFEF",
+                          },
+                          label: {
+                            fontSize: 12,
+                            color: "#02010E",
+                          },
+                        },
+                      ],
+                    },
                     type: "line",
                     data: [0, 32, 5, 19, 12, 43, 20],
                     lineStyle: {
@@ -235,7 +268,7 @@ export default function MypagePro(props) {
         </div>
 
         <div className="bothSpace">
-          <div className="">
+          <div className="mb25">
             <h5 className="weight500">월간 학습 요약</h5>
           </div>
           <div className="info-box-wrap type2">
@@ -243,7 +276,7 @@ export default function MypagePro(props) {
               <div className="default-icon">
                 <img src={clock} alt="" />
               </div>
-              <div className="">
+              <div>
                 <h4 className="mb12 weight500">
                   55<span className="info-small-desc">min</span>
                 </h4>
@@ -253,10 +286,14 @@ export default function MypagePro(props) {
               </div>
             </div>
             <div className="info-box">
-              <div className="default-icon">
-                <img src={aa} alt="" />
+              <div className="default-icon middle">
+                <img
+                  src={aa}
+                  alt=""
+                  style={{ width: "33px", height: "25px" }}
+                />
               </div>
-              <div className="">
+              <div>
                 <h4 className="mb12 weight500">
                   10.9<span className="info-small-desc">개</span>
                 </h4>
@@ -266,33 +303,60 @@ export default function MypagePro(props) {
                 </h5>
               </div>
             </div>
-
             <div className="info-box">
-              <div className="default-icon">
-                <img src={aa} alt="" />
+              <div className="default-icon middle">
+                <img
+                  src={glass}
+                  alt=""
+                  style={{ width: "33px", height: "25px" }}
+                />
               </div>
-              <div className="">
+              <div>
                 <h4 className="mb12 weight500">
-                  10.9<span className="info-small-desc">개</span>
+                  93<span className="info-small-desc">개</span>
                 </h4>
                 <h5 className="info-desc small color-bordergray">
-                  새롭게 알게 된<br />
-                  단어의 수
+                  총 학습한
+                  <br />
+                  콘텐츠 수
                 </h5>
               </div>
             </div>
 
             <div className="info-box">
-              <div className="default-icon">
-                <img src={aa} alt="" />
+              <div className="default-icon middle">
+                <img
+                  src={book}
+                  alt=""
+                  style={{ width: "25px", height: "25px" }}
+                />
               </div>
-              <div className="">
+              <div>
                 <h4 className="mb12 weight500">
-                  10.9<span className="info-small-desc">개</span>
+                  2461<span className="info-small-desc">개</span>
                 </h4>
                 <h5 className="info-desc small color-bordergray">
-                  새롭게 알게 된<br />
-                  단어의 수
+                  읽을 수 있게된
+                  <br />
+                  콘텐츠 수
+                </h5>
+              </div>
+            </div>
+
+            <div className="info-box">
+              <div className="default-icon middle">
+                <img
+                  src={goal}
+                  alt=""
+                  style={{ width: "25px", height: "25px" }}
+                />
+              </div>
+              <div>
+                <h4 className="mb12 weight500">
+                  40<span className="info-small-desc">%</span>
+                </h4>
+                <h5 className="info-desc small color-bordergray">
+                  현재 달성률
                 </h5>
               </div>
             </div>

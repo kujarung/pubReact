@@ -34,7 +34,7 @@ export default function Login() {
         </div>
         <div className="h7 weight300 tc">
           아직 리딩퍼센트의 회원이 아니신가요?{" "}
-          <span className="primary-underline color-primary">먼저 둘러보기</span>
+          <span className="primary-underline color-primary">그냥 둘러보기</span>
         </div>
       </div>
     </div>

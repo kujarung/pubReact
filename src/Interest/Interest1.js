@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import StackHeader from "components/StackHeader";
+import BackBtn from "components/BackBtn";
 
 export default function Interest1() {
   const [tagList, setTageList] = useState([
@@ -58,6 +59,9 @@ export default function Interest1() {
               <p className="tag-txt">{tag.txt}</p>
             </div>
           ))}
+        </div>
+        <div className="pos-bottom">
+          <BackBtn btnTxt="다음" />
         </div>
       </div>
     </div>

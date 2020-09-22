@@ -6,30 +6,23 @@ import { logoTxt, bottomBack, logoImg, icRest } from "components/ImgUtils";
 
 export const Start = () => {
   const Main = () => (
-    <div className="h-100vh">
-      <div className="pos-logo">
-        <h1 className="pl20 logo-txt">
-          <img src={logoTxt} alt="logo-txt" />
-        </h1>
-      </div>
-      <div className="bottom-img">
-        <img src={bottomBack} alt="bottom-back" />
-      </div>
+    <div className="h-100vh d-flex y-center x-center">
+      <h1 className="logo-txt">
+        <img src={logoTxt} alt="logo-txt" />
+      </h1>
     </div>
   );
 
   const Start = () => (
     <div className="h-100vh">
-      <div className="pos-logo tc">
-        <div className="img-logo mb40">
+      <div className="pos-logo long tc">
+        <div className="img-logo mb31">
           <img src={logoImg} alt="logo-img" />
         </div>
-        <h1 className="logo-txt mb10">
-          <img src={logoTxt} alt="logo-txt" />
-        </h1>
-        <p className="fontAvenir color-grayy h7">
-          Just get on a rocket ship with READING PERCENT!
-        </p>
+        <h5 className="fontAvenirBlack color-grayy weight700">
+          Just get on a rocket ship with <br />
+          READING PERCENT!
+        </h5>
       </div>
       <div className="pos-bottom long">
         <BackBtn btnTxt="시작하기" />

@@ -1,0 +1,32 @@
+.guide {
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.guide img {
+  width: 200px;
+}
+.guide div {
+  overflow: hidden;
+}
+
+.guide section {
+  margin-bottom: 20px;
+}
+
+.guide section {
+  width: 20%;
+  height: 500px;
+  float: left;
+  text-align: center;
+}
+
+.guide h3 {
+  font-size: 13px;
+}
+@media screen and (max-width: 768px) {
+  .guide section {
+    width: 100%;
+  }
+}

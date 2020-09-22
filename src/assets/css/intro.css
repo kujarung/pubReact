@@ -18,6 +18,10 @@
   padding-top: 40%;
 }
 
+.pos-logo.long {
+  padding-top: 60%;
+}
+
 .img-logo img {
   height: 50px;
 }

@@ -82,7 +82,7 @@ export default function Mylevel(props) {
 
       <div>
         <div className="mb20 bothSpace">
-          <h5 className="weight500">추천 콘텐츠</h5>
+          <h5 className="weight500">추천 할일</h5>
         </div>
 
         <div>

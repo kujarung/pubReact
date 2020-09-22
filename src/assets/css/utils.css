@@ -8,8 +8,35 @@
   min-height: -webkit-fill-available;
 }
 
+.flex-item-con {
+  height: calc(100vh - 187px);
+  display: flex;
+  flex-direction: column;
+}
+
+.y-end {
+}
+
+.grahp-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex2 {
+  flex: 2;
+}
+
 .pos-rel {
   position: relative;
+}
+.line-h27 {
+  line-height: 27px !important;
 }
 .line-h38 {
   line-height: 38px !important;
@@ -31,6 +58,9 @@
   opacity: 0.8;
 }
 
+.x-end {
+  justify-content: flex-end;
+}
 /* etc-utils */
 .z-index2 {
   z-index: 10;
