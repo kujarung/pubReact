@@ -19,7 +19,7 @@ export default function MypageMypercent(props) {
     { id: 3, title: "리뷰", active: false },
   ]);
 
-  const [tabList2, setTabList2] = useState([
+  const [tabList2] = useState([
     { id: 10, title: "Level 20", active: true },
     { id: 20, title: "Level 30", active: false },
     { id: 30, title: "Level 30", active: false },
@@ -52,26 +52,6 @@ export default function MypageMypercent(props) {
     },
   ];
 
-  const list = [
-    {
-      id: 11,
-      percent: "40%",
-      title: "상위 40%",
-      desc: "당신의 순위를 확인하세요!",
-    },
-    {
-      id: 12,
-      percent: "100%",
-      title: "출석률",
-      desc: "출석 점수를 획득하세요!",
-    },
-    {
-      id: 13,
-      percent: "82%",
-      title: "도전과제 달성률",
-      desc: "다음 과제에 도전하세요!",
-    },
-  ];
   const clickTab = (id) => {
     const resultTab = tabList.map((tab) =>
       tab.id === id ? { ...tab, active: true } : { ...tab, active: false }

@@ -6,8 +6,8 @@ export default function TodoList(props) {
   return (
     <div className="todo-wrap">
       <div className="todo-inner">
-        {[1, 2, 3].map((item) => (
-          <div className="todo-con">
+        {[1, 2, 3].map((item, index) => (
+          <div className="todo-con" key={index}>
             <div className="">
               <h5 className="small">학습 할 콘텐츠 고르기 10p</h5>
               <p className="h7 color-gray">오늘 읽을 콘텐츠는 1개 입니다</p>

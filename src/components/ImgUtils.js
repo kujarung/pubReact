@@ -14,6 +14,10 @@ export const daily1 = require("../assets/realImg/daily1.png");
 export const dailyLong = require("../assets/realImg/dailyLong.png");
 export const home = require("../assets/realImg/home.png");
 export const homeMyLevel = require("../assets/realImg/homeMyLevel.png");
+export const mypageFree = require("../assets/realImg/mypageFree.png");
+export const mypageLock = require("../assets/realImg/mypageLock.png");
+export const mypageMypercent = require("../assets/realImg/mypageMypercent.png");
+export const mypageReview = require("../assets/realImg/mypageReview.png");
 
 export const activity = require("../assets/img/activity.png");
 export const avatar = require("../assets/img/avatar.png");

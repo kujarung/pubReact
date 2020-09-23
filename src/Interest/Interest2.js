@@ -5,7 +5,7 @@ import Checkbox from "components/Checkbox";
 import BackBtn from "components/BackBtn";
 
 export default function Interest1() {
-  const [tagList, setTageList] = useState([
+  const [tagList] = useState([
     {
       id: 1,
       active: true,

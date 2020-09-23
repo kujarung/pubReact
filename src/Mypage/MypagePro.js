@@ -21,7 +21,7 @@ export default function MypagePro(props) {
     { id: 3, title: "리뷰", active: false },
   ]);
 
-  const [tabList2, setTabList2] = useState([
+  const [tabList2] = useState([
     { id: 10, title: "월", active: true },
     { id: 20, title: "화", active: false },
     { id: 30, title: "수", active: false },

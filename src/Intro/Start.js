@@ -2,7 +2,7 @@ import React from "react";
 import BackBtn from "components/BackBtn";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
-import { logoTxt, bottomBack, logoImg, icRest } from "components/ImgUtils";
+import { logoTxt, logoImg, icRest } from "components/ImgUtils";
 
 export const Start = () => {
   const Main = () => (

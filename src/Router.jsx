@@ -23,6 +23,7 @@ import MypageReviewVoca from "Mypage/MypageReviewVoca";
 import Guide from "guide/Guide";
 import Daily from "daily/Daily";
 import DailyLong from "daily/DailyLong";
+import Components from "guide/Components";
 
 export default function RouterLink(props) {
   const { openDrawer } = props;
@@ -32,6 +33,9 @@ export default function RouterLink(props) {
         <Route path="/signupResult">
           <SignupResult />
         </Route>
+        <Route path="/Components">
+          <Components />
+        </Route>        
         <Route path="/Daily">
           <Daily openDrawer={openDrawer} />
         </Route>
@@ -94,12 +98,12 @@ export default function RouterLink(props) {
         <Route path="/PretestResult">
           <PretestResult />
         </Route>
-        <Route path="/">
-          <Guide openDrawer={openDrawer} />
-        </Route>
         <Route path="/Main">
           <Main openDrawer={openDrawer} />
         </Route>
+        <Route path="/">
+          <Guide openDrawer={openDrawer} />
+        </Route>        
       </Switch>
     </HashRouter>
   );

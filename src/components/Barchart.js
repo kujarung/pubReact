@@ -18,7 +18,7 @@ export default function Barchart(props) {
       <div className="bar-content">
         {percentList.map((percent, index) => {
           return (
-            <div>
+            <div key={`bar-key-${index}`}>
               <div className="bar-container mb10">
                 <div
                   className="inner-percent"

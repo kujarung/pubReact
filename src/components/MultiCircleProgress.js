@@ -51,7 +51,7 @@ export default function CircleProgress(props) {
           r="15.91549430918954"
           fill="transparent"
           stroke="#F6F6F6"
-          stroke-width="1.2"
+          strokeWidth="1.2"
         ></circle>
 
         <circle

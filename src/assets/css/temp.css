@@ -6,6 +6,7 @@
 
 .guide img {
   width: 200px;
+  max-height: 380px;
 }
 .guide div {
   overflow: hidden;
@@ -29,4 +30,11 @@
   .guide section {
     width: 100%;
   }
+}
+
+.guide-border {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-bottom: 30px;
+  border-top: 1px solid gray;
 }
