@@ -381,6 +381,7 @@ X .vertical-item .vertical-txt-container {
 	left: 0;
 }
 
-.react-calendar.custom-calendar {
+.custom-calendar-wrap .react-calendar.custom-calendar {
 	width: 100%;
+	border: none;
 }
