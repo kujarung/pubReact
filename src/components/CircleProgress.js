@@ -4,6 +4,7 @@ export default function CircleProgress(props) {
   const { width, percent, small } = props;
   const max = Math.ceil((Math.PI * 2 * (width - 20)) / 2);
   const circleFill = Math.ceil((max / 100) * percent);
+  const { color, railColor } = props;
   return (
     <div className="tc">
       <svg className="circle-chart" width={width} height={width}>
@@ -47,7 +48,7 @@ export default function CircleProgress(props) {
         <circle
           filter="url(#innershadow)"
           className="circle-chart__background"
-          stroke="#F6F6F6"
+          stroke={railColor ? railColor : "#F6F6F6"}
           strokeWidth={small ? "5" : "10"}
           fill="none"
           cx={width / 2}
@@ -56,7 +57,7 @@ export default function CircleProgress(props) {
         />
         <circle
           className="circle-chart__circle"
-          stroke="#1769ff"
+          stroke={color ? color : "#1769ff"}
           strokeWidth={small ? "3" : "8"}
           strokeDasharray={`${circleFill},${max}`}
           strokeLinecap="round"

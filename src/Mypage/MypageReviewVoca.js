@@ -1,11 +1,45 @@
 import React, { useState } from "react";
 import StackHeader from "components/StackHeader";
-import { avatar, info, tempback1, tempback2 } from "components/ImgUtils";
+import {
+  avatar,
+  info,
+  tempback1,
+  tempback2,
+  review,
+  completeStudy,
+  nodap,
+} from "components/ImgUtils";
 import CircleProgress from "components/CircleProgress";
 import RenderTab from "components/RenderTab";
 import MultiCircleProgress from "components/MultiCircleProgress";
+import OverRayList from "components/OverRayList";
+import BackBtn from "components/BackBtn";
 
 export default function MypageReview(props) {
+  const overRayList = [
+    {
+      id: 1,
+      overTxt: "Mauritius Copes With Split Japanese Ship That Spilled Oil",
+      contentTxt: "It’s just a",
+      contentDesc: "이건 그냥 장난감이야.",
+      img: tempback1,
+    },
+    {
+      id: 2,
+      overTxt: "Mauritius Copes With Split Japanese Ship That Spilled Oil",
+      contentTxt: "It’s just a",
+      contentDesc: "이건 그냥 장난감이야.",
+      img: tempback2,
+    },
+    {
+      id: 3,
+      overTxt: "Mauritius Copes With Split Japanese Ship That Spilled Oil",
+      contentTxt: "It’s just a",
+      contentDesc: "이건 그냥 장난감이야.",
+      img: avatar,
+    },
+  ];
+
   const [tabList, setTabList] = useState([
     { id: 1, title: "활동지수", active: false },
     { id: 2, title: "마이퍼센트", active: false },
@@ -146,11 +180,91 @@ export default function MypageReview(props) {
           ))}
         </div>
 
-        <div className="">
+        <div className="title-container bothSpace">
+          <h5 className="weight500">오답 단어 목록</h5>
+          <p className="smallFont weight500 primary-color">더보기</p>
+        </div>
+
+        <div className="mb50">
+          <OverRayList overRayList={overRayList} />
+        </div>
+
+        <div>
           <div className="title-container bothSpace">
             <h5 className="weight500">주간 단어 학습 성취도</h5>
           </div>
-          <MultiCircleProgress percent1={90} percent2={5} percent3={5} />
+          <div className="pos-rel">
+            <MultiCircleProgress percent1={90} percent2={5} percent3={5} />
+            <div className="circle-label-con">
+              <div className="circle-label-info">
+                <div className="label-item">
+                  <div className="label-title primary">학습완료</div>
+                  <div className="label-desc">100개</div>
+                </div>
+
+                <div className="label-item">
+                  <div className="label-title navy">리뷰중</div>
+                  <div className="label-desc">100개</div>
+                </div>
+
+                <div className="label-item">
+                  <div className="label-title primary">오답</div>
+                  <div className="label-desc">100개</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="d-flex x-eq pl33 pr33 pb20 mb30">
+          <div>
+            <div className="pos-rel">
+              <CircleProgress width={"90"} percent={"81"} small={true} />
+              <div className="circle-label-con">
+                <div className="circle-label">
+                  <img src={completeStudy} alt="" style={{ width: "32px" }} />
+                </div>
+              </div>
+            </div>
+            <h6 className="mt8 tc weight400">학습완료</h6>
+          </div>
+          <div>
+            <div className="pos-rel">
+              <CircleProgress
+                width={"90"}
+                percent={"67"}
+                small={true}
+                color={"#002872"}
+              />
+              <div className="circle-label-con">
+                <div className="circle-label">
+                  <img src={review} alt="" style={{ width: "32px" }} />
+                </div>
+              </div>
+            </div>
+            <h6 className="mt8 tc weight400">리뷰 중</h6>
+          </div>
+          <div>
+            <div className="pos-rel">
+              <CircleProgress
+                width={"90"}
+                percent={"17"}
+                small={true}
+                color="#9ABEFF"
+                railColor="#F6F6F6"
+              />
+              <div className="circle-label-con">
+                <div className="circle-label">
+                  <img src={nodap} alt="" style={{ width: "32px" }} />
+                </div>
+              </div>
+            </div>
+            <h6 className="mt8 tc weight400">오답</h6>
+          </div>
+        </div>
+
+        <div className="pl20 pr20">
+          <BackBtn btnTxt="오답 학습하기" />
         </div>
       </div>
     </>

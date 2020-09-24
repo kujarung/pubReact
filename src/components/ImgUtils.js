@@ -15,8 +15,8 @@ export const dailyLong = require("../assets/realImg/dailyLong.png");
 export const home = require("../assets/realImg/home.png");
 export const homeMyLevel = require("../assets/realImg/homeMyLevel.png");
 export const mypageFree = require("../assets/realImg/mypageFree.png");
-export const mypageLock = require("../assets/realImg/mypageLock.png");
-export const mypageMypercent = require("../assets/realImg/mypageMypercent.png");
+export const mypageLock = require("../assets/realImg/myPageLock.png");
+export const mypageMypercent = require("../assets/realImg/myPageMypercent.png");
 export const mypageReview = require("../assets/realImg/mypageReview.png");
 
 export const activity = require("../assets/img/activity.png");
@@ -59,3 +59,9 @@ export const clock = require("../assets/img/clock.png");
 export const glass = require("../assets/img/glass.png");
 export const goal = require("../assets/img/goal.png");
 export const aa = require("../assets/img/aa.png");
+
+export const review = require("../assets/img/review.png");
+export const completeStudy = require("../assets/img/complete-study.png");
+export const nodap = require("../assets/img/nodap.png");
+export const grayX = require("../assets/img/gray-x.png");
+export const trash = require("../assets/img/trash.png");

@@ -1,19 +1,27 @@
-import React, {useState} from 'react'
-import AnserBtn from '../components/AnserBtn'
-import BackBtn from '../components/BackBtn'
-import Barchart from '../components/Barchart'
-import CardList from '../components/CardList'
-import Checkbox from '../components/Checkbox'
-import CircleProgress from '../components/CircleProgress'
-import {tempbak2, tempbak1, tempback1, tempback2, base, base2, base3} from '../components/ImgUtils'
-import HorizList from '../components/HorizList'
-import ImageList from '../components/ImageList'
-import MultiCircleProgress from '../components/MultiCircleProgress'
-import RenderTab from '../components/RenderTab'
-import SNSBtn from '../components/SNSBtn'
-import SerchInput from '../components/SerchInput'
-import TodoList from '../components/TodoList'
-import VerticalList from '../components/VerticalList'
+import React, { useState } from "react";
+import AnserBtn from "../components/AnserBtn";
+import BackBtn from "../components/BackBtn";
+import Barchart from "../components/Barchart";
+import CardList from "../components/CardList";
+import Checkbox from "../components/Checkbox";
+import CircleProgress from "../components/CircleProgress";
+import {
+  tempbak2,
+  tempbak1,
+  tempback1,
+  tempback2,
+  base,
+  base2,
+  base3,
+} from "../components/ImgUtils";
+import HorizList from "../components/HorizList";
+import ImageList from "../components/ImageList";
+import MultiCircleProgress from "../components/MultiCircleProgress";
+import RenderTab from "../components/RenderTab";
+import SNSBtn from "../components/SNSBtn";
+import SerchInput from "../components/SerchInput";
+import TodoList from "../components/TodoList";
+import VerticalList from "../components/VerticalList";
 
 export default function Components() {
   const verticalList = [
@@ -47,7 +55,6 @@ export default function Components() {
     },
   ];
 
-
   const snsList = ["naver", "kakako", "fb", "google"];
   const [tabList, setTabList] = useState([
     { id: 1, title: "정치", active: true },
@@ -71,14 +78,14 @@ export default function Components() {
       tab.id === id ? { ...tab, active: true } : { ...tab, active: false }
     );
     setTabList2(resultTab);
-  };  
+  };
 
   const clickTab = (id) => {
     const resultTab = tabList.map((tab) =>
       tab.id === id ? { ...tab, active: true } : { ...tab, active: false }
     );
     setTabList(resultTab);
-  };  
+  };
   const imgList = [
     {
       id: "abc1",
@@ -96,7 +103,7 @@ export default function Components() {
       content:
         "At sdfdsleast 50 people burned to vxcvdeath in a buzxcvzxcs colvlision in Ghana",
     },
-  ];  
+  ];
   const horzList = [
     {
       id: 112,
@@ -225,66 +232,58 @@ export default function Components() {
   return (
     <div>
       <section className="mt50 mb50 guide-border">
-      <h6 className="mb30 tc">
-          보더만 있는 버튼
-        </h6>          
+        <h6 className="mb30 tc">보더만 있는 버튼</h6>
         <div className="">
-        <AnserBtn             
-          click={() => console.log('click')}
-          btnTxt={'텍스트'}
-          active={true}/>
+          <AnserBtn
+            click={() => console.log("click")}
+            btnTxt={"텍스트"}
+            active={true}
+          />
         </div>
       </section>
 
       <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-          색이 찬 버튼
-        </h6>        
+        <h6 className="mb30 tc">색이 찬 버튼</h6>
         <div className="">
           <BackBtn btnTxt="홈화면으로 가기" />
         </div>
       </section>
 
       <section className="mb50 guide-border">
-        <h6 className="mb30 tc">
-          bar chart
-        </h6>
+        <h6 className="mb30 tc">bar chart</h6>
         <div className="">
-          <Barchart               title={"75450"}
-              percentList={[20, 30, 10, 50, 50, 100, 10]} />
+          <Barchart
+            title={"75450"}
+            percentList={[20, 30, 10, 50, 50, 100, 10]}
+          />
         </div>
       </section>
 
       <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-        card list
-        </h6>
+        <h6 className="mb30 tc">card list</h6>
         <div className="">
-        <CardList list={cardList1} /></div>        
+          <CardList list={cardList1} />
+        </div>
       </section>
 
       <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      Checkbox
-        </h6>
+        <h6 className="mb30 tc">Checkbox</h6>
         <div className="">
-        <div className="">
-                <Checkbox checkbox={{ id: 2, txt: "" }} />
-                </div>
-                <div className="">
-                <Checkbox checkbox={{ id: 3, txt: "내용이 있네요" }} />
-                </div>                
-              </div> 
+          <div className="">
+            <Checkbox checkbox={{ id: 2, txt: "" }} />
+          </div>
+          <div className="">
+            <Checkbox checkbox={{ id: 3, txt: "내용이 있네요" }} />
+          </div>
+        </div>
       </section>
-      
+
       <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      원형 차트
-        </h6>
+        <h6 className="mb30 tc">원형 차트</h6>
         <div className="pos-rel">
-        <CircleProgress width="280" percent={42} />  
-              {/* 원형 차트 설명 */}
-        <div className="circle-label-con">
+          <CircleProgress width="280" percent={42} />
+          {/* 원형 차트 설명 */}
+          <div className="circle-label-con">
             <div className="circle-label">
               <div className="label-txt big mb4">
                 42<span className="per">%</span>
@@ -298,58 +297,40 @@ export default function Components() {
                 </div>
               </div>
             </div>
-          </div>             
-              </div> 
+          </div>
+        </div>
       </section>
-      
 
       <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      세로 리스트
-        </h6>
-        <div className="pos-rel">
-        {<HorizList horzList={horzList} />}
-              </div> 
-      </section>      
-
+        <h6 className="mb30 tc">세로 리스트</h6>
+        <div className="pos-rel">{<HorizList horzList={horzList} />}</div>
+      </section>
 
       <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      세로 리스트 해시태그
-        </h6>
-        <div className="pos-rel">
-        {<HorizList horzList={horzListHash} />}
-              </div> 
-      </section>   
-      
-      <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      세로 리스트 바텀 제거
-        </h6>
-        <div className="pos-rel">
-        {<HorizList horzList={horzListEmpty} />}
-              </div> 
-      </section>  
+        <h6 className="mb30 tc">세로 리스트 해시태그</h6>
+        <div className="pos-rel">{<HorizList horzList={horzListHash} />}</div>
+      </section>
 
       <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      이미지 리스트 short
-        </h6>
-        <div className="pos-rel">
-            <ImageList
-              key={imgList[0].id}
-              content={imgList[0].content}
-              imgPath={imgList[0].imgPath}
-            />
-              </div> 
-      </section>     
+        <h6 className="mb30 tc">세로 리스트 바텀 제거</h6>
+        <div className="pos-rel">{<HorizList horzList={horzListEmpty} />}</div>
+      </section>
 
       <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      이미지 리스트 long
-        </h6>
+        <h6 className="mb30 tc">이미지 리스트 short</h6>
         <div className="pos-rel">
-        {imgList.map((imgInfo) => (
+          <ImageList
+            key={imgList[0].id}
+            content={imgList[0].content}
+            imgPath={imgList[0].imgPath}
+          />
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">이미지 리스트 long</h6>
+        <div className="pos-rel">
+          {imgList.map((imgInfo) => (
             <ImageList
               long={true}
               key={imgInfo.id}
@@ -357,85 +338,68 @@ export default function Components() {
               imgPath={imgInfo.imgPath}
             />
           ))}
-              </div> 
-      </section>     
+        </div>
+      </section>
 
       <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      다중 원형 차트
-        </h6>
+        <h6 className="mb30 tc">다중 원형 차트</h6>
         <div className="pos-rel">
-        <MultiCircleProgress percent1={90} percent2={5} percent3={5} />     
-              </div> 
-      </section>     
-        
-      <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      탭 스크롤
-        </h6>
-        <div className="pos-rel">
-        <RenderTab tabList={tabList} clickTab={clickTab} />   
-              </div> 
-      </section>          
-      
-      <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      탭 노스크롤
-        </h6>
-        <div className="pos-rel">
-        <RenderTab tabList={tabList2} clickTab={clickTab2} isFull={true}/>   
-              </div> 
-      </section>   
+          <MultiCircleProgress percent1={90} percent2={5} percent3={5} />
+        </div>
+      </section>
 
       <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      SNSBtn
-        </h6>
-        <div className="sns-btn-list">
-            {snsList.map((sns) => (
-              <div className="mb16">
-                <SNSBtn snsName={sns} />
-              </div>
-            ))}
-          </div>
-      </section>   
-      
-      <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      SerchInput
-        </h6>
-        <div className="sns-btn-list">
-          <SerchInput/>
-          </div>
-      </section>  
-      
-      <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      todo list check
-        </h6>
-        <div className="sns-btn-list">
-        <TodoList isComplete={false} />
-          </div>
-      </section>  
-      
-      <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      todo list no check
-        </h6>
-        <div className="sns-btn-list">
-        <TodoList isComplete />
-          </div>
-      </section> 
+        <h6 className="mb30 tc">탭 스크롤</h6>
+        <div className="pos-rel">
+          <RenderTab tabList={tabList} clickTab={clickTab} />
+        </div>
+      </section>
 
       <section className="mb50 guide-border">
-      <h6 className="mb30 tc">
-      가로 스크롤 리스트
-        </h6>
+        <h6 className="mb30 tc">탭 노스크롤</h6>
+        <div className="pos-rel">
+          <RenderTab tabList={tabList2} clickTab={clickTab2} isFull={true} />
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">SNSBtn</h6>
         <div className="sns-btn-list">
-        <VerticalList verticalList={verticalList} />
-          </div>
-      </section> 
-      
+          {snsList.map((sns) => (
+            <div className="mb16">
+              <SNSBtn snsName={sns} />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">SerchInput</h6>
+        <div className="sns-btn-list">
+          <SerchInput />
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">todo list check</h6>
+        <div className="sns-btn-list">
+          <TodoList isComplete={false} />
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">todo list no check</h6>
+        <div className="sns-btn-list">
+          <TodoList isComplete />
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">가로 스크롤 리스트</h6>
+        <div className="sns-btn-list">
+          <VerticalList verticalList={verticalList} />
+        </div>
+      </section>
     </div>
-  )
+  );
 }

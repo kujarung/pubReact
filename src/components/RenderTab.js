@@ -5,11 +5,19 @@ export default function RenderTab(props) {
   return (
     <div
       className={
-        isFull ? "tab-container full bothSpace" : "tab-container bothSpace"
+        isFull ? "tab-container bothSpace full" : "tab-container bothSpace"
       }
     >
       {tabList.map((tab) => (
         <div
+          style={
+            isFull
+              ? {
+                  width: `calc(${100 / tabList.length}% - 20px)`,
+                  textAlign: "center",
+                }
+              : {}
+          }
           key={tab.id}
           className={tab.active ? "tab active" : "tab"}
           onClick={() => clickTab(tab.id)}

@@ -62,7 +62,7 @@ export default function Signup() {
             <h2 className="fontAvenirBold">Sign In</h2>
           </div>
           <div className="mb33">
-            <h6 class="weight100">
+            <h6 className="weight100">
               읽고, 생각하고 성장하여 <span className="weight500">60%</span>의
               <br />
               장벽을 뛰어 넘는 <span className="weight500">리딩퍼센트</span>에

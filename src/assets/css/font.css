@@ -170,6 +170,10 @@ h6 {
   color: var(--color-gray) !important;
 }
 
+.color-white {
+  color: white;
+}
+
 .color-bordergray {
   color: var(--border-gray) !important;
 }
