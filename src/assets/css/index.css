@@ -5,8 +5,10 @@
 @import "./utils.css";
 @import "./header.css";
 @import "./intro.css";
+@import "./list.css";
 @import "./popup.css";
 @import "./mypage.css";
+@import "./graph.css";
 
 :root {
   --primary: #1769ff;
@@ -23,9 +25,9 @@
   --darkblack: #02010e;
   --gray50: rgba(119, 119, 119, 0.5);
   --gray10: rgba(193, 192, 200, 0.1);
+  --gray30: rgba(145, 144, 154, 0.3);
   --mainBlack: #222222;
   --gray-back: #fcfcfc;
   --borderGrayReal: #d8d8d8;
-  --navy: #002872;
-  --skyBlue: #9abeff;
+  --lightWite: #f5f6fa;
 }

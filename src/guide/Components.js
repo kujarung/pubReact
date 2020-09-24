@@ -22,6 +22,13 @@ import SNSBtn from "../components/SNSBtn";
 import SerchInput from "../components/SerchInput";
 import TodoList from "../components/TodoList";
 import VerticalList from "../components/VerticalList";
+import Steps from "../components/Steps";
+import WordList from "../components/WordList";
+import Swich from "../components/Swich";
+import HaxTxt from "../components/HaxTxt";
+import BarWidthLineChart from "../components/BarWidthLineChart";
+import DotSeletor from "../components/DotSeletor";
+import CustomCalendar from "../components/CustomCalendar";
 
 export default function Components() {
   const verticalList = [
@@ -230,7 +237,7 @@ export default function Components() {
   ];
 
   return (
-    <div>
+    <div className="over-hidden">
       <section className="mt50 mb50 guide-border">
         <h6 className="mb30 tc">보더만 있는 버튼</h6>
         <div className="">
@@ -246,6 +253,13 @@ export default function Components() {
         <h6 className="mb30 tc">색이 찬 버튼</h6>
         <div className="">
           <BackBtn btnTxt="홈화면으로 가기" />
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">회색 버튼</h6>
+        <div className="">
+          <BackBtn isGray btnTxt="홈화면으로 가기" />
         </div>
       </section>
 
@@ -398,6 +412,79 @@ export default function Components() {
         <h6 className="mb30 tc">가로 스크롤 리스트</h6>
         <div className="sns-btn-list">
           <VerticalList verticalList={verticalList} />
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">Steps</h6>
+        <div className="sns-btn-list">
+          <Steps steps={4} activeStep={3} />
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">WordList</h6>
+        <div className="sns-btn-list">
+          <WordList />
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">WordList with probleam</h6>
+        <div className="sns-btn-list">
+          <WordList isProbleam />
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">Swich</h6>
+        <div className="sns-btn-list">
+          <Swich />
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">6각형 글씨</h6>
+        <div className="sns-btn-list d-flex y-center x-eq">
+          <div className="">
+            <HaxTxt txt={"1회차"} />
+          </div>
+
+          <div className="">
+            <HaxTxt txt={"3회차"} isGray />
+          </div>
+          <div className="">
+            <HaxTxt txt={"2회차"} />
+          </div>
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">6각형 글씨</h6>
+        <div className="sns-btn-list">
+          <BarWidthLineChart />
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">DotSeletor</h6>
+        <div className="sns-btn-list">
+          <div className="pt50 pb50 pr50 pl50">
+            <div className="d-flex x-end">
+              <DotSeletor />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb50 guide-border">
+        <h6 className="mb30 tc">Calendar</h6>
+        <div className="sns-btn-list">
+          <div className="pt50 pb50 pr50 pl50">
+            <div className="d-flex x-end">
+              <CustomCalendar />
+            </div>
+          </div>
         </div>
       </section>
     </div>
