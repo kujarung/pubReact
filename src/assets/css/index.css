@@ -9,10 +9,12 @@
 @import "./popup.css";
 @import "./mypage.css";
 @import "./graph.css";
+@import "./subscribe.css";
 
 :root {
   --primary: #1769ff;
-  --primary50: rgba(23, 105, 255, 0.5);
+  --primary30: rgba(23, 105, 255, 0.3);
+  --primary30: rgba(23, 105, 255, 0.3);
   --color-gray: #91909a;
   --naver-green: #1ace60;
   --kakao-yellow: #fae102;
@@ -30,4 +32,5 @@
   --gray-back: #fcfcfc;
   --borderGrayReal: #d8d8d8;
   --lightWite: #f5f6fa;
+  --realGray: #90919a;
 }

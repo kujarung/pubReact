@@ -60,7 +60,7 @@
 
 .fontAvenirBold {
   font-family: "Avenir-Bold";
-  font-weight: "Bold";
+  font-weight: bold;
 }
 
 .fontAvenirMedium {
@@ -146,6 +146,23 @@ h6 {
   height: 100%;
 }
 
+.del-txt {
+  position: relative;
+}
+
+.del-txt::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  border-bottom: 1px solid var(--primary);
+  left: 0;
+  bottom: 7px;
+}
+
+.del-txt.gray::after {
+  border-bottom-color: var(--realGray);
+}
+
 .bottom-small-line {
   position: relative;
 }
@@ -193,10 +210,11 @@ h6 {
 .txt-empasis:after {
   content: "";
   position: absolute;
-  border-bottom: 8px solid var(--primary50);
+  border-bottom: 8px solid var(--primary30);
   width: 100%;
   left: 0;
-  bottom: 0px;
+  bottom: 6px;
+  z-index: 0;
 }
 
 .rest-icon img {

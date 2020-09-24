@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import StackHeader from "components/StackHeader";
 import { avatar, tempback1, tempback2 } from "components/ImgUtils";
 import RenderTab from "components/RenderTab";
-import SerchInput from "components/SerchInput";
-import DeletableList from "components/DeletableList";
-export default function ContentsList(props) {
-  const deletableList = [
+import WrongAnserList from "components/WrongAnserList";
+import BackBtn from "components/BackBtn";
+export default function WordList1(props) {
+  const wrongAnserList = [
     {
       id: 1,
       contentTxt:
@@ -27,8 +27,8 @@ export default function ContentsList(props) {
   ];
 
   const [selectTab, setSelectTab] = useState([
-    { id: 112, title: "학습 중인 콘텐츠", active: true },
-    { id: 224, title: "학습 완료 콘테츠", active: false },
+    { id: 112, title: "예문", active: false },
+    { id: 224, title: "단어뜻", active: true },
   ]);
 
   const clickTab2 = (id) => {
@@ -41,11 +41,8 @@ export default function ContentsList(props) {
   return (
     <>
       <StackHeader />
-      <div className="bothSpace pt20 mb30">
-        <SerchInput hasX={true} />
-      </div>
-      <div className="title-container bothSpace mb35">
-        <h3 className="weight500">컨텐츠 목록</h3>
+      <div className="title-container bothSpace mb35 mt30">
+        <h3 className="weight500">오답 단어 목록</h3>
         <p className="smallFont weight500 primary-color">27개</p>
       </div>
       <div className="mb20">
@@ -53,7 +50,11 @@ export default function ContentsList(props) {
       </div>
 
       <div className="">
-        <DeletableList deletableList={deletableList} />
+        <WrongAnserList wrongAnserList={wrongAnserList} />
+      </div>
+
+      <div className="bottom-fixed">
+        <BackBtn btnTxt="오답 학습하기" />
       </div>
     </>
   );

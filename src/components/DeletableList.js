@@ -7,11 +7,10 @@ export default function DeletableList(props) {
       {deletableList.map((list) => {
         const { img, contentTxt, id, isDelete } = list;
         return (
-          <div
-            key={id}
-            className={isDelete ? "horiz-item type-delete" : "horiz-item"}
-          >
-            <div className={"horiz-inner"}>
+          <div key={id} className={"horiz-item type-delete"}>
+            <div
+              className={isDelete ? "horiz-inner pos-delete" : "horiz-inner"}
+            >
               <div className="horiz-top">
                 <div className="horiz-ima-box">
                   <img src={img} alt="" />

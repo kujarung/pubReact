@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ImageList from "components/ImageList";
+import ImageCardItem from "components/ImageCardItem";
 import VerticalList from "components/VerticalList";
 import HorizList from "components/HorizList";
 import Header from "components/Header";
@@ -120,7 +120,7 @@ export default function Main(props) {
           <div className="tab-contant">
             <div className="mb40 bothSpace">
               {imgList.map((imgInfo) => (
-                <ImageList
+                <ImageCardItem
                   key={imgInfo.id}
                   content={imgInfo.content}
                   imgPath={imgInfo.imgPath}

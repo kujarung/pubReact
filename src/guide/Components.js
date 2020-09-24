@@ -15,7 +15,7 @@ import {
   base3,
 } from "../components/ImgUtils";
 import HorizList from "../components/HorizList";
-import ImageList from "../components/ImageList";
+import ImageCardItem from "../components/ImageCardItem";
 import MultiCircleProgress from "../components/MultiCircleProgress";
 import RenderTab from "../components/RenderTab";
 import SNSBtn from "../components/SNSBtn";
@@ -23,7 +23,7 @@ import SerchInput from "../components/SerchInput";
 import TodoList from "../components/TodoList";
 import VerticalList from "../components/VerticalList";
 import Steps from "../components/Steps";
-import WordList from "../components/WordList";
+import WordList from "../components/WrongAnserList";
 import Swich from "../components/Swich";
 import HaxTxt from "../components/HaxTxt";
 import BarWidthLineChart from "../components/BarWidthLineChart";
@@ -333,7 +333,7 @@ export default function Components() {
       <section className="mb50 guide-border">
         <h6 className="mb30 tc">이미지 리스트 short</h6>
         <div className="pos-rel">
-          <ImageList
+          <ImageCardItem
             key={imgList[0].id}
             content={imgList[0].content}
             imgPath={imgList[0].imgPath}
@@ -341,12 +341,12 @@ export default function Components() {
         </div>
       </section>
 
-      <section className="mb50 guide-border">
-        <h6 className="mb30 tc">이미지 리스트 long</h6>
+      <section className="mb50 ">
         <div className="pos-rel">
           {imgList.map((imgInfo) => (
-            <ImageList
-              long={true}
+            <ImageCardItem
+              size={"long"}
+              round={"norounded"}
               key={imgInfo.id}
               content={imgInfo.content}
               imgPath={imgInfo.imgPath}

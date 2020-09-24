@@ -25,15 +25,70 @@ import Daily from "daily/Daily";
 import DailyLong from "daily/DailyLong";
 import Components from "guide/Components";
 import ContentsList from "Mypage/ContentsList";
+import WordList1 from "WordList/WordList1";
+import WordList2 from "WordList/WordList2";
+import StudyWord from "WordList/StudyWord";
+import Nosubscribe from "Subscribe/Nosubscribe";
+import SubscribeContent from "Subscribe/SubscribeContent";
+import Subscribing from "Subscribe/Subscribing";
+import RegCupon from "Subscribe/RegCupon";
+import Ranking from "event/Ranking";
+import DailyCheck from "event/DailyCheck";
+import AttendInfo from "event/AttendInfo";
+import GetAchievements from "event/GetAchievements";
+import LevelInfo from "event/LevelInfo";
+import Setting from "setting/Setting";
 
 export default function RouterLink(props) {
   const { openDrawer } = props;
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
+        <Route path="/Setting">
+          <Setting />
+        </Route>
+        <Route path="/AttendInfo">
+          <AttendInfo />
+        </Route>
+        <Route path="/LevelInfo">
+          <LevelInfo />
+        </Route>
+
+        <Route path="/GetAchievements">
+          <GetAchievements />
+        </Route>
+        <Route path="/RegCupon">
+          <RegCupon />
+        </Route>
+        <Route path="/DailyCheck">
+          <DailyCheck />
+        </Route>
+        <Route path="/Ranking">
+          <Ranking />
+        </Route>
+        <Route path="/Subscribing">
+          <Subscribing />
+        </Route>
         <Route path="/ContentsList">
           <ContentsList />
         </Route>
+        <Route path="/SubscribeContent">
+          <SubscribeContent />
+        </Route>
+
+        <Route path="/Nosubscribe">
+          <Nosubscribe />
+        </Route>
+        <Route path="/WordList1">
+          <WordList1 />
+        </Route>
+        <Route path="/WordList2">
+          <WordList2 />
+        </Route>
+        <Route path="/StudyWord">
+          <StudyWord />
+        </Route>
+
         <Route path="/signupResult">
           <SignupResult />
         </Route>

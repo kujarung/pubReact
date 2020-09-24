@@ -16,12 +16,12 @@ export const Start = () => {
   const Start = () => (
     <div className="h-100vh">
       <div className="pos-logo long tc">
-        <div className="img-logo mb31">
+        <div className="img-logo big mb31">
           <img src={logoImg} alt="logo-img" />
         </div>
         <h5 className="fontAvenirBlack color-grayy weight700">
           Just get on a rocket ship with <br />
-          READING PERCENT!
+          Reading Percent!
         </h5>
       </div>
       <div className="pos-bottom long">

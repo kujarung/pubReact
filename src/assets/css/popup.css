@@ -17,8 +17,20 @@
   border-radius: 5px;
   padding: 40px 20px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .popup-wrap .inner-pop.small {
   padding: 40px 20px 29px 20px;
+}
+
+.pop-x-btn-con {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.pop-x-btn-con img {
+  width: 18px;
+  height: 18px;
 }

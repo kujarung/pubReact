@@ -6,7 +6,7 @@ import { icRest } from "components/ImgUtils";
 export default function PretestResult() {
   const innerHeight = window.innerHeight;
   return (
-    <div className="">
+    <div className="h-100vh">
       <div className="empty-header"></div>
       <div className="bothSpace pt21 flex-item-con">
         <div>

@@ -1,5 +1,5 @@
 import React from "react";
-import ImageList from "components/ImageList";
+import ImageCardItem from "components/ImageCardItem";
 import Header from "components/Header";
 import { base3 } from "components/ImgUtils";
 
@@ -25,8 +25,8 @@ export default function Daily(props) {
         </div>
         <div className="bothSpace">
           {imgList.map((imgInfo) => (
-            <ImageList
-              long={true}
+            <ImageCardItem
+              size={"long"}
               key={imgInfo.id}
               content={imgInfo.content}
               imgPath={imgInfo.imgPath}
