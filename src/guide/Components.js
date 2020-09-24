@@ -27,6 +27,8 @@ import WordList from '../components/WordList';
 import Swich from '../components/Swich';
 import HaxTxt from '../components/HaxTxt';
 import BarWidthLineChart from '../components/BarWidthLineChart';
+import DotSeletor from '../components/DotSeletor';
+import CustomCalendar from '../components/CustomCalendar';
 
 export default function Components() {
 	const verticalList = [
@@ -453,6 +455,28 @@ export default function Components() {
 				<h6 className="mb30 tc">6각형 글씨</h6>
 				<div className="sns-btn-list">
 					<BarWidthLineChart />
+				</div>
+			</section>
+
+			<section className="mb50 guide-border">
+				<h6 className="mb30 tc">DotSeletor</h6>
+				<div className="sns-btn-list">
+					<div className="pt50 pb50 pr50 pl50">
+						<div className="d-flex x-end">
+							<DotSeletor />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section className="mb50 guide-border">
+				<h6 className="mb30 tc">Calendar</h6>
+				<div className="sns-btn-list">
+					<div className="pt50 pb50 pr50 pl50">
+						<div className="d-flex x-end">
+							<CustomCalendar />
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>

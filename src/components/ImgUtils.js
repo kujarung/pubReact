@@ -63,3 +63,4 @@ export const peopleBack = require('../assets/img/people-back.png');
 export const iconplus = require('../assets/img/iconplus.png');
 export const iconunlimit = require('../assets/img/iconunlimit.png');
 export const nocupon = require('../assets/img/nocupon.png');
+export const dot = require('../assets/img/dot.png');
