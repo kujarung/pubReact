@@ -88,7 +88,7 @@ export default function BarchartWidthLine(props) {
 									transform="translate(1.3333334 3.3333335)"
 									id="Path"
 									fill="#2574FF"
-									fill-rule="evenodd"
+									fillRule="evenodd"
 									stroke="none"
 								/>
 							</g>
@@ -97,7 +97,7 @@ export default function BarchartWidthLine(props) {
 			</svg>
 			<div className="legend-con">
 				{legend.map(title => (
-					<div class="legend-font">{title}</div>
+					<div className="legend-font">{title}</div>
 				))}
 			</div>
 			{barList.map(item => {

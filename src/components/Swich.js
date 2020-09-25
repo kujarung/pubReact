@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Swich() {
 	return (
-		<label class="switch">
+		<label className="switch">
 			<input type="checkbox" />
-			<span class="slider" />
+			<span className="slider" />
 		</label>
 	);
 }
