@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
 
-export default function Swich() {
-	return (
-		<label className="switch">
-			<input type="checkbox" />
-			<span className="slider" />
-		</label>
-	);
+export default function Swich(props) {
+  const { active } = props;
+  return (
+    <label className="switch">
+      <input type="checkbox" checked={active} />
+      <span className="slider" />
+    </label>
+  );
 }

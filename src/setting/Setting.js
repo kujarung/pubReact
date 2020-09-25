@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import StackHeader from "components/StackHeader";
-import { rightArr } from "components/ImgUtils";
-import CircleProgress from "components/CircleProgress";
 
 export default function Setting(props) {
   return (
@@ -11,23 +9,66 @@ export default function Setting(props) {
         <h3 className="weight500">설정</h3>
       </div>
 
-      <div className="setting-wrap">
-        <div className="setting-con">
+      <div className="item-list-wrapap">
+        <div className="item-list-con">
           <div className="setting-title">설정</div>
-          <div className="setting-row">
-            <div className="txt">내 정보 설정</div>
-            <div className="arr">
-              <img src={rightArr} alt="" style={{ width: "10px" }} />
-            </div>
+          <div className="item-list-row">
+            <p className="txt">내 정보 설정</p>
+          </div>
+          <div className="item-list-row">
+            <p className="txt">알림 설정</p>
+          </div>
+          <div className="item-list-row">
+            <p className="txt">반복주기 설정</p>
+          </div>
+          <div className="item-list-row">
+            <p className="txt">도움말 다시보기</p>
           </div>
         </div>
 
-        <div className="setting-con">
-          <div className="setting-row">
-            <div className="txt">내 정보 설정</div>
-            <div className="arr">
-              <img src={rightArr} alt="" style={{ width: "10px" }} />
-            </div>
+        <div className="item-list-con">
+          <div className="setting-title">이용안내</div>
+          <div className="item-list-row">
+            <p className="txt">공지사항</p>
+          </div>
+          <div className="item-list-row">
+            <p className="txt">이벤트</p>
+          </div>
+          <div className="item-list-row">
+            <p className="txt">자주 묻는 질문</p>
+          </div>
+          <div className="item-list-row">
+            <p className="txt">이메일 문의</p>
+          </div>
+        </div>
+
+        <div className="item-list-con">
+          <div className="setting-title">공유</div>
+          <div className="item-list-row">
+            <p className="txt">지인과 리딩퍼센트 같이하기</p>
+          </div>
+          <div className="item-list-row">
+            <p className="txt">앱스토어 평점 남기기</p>
+          </div>
+        </div>
+
+        <div className="item-list-con">
+          <div className="setting-title">앱정보</div>
+          <div className="item-list-row">
+            <p className="txt">버전</p>
+            <p className="txt color-gray mr25">2020.01.01</p>
+          </div>
+          <div className="item-list-row">
+            <p className="txt">서비스 이용약관</p>
+          </div>
+          <div className="item-list-row">
+            <p className="txt">개인정보 처리방침</p>
+          </div>
+          <div className="item-list-row">
+            <p className="txt">마케팅 메시지 수신 동의</p>
+          </div>
+          <div className="item-list-row">
+            <p className="txt">서비스 탈퇴</p>
           </div>
         </div>
       </div>

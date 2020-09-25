@@ -134,9 +134,28 @@ h6 {
   line-height: 18px;
 }
 
+.desc-font {
+  font-size: 10px;
+  color: var(--realGray);
+  line-height: 14px;
+}
+
 .smallFont {
   font-size: 10px;
   line-height: 16px;
+}
+
+.reqired {
+  position: relative;
+  display: inline-block;
+}
+
+.reqired::after {
+  content: "*";
+  position: absolute;
+  right: -7px;
+  color: var(--primary);
+  top: -2px;
 }
 
 .no-scroll {

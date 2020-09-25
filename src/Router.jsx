@@ -38,15 +38,84 @@ import AttendInfo from "event/AttendInfo";
 import GetAchievements from "event/GetAchievements";
 import LevelInfo from "event/LevelInfo";
 import Setting from "setting/Setting";
+import MyInfo from "setting/MyInfo";
+import SettingAlam from "setting/SettingAlam";
+import SettingRepeat from "setting/SettingRepeat";
+import SettingRepeatPop from "setting/SettingRepeatPop";
+import HelpPop from "setting/HelpPop";
+import Notice from "setting/Notice";
+import EventIng from "event/EventIng";
+import EventEnd from "event/EventEnd";
+import FAQ from "event/FAQ";
+import SendEmail from "event/SendEmail";
+import ServicePolicy from "policy/ServicePolicy";
+import PrivatePolicy from "policy/PrivatePolicy";
+import AgreeMarketing from "policy/AgreeMarketing";
+import Withdrawal from "policy/Withdrawal";
+import WithdrawalPop from "policy/WithdrawalPop";
+import Search from "Search/Search";
 
 export default function RouterLink(props) {
   const { openDrawer } = props;
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
+        <Route path="/Search">
+          <Search />
+        </Route>
+        <Route path="/Withdrawal">
+          <Withdrawal />
+        </Route>
+        <Route path="/WithdrawalPop">
+          <WithdrawalPop />
+        </Route>
+
+        <Route path="/AgreeMarketing">
+          <AgreeMarketing />
+        </Route>
+        <Route path="/PrivatePolicy">
+          <PrivatePolicy />
+        </Route>
+        <Route path="/ServicePolicy">
+          <ServicePolicy />
+        </Route>
+        <Route path="/SettingAlam">
+          <SettingAlam />
+        </Route>
+        <Route path="/EventIng">
+          <EventIng />
+        </Route>
+        <Route path="/EventEnd">
+          <EventEnd />
+        </Route>
+        <Route path="/FAQ">
+          <FAQ />
+        </Route>
+        <Route path="/SendEmail">
+          <SendEmail />
+        </Route>
+
+        <Route path="/HelpPop">
+          <HelpPop />
+        </Route>
+        <Route path="/Notice">
+          <Notice />
+        </Route>
+
+        <Route path="/SettingRepeat">
+          <SettingRepeat />
+        </Route>
+        <Route path="/SettingRepeatPop">
+          <SettingRepeatPop />
+        </Route>
+
         <Route path="/Setting">
           <Setting />
         </Route>
+        <Route path="/MyInfo">
+          <MyInfo />
+        </Route>
+
         <Route path="/AttendInfo">
           <AttendInfo />
         </Route>
