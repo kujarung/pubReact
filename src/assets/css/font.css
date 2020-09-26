@@ -1,76 +1,76 @@
 /* font */
 @font-face {
-  font-family: "Noto Sans KR";
+  font-family: 'Noto Sans KR';
   font-style: thin;
   font-weight: 100;
-  src: url("../font/NotoSansKR-Thin.otf");
+  src: url('../font/NotoSansKR-Thin.otf');
 }
 @font-face {
-  font-family: "Noto Sans KR";
+  font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 300;
-  src: url("../font/NotoSansKR-Regular.otf");
+  src: url('../font/NotoSansKR-Regular.otf');
 }
 @font-face {
-  font-family: "Noto Sans KR";
+  font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  src: url("../font/NotoSansKR-Medium.otf");
+  src: url('../font/NotoSansKR-Medium.otf');
 }
 @font-face {
-  font-family: "Noto Sans KR";
+  font-family: 'Noto Sans KR';
   font-style: bold;
   font-weight: 500;
-  src: url("../font/NotoSansKR-Bold.otf");
+  src: url('../font/NotoSansKR-Bold.otf');
 }
 @font-face {
-  font-family: "Noto Sans KR";
+  font-family: 'Noto Sans KR';
   font-style: black;
   font-weight: 700;
-  src: url("../font/NotoSansKR-Black.otf");
+  src: url('../font/NotoSansKR-Black.otf');
 }
 @font-face {
-  font-family: "Avenir-Bold";
-  font-weight: "Bold";
-  src: url("../font/Avenir-Bold.ttf");
+  font-family: 'Avenir-Bold';
+  font-weight: 'Bold';
+  src: url('../font/Avenir-Bold.ttf');
 }
 @font-face {
-  font-family: "Avenir-Book";
-  font-weight: "500";
-  src: url("../font/Avenir-Book.ttf");
+  font-family: 'Avenir-Book';
+  font-weight: '500';
+  src: url('../font/Avenir-Book.ttf');
 }
 @font-face {
-  font-family: "Avenir-Medium";
-  font-weight: "600";
-  src: url("../font/Avenir-Medium.ttf");
+  font-family: 'Avenir-Medium';
+  font-weight: '600';
+  src: url('../font/Avenir-Medium.ttf');
 }
 @font-face {
-  font-family: "Avenir-Black";
-  font-weight: "700";
-  src: url("../font/Avenir-Black.ttf");
+  font-family: 'Avenir-Black';
+  font-weight: '700';
+  src: url('../font/Avenir-Black.ttf');
 }
 * {
-  font-family: "Noto Sans KR", "돋움", Dotum, Verdana, Helvetica, Sans-serif;
+  font-family: 'Noto Sans KR', '돋움', Dotum, Verdana, Helvetica, Sans-serif;
 }
 
 .fontAvenir {
-  font-family: "Avenir-Book";
+  font-family: 'Avenir-Book';
   font-weight: 500;
 }
 
 .fontAvenirBold {
-  font-family: "Avenir-Bold";
+  font-family: 'Avenir-Bold';
   font-weight: bold;
 }
 
 .fontAvenirMedium {
-  font-family: "Avenir-Medium";
-  font-weight: "600";
+  font-family: 'Avenir-Medium';
+  font-weight: '600';
 }
 
 .fontAvenirBlack {
-  font-family: "Avenir-Black";
-  font-weight: "700";
+  font-family: 'Avenir-Black';
+  font-weight: '700';
 }
 
 .weight100 {
@@ -121,6 +121,10 @@ h5 {
   font-size: 20px;
   line-height: 26px;
 }
+h5.middle {
+  font-size: 18px;
+  line-height: 24px;
+}
 h5.small {
   font-size: 16px;
   line-height: 22px;
@@ -132,6 +136,15 @@ h6 {
 .h7 {
   font-size: 12px;
   line-height: 18px;
+}
+
+.big-font {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.time-desc {
+  font-size: 24px;
 }
 
 .desc-font {
@@ -151,11 +164,17 @@ h6 {
 }
 
 .reqired::after {
-  content: "*";
+  content: '*';
   position: absolute;
   right: -7px;
   color: var(--primary);
   top: -2px;
+}
+
+.step-underline {
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 2px solid var(--primary);
 }
 
 .no-scroll {
@@ -170,7 +189,7 @@ h6 {
 }
 
 .del-txt::after {
-  content: "";
+  content: '';
   width: 100%;
   position: absolute;
   border-bottom: 1px solid var(--primary);
@@ -191,7 +210,7 @@ h6 {
 }
 
 .bottom-small-line:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 2px;
@@ -227,7 +246,7 @@ h6 {
 }
 
 .txt-empasis:after {
-  content: "";
+  content: '';
   position: absolute;
   border-bottom: 8px solid var(--primary30);
   width: 100%;

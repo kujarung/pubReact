@@ -22,12 +22,12 @@
 }
 
 .main-back.gray-back .btn-fon {
-  color: "white";
+  color: 'white';
 }
 
 .btn-con:after {
   position: absolute;
-  content: "";
+  content: '';
 }
 
 .left-icon {
@@ -69,7 +69,7 @@
 }
 
 .main-back .btn-font {
-  color: "white";
+  color: 'white';
 }
 
 .btn-font {
@@ -97,7 +97,7 @@
   line-height: 18px;
   color: var(--check-gray);
   padding-left: 29px;
-  background-image: url("../img/ic-empty-check.png");
+  background-image: url('../img/ic-empty-check.png');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 16px;
@@ -108,13 +108,13 @@
   color: #000000;
   font-weight: 500;
   padding-left: 29px;
-  background-image: url("../img/ic-checked.png");
+  background-image: url('../img/ic-checked.png');
   background-repeat: no-repeat;
   background-position: left center;
 }
 
-.has-check .btn-con.anser {
-  background-image: url("../img/ic-checked.png");
+.has-check .btn-con.anser.active {
+  background-image: url('../img/ic-checked.png');
   background-repeat: no-repeat;
   background-position: left 24px center;
   background-size: 20px;
@@ -149,6 +149,21 @@
   margin-right: 5px;
   min-height: 10px;
   vertical-align: middle;
+  height: 23px;
+}
+
+.inner-empty.long {
+  min-width: 120px;
+}
+
+.inner-empty.gray {
+  border: 1px solid var(--check-gray);
+  height: 23px;
+  font-size: 14px;
+  color: var(--check-gray);
+  letter-spacing: 0;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .switch {
@@ -179,7 +194,7 @@
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 9px;
   width: 9px;
   left: 2px;
@@ -213,17 +228,16 @@ input:checked + .slider:before {
 
 .hax-con {
   position: relative;
-  width: 64px;
-  height: 71px;
+  width: 71px;
+  height: 78px;
 }
 
 .hax-desc {
   width: 100%;
   position: absolute;
   top: 50%;
-  transform: translateY(calc(-50% - -3px));
+  transform: translate(0, -50%);
   text-align: center;
-  left: 3px;
 }
 
 .discount-box {
@@ -260,7 +274,7 @@ input:checked + .slider:before {
 }
 
 .tag-item.small {
-  padding: 2px 7px;
+  padding: 1px 7px;
 }
 
 .tag-item.gray .tag-txt {
@@ -278,6 +292,7 @@ input:checked + .slider:before {
 
 .tag-item.small .tag-txt {
   font-size: 10px;
+  line-height: 13px;
 }
 
 .tag-item.no-margin {
@@ -295,7 +310,7 @@ input:checked + .slider:before {
 
 .tag-item .tag-txt {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 17px;
   color: var(--darkblack);
 }
 
@@ -323,7 +338,7 @@ input:checked + .slider:before {
   width: 100%;
   border-radius: 5px;
   outline: none;
-  background-image: url("../img/select-icon.png");
+  background-image: url('../img/select-icon.png');
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-size: 14px;
@@ -353,4 +368,84 @@ input:checked + .slider:before {
   justify-content: center;
   border: 1px solid var(--color-gray);
   border-radius: 5px;
+}
+
+.read-icon {
+  width: 65px;
+  height: 44px;
+  border: 1px solid var(--primary);
+  box-sizing: border-box;
+  background-position: center;
+  background-size: 20px 25px;
+  background-repeat: no-repeat;
+  border-radius: 22px;
+}
+
+.mix-btn-con {
+  margin-right: 12px;
+  margin-left: 12px;
+  width: 100%;
+  height: 58px;
+  border: 1px solid var(--primary);
+  border-radius: 29px;
+}
+
+.sound-icon {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #f5f6fa;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background-image: url('../img/sound.png');
+  background-size: 40px;
+  background-position: center;
+}
+
+.voca-type-btn {
+  background-color: var(--color-gray);
+  font-size: 11px;
+  color: #ffffff;
+  padding: 3px 6px;
+  border-radius: 2px;
+}
+
+.gray-circle-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--lightWite);
+  font-family: 'Avenir-Medium';
+  font-weight: '600';
+}
+
+.link-line {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.link-line.active {
+  background-color: var(--lightWite);
+}
+
+.link-line:after {
+  width: 1px;
+  height: 100%;
+  top: 20px;
+  content: '';
+  position: absolute;
+  border-left: 1px solid var(--borderGrayReal);
+  left: 30px;
+  z-index: 0;
+}
+
+.link-line:last-child:after {
+  top: -20px;
 }

@@ -1,10 +1,10 @@
-import React from "react";
-import { peopleBack } from "./ImgUtils";
+import React from 'react';
+import { peopleBack } from './ImgUtils';
 
 export default function WrongAnserList(props) {
   const { isProbleam } = props;
   return [1, 2, 3, 4, 5, 6, 7, 8, 9].map((val) => (
-    <div className="horiz-item wold">
+    <div className={'horiz-item wold'}>
       <div className="horiz-inner">
         <div className="horiz-top">
           <div className="horiz-ima-box">
@@ -23,7 +23,7 @@ export default function WrongAnserList(props) {
             ) : (
               <>
                 <div className="word-title">
-                  The Mauritius government is seeking{" "}
+                  The Mauritius government is seeking{' '}
                   <span className="inner-empty" /> from the company.
                 </div>
 

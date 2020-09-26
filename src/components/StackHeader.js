@@ -1,20 +1,23 @@
-import React from "react";
-import { backBtn } from "components/ImgUtils";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { backBtn, info } from 'components/ImgUtils';
+import { Link } from 'react-router-dom';
+import DotSeletor from 'components/DotSeletor';
 
 export default function StackHeader(props) {
-  const { rightItem } = props;
+  const { rightItem, isAbsol } = props;
   return (
-    <div className="header">
+    <div className={isAbsol ? 'header absol' : 'header'}>
       <Link to="/">
         <div className="icon-img-con arr">
           <img src={backBtn} alt="back-btn" />
         </div>
       </Link>
-      {rightItem === "info" ? (
-        <div className=""></div>
-      ) : rightItem === "selector" ? (
-        <div className=""></div>
+      {rightItem === 'info' ? (
+        <div className="">
+          <img src={info} alt="" style={{ width: '24px' }} />
+        </div>
+      ) : rightItem === 'selector' ? (
+        <DotSeletor />
       ) : null}
     </div>
   );

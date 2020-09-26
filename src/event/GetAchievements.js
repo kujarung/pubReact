@@ -56,7 +56,7 @@ export default function GetAchievements(props) {
         <div className="achievements-list mb50">
           <div className="achievements-item">
             <div className="d-flex x-eq mb10">
-              <h6 className="weight400">입문 챌린저</h6>
+              <h6 className="weight500">입문 챌린저</h6>
               <div className="tag-item small no-margin">
                 <p className="tag-txt color-primary">INPROGRESS</p>
               </div>
@@ -69,17 +69,17 @@ export default function GetAchievements(props) {
               </div>
 
               <div className="">
-                <h6 className="weight500">
+                <h4 className="weight400">
                   {" "}
                   10 <span className="h7">p</span>
-                </h6>
+                </h4>
               </div>
             </div>
           </div>
 
           <div className="achievements-item">
             <div className="d-flex x-eq mb10">
-              <h6 className="weight400">능숙한 챌린저</h6>
+              <h6 className="weight500">능숙한 챌린저</h6>
               <div className="tag-item small no-margin">
                 <p className="tag-txt color-primary">INPROGRESS</p>
               </div>
@@ -92,17 +92,17 @@ export default function GetAchievements(props) {
               </div>
 
               <div className="">
-                <h6 className="weight500">
+                <h4 className="weight400">
                   {" "}
                   10 <span className="h7">p</span>
-                </h6>
+                </h4>
               </div>
             </div>
           </div>
 
           <div className="achievements-item">
             <div className="d-flex x-eq mb10">
-              <h6 className="weight400">신규 챌린저의 등장</h6>
+              <h6 className="weight500">신규 챌린저의 등장</h6>
               <div className="tag-item small no-margin">
                 <p className="tag-txt color-primary">INPROGRESS</p>
               </div>
@@ -115,10 +115,10 @@ export default function GetAchievements(props) {
               </div>
 
               <div className="">
-                <h6 className="weight500">
+                <h4 className="weight400">
                   {" "}
                   10 <span className="h7">p</span>
-                </h6>
+                </h4>
               </div>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function GetAchievements(props) {
         <div className="achievements-list mb50">
           <div className="achievements-item">
             <div className="d-flex x-eq mb10">
-              <h6 className="weight400">입문 챌린저</h6>
+              <h6 className="weight500">입문 챌린저</h6>
               <div className="">
                 <img src={circleLock} alt="" style={{ width: "20px" }} />
               </div>
@@ -145,17 +145,17 @@ export default function GetAchievements(props) {
               </div>
 
               <div className="">
-                <h6 className="weight500">
+                <h4 className="weight400">
                   {" "}
                   10 <span className="h7">p</span>
-                </h6>
+                </h4>
               </div>
             </div>
           </div>
 
           <div className="achievements-item">
             <div className="d-flex x-eq mb10">
-              <h6 className="weight400">능숙한 챌린저</h6>
+              <h6 className="weight500">능숙한 챌린저</h6>
               <div className="">
                 <img src={circleLock} alt="" style={{ width: "20px" }} />
               </div>
@@ -168,17 +168,17 @@ export default function GetAchievements(props) {
               </div>
 
               <div className="">
-                <h6 className="weight500">
+                <h4 className="weight400">
                   {" "}
                   10 <span className="h7">p</span>
-                </h6>
+                </h4>
               </div>
             </div>
           </div>
 
           <div className="achievements-item">
             <div className="d-flex x-eq mb10">
-              <h6 className="weight400">신규 챌린저의 등장</h6>
+              <h6 className="weight500">신규 챌린저의 등장</h6>
               <div className="">
                 <img src={circleLock} alt="" style={{ width: "20px" }} />
               </div>
@@ -191,10 +191,10 @@ export default function GetAchievements(props) {
               </div>
 
               <div className="">
-                <h6 className="weight500">
+                <h4 className="weight400">
                   {" "}
                   10 <span className="h7">p</span>
-                </h6>
+                </h4>
               </div>
             </div>
           </div>
@@ -208,7 +208,7 @@ export default function GetAchievements(props) {
         <div className="achievements-list mb50">
           <div className="achievements-item get">
             <div className="d-flex x-eq mb10">
-              <h6 className="weight400">입문 챌린저</h6>
+              <h6 className="weight500">입문 챌린저</h6>
               <div className="">
                 <img src={icEmptyCheck} alt="" style={{ width: "20px" }} />
               </div>
@@ -221,17 +221,17 @@ export default function GetAchievements(props) {
               </div>
 
               <div className="">
-                <h6 className="weight500">
+                <h4 className="weight400">
                   {" "}
                   10 <span className="h7">p</span>
-                </h6>
+                </h4>
               </div>
             </div>
           </div>
 
           <div className="achievements-item get">
             <div className="d-flex x-eq mb10">
-              <h6 className="weight400">능숙한 챌린저</h6>
+              <h6 className="weight500">능숙한 챌린저</h6>
               <div className="">
                 <img src={icEmptyCheck} alt="" style={{ width: "20px" }} />
               </div>
@@ -244,17 +244,17 @@ export default function GetAchievements(props) {
               </div>
 
               <div className="">
-                <h6 className="weight500">
+                <h4 className="weight400">
                   {" "}
                   10 <span className="h7">p</span>
-                </h6>
+                </h4>
               </div>
             </div>
           </div>
 
           <div className="achievements-item get">
             <div className="d-flex x-eq mb10">
-              <h6 className="weight400">신규 챌린저의 등장</h6>
+              <h6 className="weight500">신규 챌린저의 등장</h6>
               <div className="">
                 <img src={icEmptyCheck} alt="" style={{ width: "20px" }} />
               </div>
@@ -267,10 +267,10 @@ export default function GetAchievements(props) {
               </div>
 
               <div className="">
-                <h6 className="weight500">
+                <h4 className="weight400">
                   {" "}
                   10 <span className="h7">p</span>
-                </h6>
+                </h4>
               </div>
             </div>
           </div>

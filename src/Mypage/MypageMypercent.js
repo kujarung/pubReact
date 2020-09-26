@@ -101,7 +101,7 @@ export default function MypageMypercent(props) {
               12<span className="small-desc">개월</span>
             </h3>
             <p className="h7 mb7 color-gray">구독중입니다.</p>
-            <div className="tag-item small no-margin">
+            <div className="tag-item small no-margin he-auto">
               <p className="tag-txt color-primary">256일 남음</p>
             </div>
           </div>

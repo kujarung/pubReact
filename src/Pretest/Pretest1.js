@@ -1,39 +1,41 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
-import AnserBtn from "components/AnserBtn";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
+import AnserBtn from 'components/AnserBtn';
 
 export default function Pretest1() {
   const [anserList, setAnserList] = useState([
     {
-      id: "1",
-      btnTxt: "injure (해치다)",
+      id: '1',
+      btnTxt: 'injure (해치다)',
       active: false,
     },
     {
-      id: "2",
-      btnTxt: "start (시작하다)",
+      id: '2',
+      btnTxt: 'start (시작하다)',
       active: true,
     },
     {
-      id: "3",
-      btnTxt: "eat (먹다)",
+      id: '3',
+      btnTxt: 'eat (먹다)',
       active: false,
     },
     {
-      id: "4",
-      btnTxt: "desk (책상)",
+      id: '4',
+      btnTxt: 'desk (책상)',
       active: false,
     },
     {
-      id: "5",
-      btnTxt: "dog (개)",
+      id: '5',
+      btnTxt: 'dog (개)',
       active: false,
     },
   ]);
 
   const clickBtn = (id) => {
     const result = anserList.map((anser) =>
-      anser.id === id ? { ...anser, active: true } : { ...anser, active: false }
+      anser.id === id
+        ? { ...anser, active: true }
+        : { ...anser, active: false },
     );
     setAnserList(result);
   };
@@ -48,7 +50,7 @@ export default function Pretest1() {
 
         <div className="">
           <h5 className="weight500 line-h30">
-            <div className="d-flex">
+            <div className="d-flex y-center">
               There is a way to <span className="inner-empty" />
               with
             </div>
