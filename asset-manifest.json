@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/pubReact/static/css/main.110cf10d.chunk.css",
-    "main.js": "/pubReact/static/js/main.3a9bd331.chunk.js",
-    "main.js.map": "/pubReact/static/js/main.3a9bd331.chunk.js.map",
+    "main.css": "/pubReact/static/css/main.53dca2c5.chunk.css",
+    "main.js": "/pubReact/static/js/main.a85fba2a.chunk.js",
+    "main.js.map": "/pubReact/static/js/main.a85fba2a.chunk.js.map",
     "runtime-main.js": "/pubReact/static/js/runtime-main.76f84a07.js",
     "runtime-main.js.map": "/pubReact/static/js/runtime-main.76f84a07.js.map",
     "static/css/2.9caa258a.chunk.css": "/pubReact/static/css/2.9caa258a.chunk.css",
     "static/js/2.b8c4cb1e.chunk.js": "/pubReact/static/js/2.b8c4cb1e.chunk.js",
     "static/js/2.b8c4cb1e.chunk.js.map": "/pubReact/static/js/2.b8c4cb1e.chunk.js.map",
     "index.html": "/pubReact/index.html",
-    "precache-manifest.ad4e0588f37ff1852778b9b6f5a23ed4.js": "/pubReact/precache-manifest.ad4e0588f37ff1852778b9b6f5a23ed4.js",
+    "precache-manifest.0ea73adb58d7ea895e7d22bc86a0d210.js": "/pubReact/precache-manifest.0ea73adb58d7ea895e7d22bc86a0d210.js",
     "service-worker.js": "/pubReact/service-worker.js",
     "static/css/2.9caa258a.chunk.css.map": "/pubReact/static/css/2.9caa258a.chunk.css.map",
-    "static/css/main.110cf10d.chunk.css.map": "/pubReact/static/css/main.110cf10d.chunk.css.map",
+    "static/css/main.53dca2c5.chunk.css.map": "/pubReact/static/css/main.53dca2c5.chunk.css.map",
     "static/js/2.b8c4cb1e.chunk.js.LICENSE.txt": "/pubReact/static/js/2.b8c4cb1e.chunk.js.LICENSE.txt",
     "static/media/AgreeMarketing.png": "/pubReact/static/media/AgreeMarketing.8e92fdb9.png",
     "static/media/Alam.png": "/pubReact/static/media/Alam.86ff06c5.png",
@@ -134,7 +134,7 @@
     "static/js/runtime-main.76f84a07.js",
     "static/css/2.9caa258a.chunk.css",
     "static/js/2.b8c4cb1e.chunk.js",
-    "static/css/main.110cf10d.chunk.css",
-    "static/js/main.3a9bd331.chunk.js"
+    "static/css/main.53dca2c5.chunk.css",
+    "static/js/main.a85fba2a.chunk.js"
   ]
 }
