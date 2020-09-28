@@ -15,7 +15,7 @@ export default function Step3_2() {
 
         <div className="step-card">
           <div className="d-flex x-eq mb20">
-            <h2 className="small">parent</h2>
+            <h2 className="small fontAvenirBold">parent</h2>
             <div className="sound-icon"></div>
           </div>
           <div className="d-flex y-center">

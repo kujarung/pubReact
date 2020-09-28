@@ -1,39 +1,39 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
-import { avatar, tempback1, tempback2 } from "components/ImgUtils";
-import RenderTab from "components/RenderTab";
-import WrongAnserList from "components/WrongAnserList";
-import BackBtn from "components/BackBtn";
-import ImageCardItem from "../components/ImageCardItem";
-import { hand } from "../components/ImgUtils";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
+import { avatar, tempback1, tempback2 } from 'components/ImgUtils';
+import RenderTab from 'components/RenderTab';
+import WrongAnserList from 'components/WrongAnserList';
+import BackBtn from 'components/BackBtn';
+import ImageCardItem from '../components/ImageCardItem';
+import { hand } from '../components/ImgUtils';
 
 export default function StudyWord(props) {
   const wrongAnserList = [
     {
       id: 1,
       contentTxt:
-        "Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…",
+        'Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…',
       img: hand,
     },
   ];
 
   const [selectTab, setSelectTab] = useState([
-    { id: 112, title: "예문", active: true },
-    { id: 224, title: "단어뜻", active: false },
+    { id: 112, title: '예문', active: true },
+    { id: 224, title: '단어뜻', active: false },
   ]);
 
   const clickTab2 = (id) => {
     const resultTab = selectTab.map((tab) =>
-      tab.id === id ? { ...tab, active: true } : { ...tab, active: false }
+      tab.id === id ? { ...tab, active: true } : { ...tab, active: false },
     );
     setSelectTab(resultTab);
   };
   const imgList = [
     {
-      id: "xcvxcvfgdsvcb",
+      id: 'xcvxcvfgdsvcb',
       imgPath: hand,
       content:
-        "At least 50 people burned to death in a bus collision in Ghana ",
+        'At least 50 people burned to death in a bus collision in Ghana ',
     },
   ];
   return (
@@ -46,8 +46,8 @@ export default function StudyWord(props) {
         <div className="pos-rel">
           <ImageCardItem
             hasInfo
-            round={"norounded"}
-            size={"middle"}
+            round={'norounded'}
+            size={'middle'}
             key={imgList[0].id}
             content={imgList[0].content}
             imgPath={imgList[0].imgPath}
@@ -67,7 +67,7 @@ export default function StudyWord(props) {
       </div>
 
       <div className="bothSpace mb17">
-        <BackBtn btnTxt="오답 학습하기" />
+        <BackBtn btnTxt="학습 시작하기" />
       </div>
     </>
   );

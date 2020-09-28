@@ -1,9 +1,12 @@
-import React from "react";
+import React from 'react';
 
 export default function Checkbox(props) {
-  const { id, txt, checked } = props.checkbox;
+  const {
+    checkbox: { id, txt, checked },
+    noMargin,
+  } = props;
   return (
-    <div className="check-con">
+    <div className={noMargin ? 'check-con no-margin' : 'check-con'}>
       <input type="checkbox" id={id} checked={checked} />
       <label htmlFor={id}>{txt}</label>
     </div>

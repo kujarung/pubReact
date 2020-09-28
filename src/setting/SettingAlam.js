@@ -1,6 +1,6 @@
-import React from "react";
-import StackHeader from "components/StackHeader";
-import Swich from "components/Swich";
+import React from 'react';
+import StackHeader from 'components/StackHeader';
+import Swich from 'components/Swich';
 
 export default function SettingAlam(props) {
   return (
@@ -15,7 +15,7 @@ export default function SettingAlam(props) {
           <div className="setting-title">푸쉬알림</div>
           <div className="item-list-row">
             <p className="txt">
-              내 정보 수정
+              공지/이벤트
               <p className="h7 color-gray mt6">
                 공지/이벤트 정보를 푸쉬 알림으로 받을 수 있습니다.
               </p>

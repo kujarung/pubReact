@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
-import { nocupon, free, iconunlimit, iconplus } from "components/ImgUtils";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
+import { nocupon, free, iconunlimit, iconplus } from 'components/ImgUtils';
 
 export default function SubscribeContent(props) {
   return (
@@ -57,24 +57,15 @@ export default function SubscribeContent(props) {
             <div className="horiz-top">
               <div
                 className="cupon-img mr12"
-                style={{ backgroundImage: `url(${nocupon})` }}
+                style={{ backgroundImage: `url(${free})` }}
               ></div>
               <div className="">
                 <div className="d-flex y-center">
-                  <h6 className="weight500 mr3">한 이용권</h6>
-                  <div className="discount-box">29%할인가</div>
+                  <h6 className="weight500 mr3">평생 무료 이용권</h6>
+                  <div className="discount-box">무제한</div>
                 </div>
                 <div className="cupon-content">
-                  <div className="h7 ">월 3개 콘텐츠 무제한 학습</div>
-                  <div className="">
-                    <div className="h7 color-primary fontAvenirBold">
-                      월간 11,000원
-                    </div>
-                    <div className="h7 color-primary fontAvenirBold">
-                      연간 <span className="del-txt">112,000원</span> →
-                      110,000원
-                    </div>
-                  </div>
+                  <div className="h7 ">평생 월 1개 콘텐츠 무료 학습</div>
                 </div>
               </div>
             </div>

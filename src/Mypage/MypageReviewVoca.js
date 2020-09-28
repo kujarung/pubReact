@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
 import {
   avatar,
   info,
@@ -8,103 +8,103 @@ import {
   review,
   completeStudy,
   nodap,
-} from "components/ImgUtils";
-import CircleProgress from "components/CircleProgress";
-import RenderTab from "components/RenderTab";
-import MultiCircleProgress from "components/MultiCircleProgress";
-import OverRayList from "components/OverRayList";
-import BackBtn from "components/BackBtn";
+} from 'components/ImgUtils';
+import CircleProgress from 'components/CircleProgress';
+import RenderTab from 'components/RenderTab';
+import MultiCircleProgress from 'components/MultiCircleProgress';
+import OverRayList from 'components/OverRayList';
+import BackBtn from 'components/BackBtn';
 
 export default function MypageReview(props) {
   const overRayList = [
     {
       id: 1,
-      overTxt: "Mauritius Copes With Split Japanese Ship That Spilled Oil",
-      contentTxt: "It’s just a",
-      contentDesc: "이건 그냥 장난감이야.",
+      overTxt: 'Mauritius Copes With Split Japanese Ship That Spilled Oil',
+      contentTxt: 'It’s just a',
+      contentDesc: '이건 그냥 장난감이야.',
       img: tempback1,
     },
     {
       id: 2,
-      overTxt: "Mauritius Copes With Split Japanese Ship That Spilled Oil",
-      contentTxt: "It’s just a",
-      contentDesc: "이건 그냥 장난감이야.",
+      overTxt: 'Mauritius Copes With Split Japanese Ship That Spilled Oil',
+      contentTxt: 'It’s just a',
+      contentDesc: '이건 그냥 장난감이야.',
       img: tempback2,
     },
     {
       id: 3,
-      overTxt: "Mauritius Copes With Split Japanese Ship That Spilled Oil",
-      contentTxt: "It’s just a",
-      contentDesc: "이건 그냥 장난감이야.",
+      overTxt: 'Mauritius Copes With Split Japanese Ship That Spilled Oil',
+      contentTxt: 'It’s just a',
+      contentDesc: '이건 그냥 장난감이야.',
       img: avatar,
     },
   ];
 
   const [tabList, setTabList] = useState([
-    { id: 1, title: "활동지수", active: false },
-    { id: 2, title: "마이퍼센트", active: false },
-    { id: 3, title: "리뷰", active: true },
+    { id: 1, title: '활동지수', active: false },
+    { id: 2, title: '마이퍼센트', active: false },
+    { id: 3, title: '리뷰하기', active: true },
   ]);
 
   const [selectTab, setSelectTab] = useState([
-    { id: 112, title: "Reading", active: true },
-    { id: 224, title: "Vocabulary", active: false },
+    { id: 112, title: 'Reading', active: true },
+    { id: 224, title: 'Vocabulary', active: false },
   ]);
   const verticalList = [
     {
       id: 1,
       imgPath: tempback1,
-      date: "Apr 18, 2020",
+      date: 'Apr 18, 2020',
       content:
-        "At least 50 people burned to death in a b… At least 50 people burned to death in a b…",
+        'At least 50 people burned to death in a b… At least 50 people burned to death in a b…',
     },
     {
       id: 2,
       imgPath: tempback2,
-      date: "Apr 18, 2020",
+      date: 'Apr 18, 2020',
       content:
-        "At least 50 people burned to death in a b… At least 50 people burned to death in a b…",
+        'At least 50 people burned to death in a b… At least 50 people burned to death in a b…',
     },
     {
       id: 3,
       imgPath: tempback1,
-      date: "Apr 18, 2020",
+      date: 'Apr 18, 2020',
       content:
-        "At least 50 people burned to death in a b… At least 50 people burned to death in a b…",
+        'At least 50 people burned to death in a b… At least 50 people burned to death in a b…',
     },
     {
       id: 4,
       imgPath: tempback2,
-      date: "Apr 18, 2020",
+      date: 'Apr 18, 2020',
       content:
-        "At least 50 people burned to death in a b… At least 50 people burned to death in a b…",
+        'At least 50 people burned to death in a b… At least 50 people burned to death in a b…',
     },
   ];
 
   const clickTab = (id) => {
     const resultTab = tabList.map((tab) =>
-      tab.id === id ? { ...tab, active: true } : { ...tab, active: false }
+      tab.id === id ? { ...tab, active: true } : { ...tab, active: false },
     );
     setTabList(resultTab);
   };
 
   const clickTab2 = (id) => {
     const resultTab = selectTab.map((tab) =>
-      tab.id === id ? { ...tab, active: true } : { ...tab, active: false }
+      tab.id === id ? { ...tab, active: true } : { ...tab, active: false },
     );
     setSelectTab(resultTab);
   };
   const hashList = [
-    "#devleoper",
-    "#design",
-    "#computer",
-    "#weather",
-    "#bio2",
-    "#dev2",
-    "#design2",
-    "#computer2",
-    "#weather2",
-    "#bio21",
+    '#devleoper',
+    '#design',
+    '#computer',
+    '#weather',
+    '#bio2',
+    '#dev2',
+    '#design2',
+    '#computer2',
+    '#weather2',
+    '#bio21',
   ];
 
   return (
@@ -146,11 +146,11 @@ export default function MypageReview(props) {
               <img
                 src={info}
                 alt=""
-                style={{ width: "15px", height: "15px" }}
+                style={{ width: '15px', height: '15px' }}
               />
             </div>
             <div className="mb12 pos-rel">
-              <CircleProgress width={"82"} percent={"42"} small={true} />
+              <CircleProgress width={'82'} percent={'42'} small={true} />
               <div className="circle-label-con">
                 <div className="circle-label">
                   <div className="label-txt small fontAvenirBold">42%</div>
@@ -171,7 +171,7 @@ export default function MypageReview(props) {
         <div className="select-tab-con mb20">
           {selectTab.map((tab) => (
             <div
-              className={tab.active ? "select-tab active" : "select-tab"}
+              className={tab.active ? 'select-tab active' : 'select-tab'}
               key={tab.id}
               onClick={() => clickTab2(tab.id)}
             >
@@ -202,13 +202,13 @@ export default function MypageReview(props) {
                   <div className="label-desc">100개</div>
                 </div>
 
-                <div className="label-item">
-                  <div className="label-title navy">리뷰중</div>
+                <div className="label-item navy">
+                  <div className="label-title ">리뷰중</div>
                   <div className="label-desc">100개</div>
                 </div>
 
-                <div className="label-item">
-                  <div className="label-title primary">오답</div>
+                <div className="label-item sky">
+                  <div className="label-title">오답</div>
                   <div className="label-desc">100개</div>
                 </div>
               </div>
@@ -219,10 +219,10 @@ export default function MypageReview(props) {
         <div className="d-flex x-eq pl33 pr33 pb20 mb30">
           <div>
             <div className="pos-rel">
-              <CircleProgress width={"90"} percent={"81"} small={true} />
+              <CircleProgress width={'90'} percent={'81'} small={true} />
               <div className="circle-label-con">
                 <div className="circle-label">
-                  <img src={completeStudy} alt="" style={{ width: "32px" }} />
+                  <img src={completeStudy} alt="" style={{ width: '32px' }} />
                 </div>
               </div>
             </div>
@@ -231,14 +231,14 @@ export default function MypageReview(props) {
           <div>
             <div className="pos-rel">
               <CircleProgress
-                width={"90"}
-                percent={"67"}
+                width={'90'}
+                percent={'67'}
                 small={true}
-                color={"#002872"}
+                color={'#002872'}
               />
               <div className="circle-label-con">
                 <div className="circle-label">
-                  <img src={review} alt="" style={{ width: "32px" }} />
+                  <img src={review} alt="" style={{ width: '32px' }} />
                 </div>
               </div>
             </div>
@@ -247,15 +247,15 @@ export default function MypageReview(props) {
           <div>
             <div className="pos-rel">
               <CircleProgress
-                width={"90"}
-                percent={"17"}
+                width={'90'}
+                percent={'17'}
                 small={true}
                 color="#9ABEFF"
                 railColor="#F6F6F6"
               />
               <div className="circle-label-con">
                 <div className="circle-label">
-                  <img src={nodap} alt="" style={{ width: "32px" }} />
+                  <img src={nodap} alt="" style={{ width: '32px' }} />
                 </div>
               </div>
             </div>

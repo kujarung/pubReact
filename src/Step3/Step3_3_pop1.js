@@ -22,7 +22,7 @@ export default function Step3_3_pop1() {
             <h4 className="small weight500">카드섞기</h4>
           </div>
           <div className="mb38 pl10 pr10">
-            <h6 className="weight500">단어 카드를 섞을까요?</h6>
+            <h6 className="weight400">단어 카드를 섞을까요?</h6>
           </div>
 
           <div className="d-flex x-end">

@@ -1,7 +1,7 @@
-import React from "react";
-import StackHeader from "components/StackHeader";
-import { blackX } from "components/ImgUtils";
-import BackBtn from "components/BackBtn";
+import React from 'react';
+import StackHeader from 'components/StackHeader';
+import { blackX } from 'components/ImgUtils';
+import BackBtn from 'components/BackBtn';
 
 export default function HelpPop(props) {
   return (
@@ -12,14 +12,14 @@ export default function HelpPop(props) {
             <img
               src={blackX}
               alt=""
-              style={{ width: "16px", height: "16px" }}
+              style={{ width: '16px', height: '16px' }}
             />
           </div>
           <div className="mb38">
             <h4 className="small weight500">초기화 확인</h4>
           </div>
           <div className="mb38">
-            <h6 className="weight500">
+            <h6 className="weight400">
               모든 도움말 상자를
               <br />
               다시 보시곘습니까?

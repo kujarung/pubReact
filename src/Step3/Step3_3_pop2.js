@@ -22,7 +22,7 @@ export default function Step3_3_pop2() {
             <h4 className="small weight500">리뷰 중단</h4>
           </div>
           <div className="mb38 pl10 pr10">
-            <h6 className="weight500">리뷰를 중단 하시겠습니까?</h6>
+            <h6 className="weight400">리뷰를 중단 하시겠습니까?</h6>
           </div>
 
           <div className="d-flex x-end">

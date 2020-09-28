@@ -36,7 +36,7 @@ export default function Step2_2() {
             <HorizontalBar percent={60} />
           </div>
 
-          <h5 className="line-h26 weight300">
+          <h5 className="line-h26 weight300 small">
             학습자님께 <span className="color-primary">도전적인 콘텐츠</span>{' '}
             군요! <br />
             <br />

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
-import Checkbox from "../components/Checkbox";
-import BackBtn from "components/BackBtn";
-import { icRest, blackX } from "components/ImgUtils";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
+import Checkbox from '../components/Checkbox';
+import BackBtn from 'components/BackBtn';
+import { icRest, blackX } from 'components/ImgUtils';
 
 export default function WithdrawalPop(props) {
   return (
@@ -13,14 +13,14 @@ export default function WithdrawalPop(props) {
             <img
               src={blackX}
               alt=""
-              style={{ width: "16px", height: "16px" }}
+              style={{ width: '16px', height: '16px' }}
             />
           </div>
           <div className="mb38">
             <h4 className="small weight500">탈퇴 확인</h4>
           </div>
           <div className="mb38">
-            <h6 className="weight500">
+            <h6 className="weight400">
               정말 리딩퍼센트에서 탈퇴 하시겠습니까?
             </h6>
           </div>
@@ -55,11 +55,11 @@ export default function WithdrawalPop(props) {
         <div className="pos-bottom middle">
           <div className="mb20">
             <Checkbox
-              checkbox={{ id: 1, txt: "모든 내용을 삭제하는 것에 동의합니다." }}
+              checkbox={{ id: 1, txt: '모든 내용을 삭제하는 것에 동의합니다.' }}
             />
           </div>
 
-          <BackBtn btnTxt={"탈퇴하기"} isGray />
+          <BackBtn btnTxt={'탈퇴하기'} isGray />
         </div>
       </div>
     </>

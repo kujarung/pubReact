@@ -78,6 +78,7 @@ import WrongNote from 'WordList/WrongNote';
 import LastRecommend from 'WordList/LastRecommend';
 import Restudy from 'Study/Restudy';
 import Step2_3 from 'Step2/Step2_3';
+import MainHowTo from 'Main/MainHowTo';
 
 export default function RouterLink(props) {
   const { openDrawer } = props;
@@ -86,6 +87,9 @@ export default function RouterLink(props) {
       <Switch>
         <Route path="/Test1">
           <Test1 />
+        </Route>
+        <Route path="/MainHowTo">
+          <MainHowTo />
         </Route>
         <Route path="/Restudy">
           <Restudy />

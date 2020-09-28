@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
 
 export default function AgreeMarketing(props) {
   return (
@@ -10,7 +10,10 @@ export default function AgreeMarketing(props) {
           <h3 className="weight500">마케팅 메시지 수신 동의 </h3>
         </div>
 
-        <div className="mb25">
+        <div
+          className="pb15 mb15"
+          style={{ borderBottom: '1px solid #F5F6FA' }}
+        >
           <h5 className="small weight500">1.1.2 버전 업데이트 안내</h5>
           <div className="h7 color-gray">2019.12.30 개정</div>
         </div>

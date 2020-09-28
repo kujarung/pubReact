@@ -28,7 +28,7 @@ export default function Step3_5() {
         </div>
 
         <div className="shadow-box pa30 mb37">
-          <h5 className="line-h26 weight300">
+          <h5 className="line-h26 weight300 small">
             <span className="weight500">고생하셨습니다!</span> <br />
             <br />
             마지막 관문인 테스트가 남았네요! <br />

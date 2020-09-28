@@ -6,6 +6,17 @@ export default function HaxTxt(props) {
     <div className="hax-con">
       {isGray ? (
         <svg style={{ width: '100%', height: '100%' }}>
+          <filter id="dropshadow" height="150%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+            <feOffset dx="3" dy="5" result="offsetblur" />
+            <feComponentTransfer>
+              <feFuncA type="linear" slope="0.2" />
+            </feComponentTransfer>
+            <feMerge>
+              <feMergeNode />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
           <g transform="translate(3,3)" style={{ transform: 'scale(1.1)' }}>
             <path
               d="M64 49.4205L64 20.9803C64 18.5647 62.6864 16.3339 60.5546 15.1264L35.4458 0.905574C33.3132 -0.301858 30.6868 -0.301858 28.5542 0.905574L3.44543 15.1264C1.3136 16.3339 0 18.5647 0 20.9803L0 49.4205C0 51.8353 1.3136 54.0669 3.44543 55.2743L28.5542 69.4944C30.6868 70.7019 33.3132 70.7019 35.4458 69.4944L60.5546 55.2743C62.6864 54.0669 64 51.8353 64 49.4205"
@@ -25,7 +36,7 @@ export default function HaxTxt(props) {
         </svg>
       ) : (
         <svg style={{ width: '100%', height: '100%' }}>
-          <g transform="translate(3,3)">
+          <g transform="translate(3,3)" filter="url(#dropshadow)">
             <path
               d="M64 20.9803C64 18.5647 62.6864 16.3339 60.5546 15.1264L35.4458 0.905574C33.3132 -0.301858 30.6868 -0.301858 28.5542 0.905574L3.44543 15.1264C1.3136 16.3339 0 18.5647 0 20.9803L0 49.4205C0 51.8353 1.3136 54.0669 3.44543 55.2743L28.5542 69.4944C30.6868 70.7019 33.3132 70.7019 35.4458 69.4944L60.5546 55.2743C62.6864 54.0669 64 51.8353 64 49.4205L64 20.9803Z"
               fill="#FFFFFF"
@@ -47,7 +58,13 @@ export default function HaxTxt(props) {
       )}
 
       <div className="hax-desc">
-        <h6 className="fontweight400 color-primary">{txt}</h6>
+        <h6
+          className={
+            isGray ? 'fontweight400 color-gray' : 'fontweight400 color-primary'
+          }
+        >
+          {txt}
+        </h6>
       </div>
     </div>
   );

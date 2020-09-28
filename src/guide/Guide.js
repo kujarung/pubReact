@@ -73,6 +73,7 @@ import {
   WrongNote,
   LastRecommend,
   Restudy,
+  MainHowTo,
 } from 'components/ImgUtils';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -294,16 +295,6 @@ export default function Guide() {
         </section>
 
         <section className="">
-          <Link to="/MypageReviewRead">
-            <div className="mb30">
-              <img src={voca} alt="" />
-            </div>
-
-            <h3 className="">4.3.5_mypage_리뷰하기_voca</h3>
-          </Link>
-        </section>
-
-        <section className="">
           <Link to="/MypageReviewVoca">
             <div className="mb30">
               <img src={voca} alt="" />
@@ -339,26 +330,6 @@ export default function Guide() {
             </div>
 
             <h3 className="">4.3.8_단어목록_단어뜻</h3>
-          </Link>
-        </section>
-
-        <section className="">
-          <Link to="/WordList2">
-            <div className="mb30">
-              <img src={wrongL2} alt="" />
-            </div>
-
-            <h3 className="">4.3.8_단어목록_단어뜻</h3>
-          </Link>
-        </section>
-
-        <section className="">
-          <Link to="/StudyWord">
-            <div className="mb30">
-              <img src={studyVoca} alt="" />
-            </div>
-
-            <h3 className="">4.3.9_단어학습</h3>
           </Link>
         </section>
 
@@ -409,6 +380,16 @@ export default function Guide() {
             </div>
 
             <h3 className="">4.3.13_쿠폰등록</h3>
+          </Link>
+        </section>
+
+        <section className="">
+          <Link to="/MainHowTo">
+            <div className="mb30">
+              <img src={MainHowTo} alt="" />
+            </div>
+
+            <h3 className="">4.4.1_how to</h3>
           </Link>
         </section>
 

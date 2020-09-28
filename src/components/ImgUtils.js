@@ -73,6 +73,7 @@ export const WrongNote = require('../assets/realImg/WrongNote.png');
 export const LastRecommend = require('../assets/realImg/LastRecommend.png');
 export const Summary = require('../assets/realImg/Summary.png');
 export const Step1_2_1 = require('../assets/realImg/Step1_2_1.png');
+export const MainHowTo = require('../assets/realImg/MainHowTo.png');
 
 //
 //

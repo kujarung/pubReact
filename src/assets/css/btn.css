@@ -88,6 +88,10 @@
   margin-bottom: 15px;
 }
 
+.check-con.no-margin {
+  margin-bottom: 0;
+}
+
 .check-con:last-child {
   margin-bottom: 0px;
 }
@@ -261,7 +265,7 @@ input:checked + .slider:before {
 .tag-item {
   float: left;
   padding: 5px 15px;
-  border: 1px solid var(--gray50);
+  border: 1px solid var(--border-gray);
   border-radius: 20px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -398,8 +402,10 @@ input:checked + .slider:before {
   box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   background-image: url('../img/sound.png');
-  background-size: 40px;
+  background-size: 24px;
   background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 
 .voca-type-btn {

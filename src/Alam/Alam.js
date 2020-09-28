@@ -4,9 +4,19 @@ import { icCirArrow, alarm, alarmD } from 'components/ImgUtils';
 import BackBtn from 'components/BackBtn';
 
 export default function Alam(props) {
+  const dotList = [
+    {
+      title: '모두 읽은 상태로 표시',
+      active: false,
+    },
+    {
+      title: '읽은 알림 삭제',
+      active: true,
+    },
+  ];
   return (
     <div className="h-100vh">
-      <StackHeader rightItem="selector" />
+      <StackHeader rightItem="selector" dotList={dotList} />
       <div className="bothSpace mt29 mb20">
         <h3 className="weight500">주요알림</h3>
       </div>

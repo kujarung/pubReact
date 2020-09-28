@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
-import { nocupon, free, iconunlimit, iconplus } from "components/ImgUtils";
-import Checkbox from "components/Checkbox";
-import BackBtn from "components/BackBtn";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
+import Checkbox from 'components/Checkbox';
+import BackBtn from 'components/BackBtn';
 export default function Subscribing(props) {
   return (
     <>
@@ -26,7 +25,7 @@ export default function Subscribing(props) {
 
           <div className="cupon-item">
             <div className="d-flex">
-              <Checkbox checkbox={{ id: 1, txt: "", checked: true }} />
+              <Checkbox noMargin checkbox={{ id: 1, txt: '', checked: true }} />
               <h6 className="weight400">1주일 무료(쿠폰)</h6>
             </div>
             <div className="d-flex y-end direction-column">
@@ -34,7 +33,7 @@ export default function Subscribing(props) {
                 7<span className="h7">일</span>
               </h4>
               <div className="fontAvenirBold">
-                <span className="color-gray del-txt gray">10,000원</span> →{" "}
+                <span className="color-gray del-txt gray">10,000원</span> →{' '}
                 <span className="color-primary">0원</span>
               </div>
             </div>
@@ -48,7 +47,7 @@ export default function Subscribing(props) {
 
           <div className="cupon-item">
             <div className="d-flex">
-              <Checkbox checkbox={{ id: 3, txt: "" }} />
+              <Checkbox noMargin checkbox={{ id: 3, txt: '' }} />
               <h6 className="weight400">1개월</h6>
             </div>
             <div className="d-flex y-end direction-column">
@@ -56,7 +55,7 @@ export default function Subscribing(props) {
                 7<span className="h7">일</span>
               </h4>
               <div className="fontAvenirBold">
-                <span className="del-txt gray color-gray">10,000원</span> →{" "}
+                <span className="del-txt gray color-gray">10,000원</span> →{' '}
                 <span className="color-primary">0원</span>
               </div>
             </div>
@@ -64,7 +63,7 @@ export default function Subscribing(props) {
 
           <div className="cupon-item">
             <div className="d-flex">
-              <Checkbox checkbox={{ id: 4, txt: "" }} />
+              <Checkbox noMargin checkbox={{ id: 4, txt: '' }} />
               <h6 className="weight400">3개월 (17% 할인)</h6>
             </div>
             <div className="d-flex y-end direction-column">
@@ -79,7 +78,7 @@ export default function Subscribing(props) {
 
           <div className="cupon-item">
             <div className="d-flex">
-              <Checkbox checkbox={{ id: 6, txt: "" }} />
+              <Checkbox noMargin checkbox={{ id: 6, txt: '' }} />
               <h6 className="weight400">12개월 (17% 할인)</h6>
             </div>
             <div className="d-flex y-end direction-column">

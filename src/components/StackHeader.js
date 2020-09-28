@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import DotSeletor from 'components/DotSeletor';
 
 export default function StackHeader(props) {
-  const { rightItem, isAbsol } = props;
+  const { rightItem, isAbsol, dotList } = props;
   return (
     <div className={isAbsol ? 'header absol' : 'header'}>
       <Link to="/">
@@ -17,7 +17,7 @@ export default function StackHeader(props) {
           <img src={info} alt="" style={{ width: '24px' }} />
         </div>
       ) : rightItem === 'selector' ? (
-        <DotSeletor />
+        <DotSeletor dotList={dotList} />
       ) : null}
     </div>
   );

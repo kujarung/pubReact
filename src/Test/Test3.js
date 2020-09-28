@@ -97,7 +97,7 @@ export default function Test3() {
 
         <div className="mb40">
           <h5 className="mb10 weight500">1회차</h5>
-          <div className="d-flex">
+          <div className="d-flex emigi-wrap">
             <div className="emigi-con">
               <div className="h7 color-gray mb11">나의 예상</div>
               <div className="mb18">
