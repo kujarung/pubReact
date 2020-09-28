@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/pubReact/static/css/main.53dca2c5.chunk.css",
-    "main.js": "/pubReact/static/js/main.a85fba2a.chunk.js",
-    "main.js.map": "/pubReact/static/js/main.a85fba2a.chunk.js.map",
+    "main.js": "/pubReact/static/js/main.9accf01c.chunk.js",
+    "main.js.map": "/pubReact/static/js/main.9accf01c.chunk.js.map",
     "runtime-main.js": "/pubReact/static/js/runtime-main.76f84a07.js",
     "runtime-main.js.map": "/pubReact/static/js/runtime-main.76f84a07.js.map",
     "static/css/2.9caa258a.chunk.css": "/pubReact/static/css/2.9caa258a.chunk.css",
-    "static/js/2.b8c4cb1e.chunk.js": "/pubReact/static/js/2.b8c4cb1e.chunk.js",
-    "static/js/2.b8c4cb1e.chunk.js.map": "/pubReact/static/js/2.b8c4cb1e.chunk.js.map",
+    "static/js/2.1b6805ff.chunk.js": "/pubReact/static/js/2.1b6805ff.chunk.js",
+    "static/js/2.1b6805ff.chunk.js.map": "/pubReact/static/js/2.1b6805ff.chunk.js.map",
     "index.html": "/pubReact/index.html",
-    "precache-manifest.0ea73adb58d7ea895e7d22bc86a0d210.js": "/pubReact/precache-manifest.0ea73adb58d7ea895e7d22bc86a0d210.js",
+    "precache-manifest.3b5f48fb457d9c42b142cafdbb843917.js": "/pubReact/precache-manifest.3b5f48fb457d9c42b142cafdbb843917.js",
     "service-worker.js": "/pubReact/service-worker.js",
     "static/css/2.9caa258a.chunk.css.map": "/pubReact/static/css/2.9caa258a.chunk.css.map",
     "static/css/main.53dca2c5.chunk.css.map": "/pubReact/static/css/main.53dca2c5.chunk.css.map",
-    "static/js/2.b8c4cb1e.chunk.js.LICENSE.txt": "/pubReact/static/js/2.b8c4cb1e.chunk.js.LICENSE.txt",
+    "static/js/2.1b6805ff.chunk.js.LICENSE.txt": "/pubReact/static/js/2.1b6805ff.chunk.js.LICENSE.txt",
     "static/media/AgreeMarketing.png": "/pubReact/static/media/AgreeMarketing.8e92fdb9.png",
     "static/media/Alam.png": "/pubReact/static/media/Alam.86ff06c5.png",
     "static/media/AttendInfo.png": "/pubReact/static/media/AttendInfo.336d7de1.png",
@@ -26,6 +26,7 @@
     "static/media/HelpPop.png": "/pubReact/static/media/HelpPop.66af9640.png",
     "static/media/LastRecommend.png": "/pubReact/static/media/LastRecommend.78d0f05b.png",
     "static/media/LevelInfo.png": "/pubReact/static/media/LevelInfo.c4caf175.png",
+    "static/media/MainHowTo.png": "/pubReact/static/media/MainHowTo.9cc28d86.png",
     "static/media/MyInfo.png": "/pubReact/static/media/MyInfo.6b5d311a.png",
     "static/media/Notice.png": "/pubReact/static/media/Notice.44e83c2e.png",
     "static/media/PrivatePolicy.png": "/pubReact/static/media/PrivatePolicy.be56736f.png",
@@ -133,8 +134,8 @@
   "entrypoints": [
     "static/js/runtime-main.76f84a07.js",
     "static/css/2.9caa258a.chunk.css",
-    "static/js/2.b8c4cb1e.chunk.js",
+    "static/js/2.1b6805ff.chunk.js",
     "static/css/main.53dca2c5.chunk.css",
-    "static/js/main.a85fba2a.chunk.js"
+    "static/js/main.9accf01c.chunk.js"
   ]
 }
