@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/pubReact/static/css/main.53dca2c5.chunk.css",
-    "main.js": "/pubReact/static/js/main.35f38199.chunk.js",
-    "main.js.map": "/pubReact/static/js/main.35f38199.chunk.js.map",
+    "main.css": "/pubReact/static/css/main.08082199.chunk.css",
+    "main.js": "/pubReact/static/js/main.3cabe89f.chunk.js",
+    "main.js.map": "/pubReact/static/js/main.3cabe89f.chunk.js.map",
     "runtime-main.js": "/pubReact/static/js/runtime-main.76f84a07.js",
     "runtime-main.js.map": "/pubReact/static/js/runtime-main.76f84a07.js.map",
     "static/css/2.9caa258a.chunk.css": "/pubReact/static/css/2.9caa258a.chunk.css",
     "static/js/2.1b6805ff.chunk.js": "/pubReact/static/js/2.1b6805ff.chunk.js",
     "static/js/2.1b6805ff.chunk.js.map": "/pubReact/static/js/2.1b6805ff.chunk.js.map",
     "index.html": "/pubReact/index.html",
-    "precache-manifest.4a8985e87ad86e3d281cfbaa86423581.js": "/pubReact/precache-manifest.4a8985e87ad86e3d281cfbaa86423581.js",
+    "precache-manifest.3c74195e6643ba3cda4fc3cf06076122.js": "/pubReact/precache-manifest.3c74195e6643ba3cda4fc3cf06076122.js",
     "service-worker.js": "/pubReact/service-worker.js",
     "static/css/2.9caa258a.chunk.css.map": "/pubReact/static/css/2.9caa258a.chunk.css.map",
-    "static/css/main.53dca2c5.chunk.css.map": "/pubReact/static/css/main.53dca2c5.chunk.css.map",
+    "static/css/main.08082199.chunk.css.map": "/pubReact/static/css/main.08082199.chunk.css.map",
     "static/js/2.1b6805ff.chunk.js.LICENSE.txt": "/pubReact/static/js/2.1b6805ff.chunk.js.LICENSE.txt",
     "static/media/AgreeMarketing.png": "/pubReact/static/media/AgreeMarketing.8e92fdb9.png",
     "static/media/Alam.png": "/pubReact/static/media/Alam.86ff06c5.png",
@@ -135,7 +135,7 @@
     "static/js/runtime-main.76f84a07.js",
     "static/css/2.9caa258a.chunk.css",
     "static/js/2.1b6805ff.chunk.js",
-    "static/css/main.53dca2c5.chunk.css",
-    "static/js/main.35f38199.chunk.js"
+    "static/css/main.08082199.chunk.css",
+    "static/js/main.3cabe89f.chunk.js"
   ]
 }
