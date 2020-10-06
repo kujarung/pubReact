@@ -194,29 +194,6 @@
 	color: var(--primary);
 }
 
-.vertical-list-wrap {
-	display: flex;
-	flex-wrap: nowrap;
-	overflow-y: auto;
-	padding-bottom: 20px;
-}
-
-.vertical-item:first-child {
-	margin-left: 20px;
-}
-
-.vertical-item {
-	margin-right: 15px;
-	background: #ffffff;
-	box-shadow: 3px 8px 22px 0 rgba(0, 0, 0, 0.1);
-	border-radius: 5px;
-	position: relative;
-}
-
-.vertical-item .vertical-txt-container {
-	padding: 10px 15px;
-}
-
 .over-ray-con {
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.7);
@@ -248,13 +225,6 @@
 .date-txt {
 	font-size: 10px;
 	color: var(--check-gray);
-}
-
-.vertical-item-img img {
-	width: 200px;
-	height: 136px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
 }
 
 .list-content {
