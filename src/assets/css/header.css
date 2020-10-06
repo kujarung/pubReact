@@ -1,92 +1,92 @@
 .header {
-  padding-top: 44px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 44px;
-  padding-left: 25px;
-  padding-right: 20px;
-  z-index: 2;
+	padding-top: 44px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 44px;
+	padding-left: 25px;
+	padding-right: 20px;
+	z-index: 2;
 }
 
 .header.absol {
-  margin-top: 44px;
-  padding-top: 0;
-  position: absolute;
-  box-sizing: border-box;
-  width: 100%;
+	margin-top: 44px;
+	padding-top: 0;
+	position: absolute;
+	box-sizing: border-box;
+	width: 100%;
 }
 
 .icon-img-con {
-  display: flex;
-  align-items: center;
-  width: 44px;
-  height: 44px;
+	display: flex;
+	align-items: center;
+	width: 44px;
+	height: 44px;
 }
 
 .icon-img-con img {
-  width: 18px;
-  height: 18px;
+	width: 18px;
+	height: 18px;
 }
 
 .icon-img-con.arr img {
-  width: 10px;
-  height: 18px;
+	width: 10px;
+	height: 18px;
 }
 
 .drawer-dim {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  z-index: 20;
-  transition: 0;
-  transition: 0.1s;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	z-index: 20;
+	transition: 0;
+	transition: 0.1s;
 }
 
 .drawer {
-  width: 80%;
-  position: fixed;
-  height: 100vh;
+	width: 80%;
+	position: fixed;
+	height: 100vh;
 
-  left: -300%;
-  transition: 0.3s ease-in-out;
-  z-index: 40;
+	left: -300%;
+	transition: 0.3s ease-in-out;
+	z-index: 40;
 }
 
 .drawer.active {
-  left: 0;
-  transition: 0.3s ease-in-out;
+	left: 0;
+	transition: 0.3s ease-in-out;
 }
 
 .drawe-inner {
-  position: absolute;
-  top: 0;
-  padding-top: 44px;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 30;
+	position: absolute;
+	top: 0;
+	padding-top: 44px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	z-index: 30;
 }
 
 .back-btn-con {
-  margin-bottom: 54px;
-  margin-right: 20px;
-  margin-top: 10px;
+	margin-bottom: 54px;
+	margin-right: 20px;
+	margin-top: 10px;
 }
 
 .back-btn-con img {
-  width: 24px;
-  height: 24px;
+	width: 24px;
+	height: 24px;
 }
 
 .menu-list li {
-  font-size: 18px;
-  color: var(--check-gray);
-  margin-bottom: 38px;
+	font-size: 18px;
+	color: var(--check-gray);
+	margin-bottom: 38px;
 }
 
 .menu-list li:last-child {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
