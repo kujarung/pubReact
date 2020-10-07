@@ -31,7 +31,7 @@ export default function Test2() {
         </h5>
       </div>
 
-      <div className="pos-bottom">
+      <div className="pos-bottom small-no-absol">
         <div className="has-check mb20">
           <AnserBtn btnTxt={'gunman'} />
           <AnserBtn btnTxt={'assailants'} />

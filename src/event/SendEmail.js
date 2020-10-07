@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
-import Checkbox from "../components/Checkbox";
-import BackBtn from "components/BackBtn";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
+import Checkbox from '../components/Checkbox';
+import BackBtn from 'components/BackBtn';
 
 export default function SendEmail(props) {
   return (
@@ -37,16 +37,16 @@ export default function SendEmail(props) {
         </div>
 
         <div className="mb20">
-          <h6 className="weight400 mb6 required">문의 내용</h6>
+          <h6 className="weight400 mb6 reqired">문의 내용</h6>
           <div className="email-textarea">
             <textarea></textarea>
           </div>
         </div>
 
         <div className="mb20">
-          <h6 className="weight400 mb6">첨부파일</h6>
-          <div className="attach-con mb6">
-            <h6 className="color-gray">첨부파일 추가</h6>
+          <div class="filebox mb6">
+            <label for="file">첨부파일 추가</label>
+            <input type="file" id="file" />
           </div>
 
           <div className="desc-font">
@@ -60,20 +60,22 @@ export default function SendEmail(props) {
 
       <div
         className="mb10 desc-font"
-        style={{ padding: "10px 20px", backgroundColor: "#F5F6FA" }}
+        style={{ padding: '10px 20px', backgroundColor: '#F5F6FA' }}
       >
         문의하신 내용에 대한 원인파악 및 원활할 상담을 위하여 이메일,
         휴대폰번호를 수집합니다. 수집된 개인정보는 문의 접수일 기주능로 3년간
         보관 후 파기됩니다. 더 자세한 내용에 대해서는
-        <span className="weight500">리딩퍼센트 개인정보처리방침</span>을
-        참고하시기 바랍니다.
+        <a href="#" className="weight500 desc-font">
+          리딩퍼센트 개인정보처리방침
+        </a>
+        을 참고하시기 바랍니다.
       </div>
       <div className="mb27 bothSpace">
-        <Checkbox checkbox={{ id: 1, txt: "위 내용에 동의합니다." }} />
+        <Checkbox checkbox={{ id: 1, txt: '위 내용에 동의합니다.' }} />
       </div>
 
-      <div className="bothSpace">
-        <BackBtn btnTxt={"문의접수"} />
+      <div className="bothSpace mb30">
+        <BackBtn btnTxt={'문의접수'} />
       </div>
     </>
   );

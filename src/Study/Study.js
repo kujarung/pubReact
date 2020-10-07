@@ -1,5 +1,5 @@
 import React from 'react';
-import { base3, ic_read } from 'components/ImgUtils';
+import { base3, ic_read, fullImage } from 'components/ImgUtils';
 import StackHeaderWhite from 'components/StackHeaderWhite';
 import BackBtn from 'components/BackBtn';
 
@@ -9,8 +9,8 @@ export default function Study() {
       <StackHeaderWhite rightItem={'selector'} isAbsol />
       <div className="study-wrap">
         <div className="study-img">
-          <img src={base3} alt="" />
-          <div className="pos-bottom middle">
+          <img src={fullImage} alt="" />
+          <div className="pos-bottom">
             <div className="top-icon-list">
               <div className="top-icon h7">Global</div>
               <div className="top-icon h7">Lv.30</div>
@@ -20,8 +20,9 @@ export default function Study() {
             </h4>
           </div>
         </div>
-        <div className="pos-bottom">
-          <div className="d-flex x-eq y-center mb21 pl40 pr40">
+
+        <div className="pos-bottom middle">
+          <div className="d-flex x-eq y-center mb21 pl25 pr25">
             <div className="tc">
               <h5 className="middle weight500 mb2">27개</h5>
               <div className="h7 color-gray opacity50">학습 단어 수</div>
@@ -38,7 +39,7 @@ export default function Study() {
           <div className="d-flex">
             <BackBtn btnTxt="학습하기" />
             <div className="ml10">
-              <div
+              <button
                 onClick={() => console.log('1')}
                 className="read-icon"
                 style={{ backgroundImage: `URL(${ic_read})` }}

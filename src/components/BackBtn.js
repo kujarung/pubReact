@@ -6,7 +6,7 @@ export default function BackBtn(props) {
     <button
       className={`btn-con main-back`}
       style={{
-        backgroundColor: isGray ? 'rgba(119, 119, 119, 0.5)' : '--primary',
+        backgroundColor: isGray ? '#c1c0c8' : '--primary',
         width: isSmall ? '100px' : '100%',
       }}
     >

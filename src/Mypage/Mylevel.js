@@ -86,9 +86,9 @@ export default function Mylevel(props) {
         <div>
           <h2 className="samll fontAvenirBold">Percent</h2>
         </div>
-        <div className="title-help-icon">
+        <button className="title-help-icon">
           <img src={icContents} alt="percent-img" />
-        </div>
+        </button>
       </div>
 
       <div className="pos-rel mb50">
@@ -103,7 +103,9 @@ export default function Mylevel(props) {
             </div>
             <div className="d-flex x-center">
               <div className="tag-item no-margin">
-                <p className="tag-txt color-primary">자세히보기</p>
+                <a href="#">
+                  <p className="tag-txt color-primary">자세히보기</p>
+                </a>
               </div>
             </div>
           </div>

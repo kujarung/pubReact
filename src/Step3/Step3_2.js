@@ -5,6 +5,21 @@ import MixBtnGrup from 'components/MixBtnGrup';
 import DotSeletor from 'components/DotSeletor';
 
 export default function Step3_2() {
+  const dotList = [
+    {
+      title: '다른 예문 보기',
+      active: false,
+    },
+    {
+      title: '구글 번역 (새창)',
+      active: true,
+    },
+    {
+      title: '파파고 번역 (새창)',
+      active: false,
+    },
+  ];
+
   return (
     <div className="h-100vh">
       <StackHeader />
@@ -14,22 +29,29 @@ export default function Step3_2() {
         </div>
 
         <div className="step-card">
-          <div className="d-flex x-eq mb20">
-            <h2 className="small fontAvenirBold">parent</h2>
-            <div className="sound-icon"></div>
-          </div>
-          <div className="d-flex y-center">
-            <div className="voca-type-btn mr3">noun</div>
-            <h6 className="colr-gray">/ˈper.ənt/</h6>
-          </div>
-          <div className="">
-            <h6 className="weight500">부모</h6>
-          </div>
+          <div className="scroll-wrap">
+            <div className="d-flex x-eq mb20">
+              <div className="word-content-container">
+                <h2 className="small fontAvenirBold word-break-all">
+                  parentparentparentparentparentparentparentparentparent
+                </h2>
+              </div>
 
-          <div className="pos-bottom d-flex y-center x-eq">
-            <h6 className="color-gray">1 of 27</h6>
+              <button className="sound-icon" />
+            </div>
+            <div className="d-flex y-center">
+              <div className="voca-type-btn mr3">noun</div>
+              <h6 className="color-gray">/ˈper.ənt/</h6>
+            </div>
             <div className="">
-              <DotSeletor />
+              <h6 className="weight500">부모</h6>
+            </div>
+
+            <div className="pos-bottom d-flex y-center x-eq">
+              <h6 className="color-gray">1 of 27</h6>
+              <div className="">
+                <DotSeletor dotList={dotList} />
+              </div>
             </div>
           </div>
         </div>

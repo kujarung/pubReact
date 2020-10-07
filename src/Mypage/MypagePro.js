@@ -98,13 +98,13 @@ export default function MypagePro(props) {
           </div>
 
           <div className="info-box mb50">
-            <div className="pos-info-icon">
+            <button className="pos-info-icon">
               <img
                 src={info}
                 alt=""
                 style={{ width: '15px', height: '15px' }}
               />
-            </div>
+            </button>
             <div className="mb12 pos-rel">
               <CircleProgress width={'82'} percent={'42'} small={true} />
               <div className="circle-label-con">
@@ -121,7 +121,7 @@ export default function MypagePro(props) {
         </div>
 
         <div className="mb20">
-          <RenderTab tabList={tabList} clickTab={clickTab} isFull={true} />
+          <RenderTab tabList={tabList} clickTab={clickTab} isFull />
         </div>
 
         <div className="mb50">
@@ -133,14 +133,14 @@ export default function MypagePro(props) {
             <div>
               <h5 className="weight500">일일 학습 기록</h5>
             </div>
-            <div className="small-icon">
+            <button className="small-icon">
               <img src={info} alt="" />
-            </div>
+            </button>
           </div>
         </div>
 
         <div className="mb25">
-          <RenderTab tabList={tabList2} />
+          <RenderTab tabList={tabList2} isFull isSmall />
         </div>
 
         <div className="d-flex x-eq pl33 pr33 pb20 pt10 mb30">

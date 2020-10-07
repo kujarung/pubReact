@@ -6,7 +6,7 @@ export default function Login() {
   const snsList = ['naver', 'kakako', 'fb', 'google'];
   return (
     <div className="h-100vh">
-      <div className="bothSpace mb30">
+      <div className="bothSpace mb-small-30">
         <div className="mb84 pt77">
           <div className="img-logo big tc">
             <img src={logoImg} alt="logo-img" />

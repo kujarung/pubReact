@@ -11,73 +11,35 @@ export default function Search(props) {
           <div className="mb10">
             <SerchInput placeholder="검색어를 입력해주세요" hasX />
           </div>
-
-          <div className="d-flex x-end h7 color-gray mb3">전체삭제</div>
+          <div className="d-flex x-end">
+            <button className=" h7 color-gray mb3">전체삭제</button>
+          </div>
 
           <div className="mb22">
-            <div className="search-row d-flex x-eq">
+            <div className="search-row d-flex x-eq y-center">
               <div className="d-flex y-center">
                 <div className=" mr10">
-                  <img src={resent} alt="" style={{ width: '21px' }} />
+                  <img src={resent} alt="" style={{ width: '20px' }} />
                 </div>
-                <div className="">climate change</div>
+                <h6 className="">가나다</h6>
               </div>
 
-              <div className="">
+              <button className="d-flex y-center he20">
                 <img src={grayX} alt="" style={{ width: '12px' }} />
-              </div>
+              </button>
             </div>
 
-            <div className="search-row d-flex x-eq">
+            <div className="search-row d-flex x-eq y-center">
               <div className="d-flex y-center">
                 <div className=" mr10">
-                  <img src={resent} alt="" style={{ width: '21px' }} />
+                  <img src={resent} alt="" style={{ width: '20px' }} />
                 </div>
-                <div className="">climate change</div>
+                <h6 className="">climate change</h6>
               </div>
 
-              <div className="">
+              <button className="d-flex y-center he20">
                 <img src={grayX} alt="" style={{ width: '12px' }} />
-              </div>
-            </div>
-
-            <div className="search-row d-flex x-eq">
-              <div className="d-flex y-center">
-                <div className=" mr10">
-                  <img src={resent} alt="" style={{ width: '21px' }} />
-                </div>
-                <div className="">climate change</div>
-              </div>
-
-              <div className="">
-                <img src={grayX} alt="" style={{ width: '12px' }} />
-              </div>
-            </div>
-
-            <div className="search-row d-flex x-eq">
-              <div className="d-flex y-center">
-                <div className=" mr10">
-                  <img src={resent} alt="" style={{ width: '21px' }} />
-                </div>
-                <div className="">climate change</div>
-              </div>
-
-              <div className="">
-                <img src={grayX} alt="" style={{ width: '12px' }} />
-              </div>
-            </div>
-
-            <div className="search-row d-flex x-eq">
-              <div className="d-flex y-center">
-                <div className=" mr10">
-                  <img src={resent} alt="" style={{ width: '21px' }} />
-                </div>
-                <div className="">climate change</div>
-              </div>
-
-              <div className="">
-                <img src={grayX} alt="" style={{ width: '12px' }} />
-              </div>
+              </button>
             </div>
           </div>
         </div>

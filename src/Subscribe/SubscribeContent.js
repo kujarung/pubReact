@@ -8,9 +8,9 @@ export default function SubscribeContent(props) {
       <StackHeader />
       <div className="mt29 mb30 title-container bothSpace">
         <h3 className="weight500">구독 안내</h3>
-        <div className="tag-item small no-margin">
+        <buton className="tag-item small no-margin">
           <p className="tag-txt color-primary">이용권 쿠폰 등록</p>
-        </div>
+        </buton>
       </div>
       <div className="bothSpace mb10">
         <h5 className="weight500">현재 이용권</h5>

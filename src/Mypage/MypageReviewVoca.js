@@ -142,13 +142,13 @@ export default function MypageReview(props) {
           </div>
 
           <div className="info-box mb50">
-            <div className="pos-info-icon">
+            <button className="pos-info-icon">
               <img
                 src={info}
                 alt=""
                 style={{ width: '15px', height: '15px' }}
               />
-            </div>
+            </button>
             <div className="mb12 pos-rel">
               <CircleProgress width={'82'} percent={'42'} small={true} />
               <div className="circle-label-con">
@@ -170,19 +170,21 @@ export default function MypageReview(props) {
 
         <div className="select-tab-con mb20">
           {selectTab.map((tab) => (
-            <div
+            <button
               className={tab.active ? 'select-tab active' : 'select-tab'}
               key={tab.id}
               onClick={() => clickTab2(tab.id)}
             >
               {tab.title}
-            </div>
+            </button>
           ))}
         </div>
 
         <div className="title-container bothSpace">
-          <h5 className="weight500">록</h5>
-          <p className="smallFont weight500 primary-color">더보기</p>
+          <h5 className="weight500">오답 단어 목록</h5>
+          <a href="#">
+            <p className="smallFont weight500 primary-color">더보기</p>
+          </a>
         </div>
 
         <div className="mb50">

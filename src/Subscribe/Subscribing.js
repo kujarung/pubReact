@@ -8,9 +8,9 @@ export default function Subscribing(props) {
       <StackHeader />
       <div className="mt29 mb30 title-container bothSpace">
         <h3 className="weight500">나의 구독</h3>
-        <div className="tag-item small no-margin">
+        <button className="tag-item small no-margin">
           <p className="tag-txt color-primary">할인 쿠폰 등록</p>
-        </div>
+        </button>
       </div>
 
       <div className="bothSpace">
@@ -32,7 +32,7 @@ export default function Subscribing(props) {
               <h4 className="fontAvenirBold">
                 7<span className="h7">일</span>
               </h4>
-              <div className="fontAvenirBold">
+              <div className="fontAvenirBold small-minus-letter">
                 <span className="color-gray del-txt gray">10,000원</span> →{' '}
                 <span className="color-primary">0원</span>
               </div>

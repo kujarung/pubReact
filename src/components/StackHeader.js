@@ -13,9 +13,9 @@ export default function StackHeader(props) {
         </div>
       </Link>
       {rightItem === 'info' ? (
-        <div className="">
+        <button className="">
           <img src={info} alt="" style={{ width: '24px' }} />
-        </div>
+        </button>
       ) : rightItem === 'selector' ? (
         <DotSeletor dotList={dotList} />
       ) : null}

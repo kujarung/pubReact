@@ -10,6 +10,9 @@ export const pretest3 = require('../assets/realImg/pretest3.png');
 export const pretestResult = require('../assets/realImg/pretestResult.png');
 export const interest1 = require('../assets/realImg/interest1.png');
 export const interest2 = require('../assets/realImg/interest2.png');
+export const interest3 = require('../assets/realImg/Interest3.png');
+export const interest4 = require('../assets/realImg/Interest4.png');
+export const interest5 = require('../assets/realImg/Interest5.png');
 export const recommend = require('../assets/realImg/recommend.png');
 export const daily1 = require('../assets/realImg/daily1.png');
 export const dailyLong = require('../assets/realImg/dailyLong.png');
@@ -140,11 +143,15 @@ export const free = require('../assets/img/FREE.png');
 export const arrLeft = require('../assets/img/arr-left.png');
 export const arrRight = require('../assets/img/arr-right.png');
 
+export const fullImage = require('../assets/img/full-image.png');
 export const people1 = require('../assets/img/people1.png');
 export const people2 = require('../assets/img/people2.png');
 export const people3 = require('../assets/img/people3.png');
 export const circleLock = require('../assets/img/circle-lock.png');
 export const rightArr = require('../assets/img/right-arr.png');
+export const leftWhiteArr = require('../assets/img/left-white-arr.png');
+export const rightWhiteArr = require('../assets/img/right-white-arr.png');
+
 export const arrUp = require('../assets/img/arr-up.png');
 export const arrDwon = require('../assets/img/arr-down.png');
 export const camera = require('../assets/img/camera.png');

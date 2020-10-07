@@ -4,68 +4,69 @@ import SerchInput from 'components/SerchInput';
 import Checkbox from 'components/Checkbox';
 import BackBtn from 'components/BackBtn';
 
-export default function Interest1() {
-  const [tagList] = useState([
+export default function Interest4() {
+  const [tagList, setTageList] = useState([
     {
       id: 1,
       active: true,
-      txt: '#programming',
+      txt: '학생',
     },
     {
       id: 2,
-      active: true,
-      txt: '#bio',
+      active: false,
+      txt: '직장인',
     },
     {
       id: 3,
-      active: true,
-      txt: '#insta',
+      active: false,
+      txt: '기업가',
     },
     {
       id: 4,
-      active: true,
-      txt: '#programming',
+      active: false,
+      txt: '은퇴자',
     },
     {
       id: 5,
-      active: true,
-      txt: '#programming',
+      active: false,
+      txt: '일반인',
+    },
+    {
+      id: 6,
+      active: false,
+      txt: '선택안함',
     },
   ]);
-
+  const clickTag = (id) => {
+    const result = tagList.map((tag) => {
+      if (tag.id === id) {
+        return { ...tag, active: true };
+      } else {
+        return { ...tag, active: false };
+      }
+    });
+    setTageList(result);
+  };
   return (
     <div className="h-100vh">
       <StackHeader />
       <div className="pt15 bothSpace">
         <div className="mb36">
-          <h5 className="weight500">관심사는 해시태그는 무엇인가요?</h5>
+          <h5 className="weight500">현재 직업은 무엇인가요</h5>
         </div>
         <div className="">
           <div className="mb22">
-            <SerchInput placeholder={'programming'} />
+            <SerchInput
+              placeholder={'직접입력 (ex: 디자이너, 개발자, 번역가 등)'}
+            />
           </div>
 
-          <div className="has-list mb22">
-            <div className="item">
-              <div className="h7"># program</div>
-              <div className="">
-                <Checkbox checkbox={{ id: 1 }} />
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="h7"># program</div>
-              <div className="">
-                <Checkbox checkbox={{ id: 2, txt: '' }} />
-              </div>
-            </div>
-          </div>
-
-          <div className="scroll">
+          <div className="tag-wrap">
             {tagList.map((tag) => (
               <button
                 className={tag.active ? 'tag-item active' : 'tag-item'}
                 key={tag.id}
+                onClick={() => clickTag(tag.id)}
               >
                 <p className="tag-txt">{tag.txt}</p>
               </button>

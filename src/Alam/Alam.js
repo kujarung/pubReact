@@ -28,13 +28,13 @@ export default function Alam(props) {
               <div
                 className="mr10 alam-img-con"
                 style={{ backgroundImage: `url(${alarm})` }}
-              ></div>
+              />
 
-              <div className="">
-                <h5 className="small weight300 mr10">
-                  장애 발생 및 처리 결과 안내
-                </h5>
-                <div className="h7 color-gray">총 3회 학습</div>
+              <div className="alam-content">
+                <h5 className="small weight300">장애 발생 및 처리 결과 안내</h5>
+                <div className="h7 color-gray">
+                  2020년 12월 01일 오후 2:12:12
+                </div>
               </div>
             </div>
           </div>
@@ -48,11 +48,14 @@ export default function Alam(props) {
                 style={{ backgroundImage: `url(${alarm})` }}
               ></div>
 
-              <div className="">
-                <h5 className="small weight300 mr10">
-                  장애 발생 및 처리 결과 안내
+              <div className="alam-content">
+                <h5 className="small weight300">
+                  장애 발생 및 처리 결과 안내>장애 발생 및 처리 결과 안내>장애
+                  발생 및 처리 결과 안내
                 </h5>
-                <div className="h7 color-gray">총 3회 학습</div>
+                <div className="h7 color-gray">
+                  2020년 12월 01일 오후 2:12:12
+                </div>
               </div>
             </div>
           </div>
@@ -66,11 +69,11 @@ export default function Alam(props) {
                 style={{ backgroundImage: `url(${alarmD})` }}
               ></div>
 
-              <div className="">
-                <h5 className="small weight300 mr10">
-                  장애 발생 및 처리 결과 안내
-                </h5>
-                <div className="h7 color-gray">총 3회 학습</div>
+              <div className="alam-content">
+                <h5 className="small weight300">장애 발생 및 처리 결과 안내</h5>
+                <div className="h7 color-gray">
+                  2020년 12월 01일 오후 2:12:12
+                </div>
               </div>
             </div>
           </div>
@@ -84,11 +87,11 @@ export default function Alam(props) {
                 style={{ backgroundImage: `url(${alarmD})` }}
               ></div>
 
-              <div className="">
-                <h5 className="small weight300 mr10">
-                  장애 발생 및 처리 결과 안내
-                </h5>
-                <div className="h7 color-gray">총 3회 학습</div>
+              <div className="alam-content">
+                <h5 className="small weight300">장애 발생 및 처리 결과 안내</h5>
+                <div className="h7 color-gray">
+                  2020년 12월 01일 오후 2:12:12
+                </div>
               </div>
             </div>
           </div>

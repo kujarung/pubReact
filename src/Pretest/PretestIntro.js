@@ -1,6 +1,6 @@
-import React from "react";
-import BackBtn from "components/BackBtn";
-import { icRest } from "components/ImgUtils";
+import React from 'react';
+import BackBtn from 'components/BackBtn';
+import { icRest } from 'components/ImgUtils';
 
 export default function PretestIntro() {
   return (
@@ -37,9 +37,11 @@ export default function PretestIntro() {
               <BackBtn btnTxt="시작하기" />
             </div>
             <div className="tc">
-              <p className="primary-underline color-primary h7">
-                그냥 둘러보기
-              </p>
+              <a href="#">
+                <p className="primary-underline color-primary h7">
+                  그냥 둘러보기
+                </p>
+              </a>
             </div>
           </div>
         </div>

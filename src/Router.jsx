@@ -13,6 +13,9 @@ import Pretest3 from 'Pretest/Pretest3';
 import PretestResult from 'Pretest/PretestResult';
 import Interest1 from 'Interest/Interest1';
 import Interest2 from 'Interest/Interest2';
+import Interest3 from 'Interest/Interest3';
+import Interest4 from 'Interest/Interest4';
+import Interest5 from 'Interest/Interest5';
 import Recomment from 'Interest/Recomment';
 import Mylevel from 'Mypage/Mylevel';
 import MypagePro from 'Mypage/MypagePro';
@@ -309,6 +312,19 @@ export default function RouterLink(props) {
         <Route path="/Interest2">
           <Interest2 />
         </Route>
+
+        <Route path="/Interest3">
+          <Interest3 />
+        </Route>
+
+        <Route path="/Interest4">
+          <Interest4 />
+        </Route>
+
+        <Route path="/Interest5">
+          <Interest5 />
+        </Route>
+
         <Route path="/Recomment">
           <Recomment />
         </Route>

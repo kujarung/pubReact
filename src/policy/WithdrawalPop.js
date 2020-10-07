@@ -8,14 +8,14 @@ export default function WithdrawalPop(props) {
   return (
     <>
       <div className="popup-wrap">
-        <div className="inner-pop">
-          <div className="pop-x-btn-con tpye2">
+        <div className="inner-pop bottom-small">
+          <button className="pop-x-btn-con tpye2">
             <img
               src={blackX}
               alt=""
               style={{ width: '16px', height: '16px' }}
             />
-          </div>
+          </button>
           <div className="mb38">
             <h4 className="small weight500">탈퇴 확인</h4>
           </div>

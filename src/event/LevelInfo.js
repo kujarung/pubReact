@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
-import { icRest } from "components/ImgUtils";
-import CircleProgress from "components/CircleProgress";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
+import { icRest } from 'components/ImgUtils';
+import CircleProgress from 'components/CircleProgress';
 
 export default function LevelInfo(props) {
   return (

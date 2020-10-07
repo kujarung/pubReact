@@ -49,7 +49,7 @@ export default function WordList1(props) {
         <RenderTab tabList={selectTab} clickTab={selectTab} isFull={true} />
       </div>
 
-      <div className="mb70">
+      <div className="mb80">
         <WrongAnserList wrongAnserList={wrongAnserList} isProbleam />
       </div>
 

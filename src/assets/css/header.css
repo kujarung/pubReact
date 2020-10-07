@@ -20,7 +20,7 @@
 }
 
 .header.absol {
-  margin-top: 44px;
+  margin-top: 22px;
   padding-top: 0;
   position: absolute;
   box-sizing: border-box;
@@ -32,11 +32,16 @@
   align-items: center;
   width: 44px;
   height: 44px;
+  justify-content: flex-end;
+}
+
+.icon-img-con.arr {
+  justify-content: flex-start;
 }
 
 .icon-img-con img {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
 }
 
 .icon-img-con.arr img {
@@ -92,9 +97,12 @@
 }
 
 .menu-list li {
+  margin-bottom: 38px;
+}
+
+.menu-list li a {
   font-size: 18px;
   color: var(--check-gray);
-  margin-bottom: 38px;
 }
 
 .menu-list li:last-child {

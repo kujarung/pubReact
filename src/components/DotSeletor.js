@@ -7,9 +7,9 @@ export default function DotSelector(props) {
   return (
     <>
       <div className="dot-wrap">
-        <div className="dot-con" onClick={() => setShowDesc(!showDesc)}>
+        <button className="dot-con" onClick={() => setShowDesc(!showDesc)}>
           <img src={dot} alt="" />
-        </div>
+        </button>
         <div className={showDesc ? 'dot-desc-con active' : 'dot-desc-con'}>
           {dotList ? (
             dotList.map((val) => (

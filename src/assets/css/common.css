@@ -147,7 +147,7 @@
   left: 20px;
 }
 
-.img-list-container .inner-content {
+.inner-content {
   color: white;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -259,7 +259,7 @@
 .horiz-item {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .horiz-inner {
@@ -320,11 +320,11 @@
 }
 
 .empty-header {
-  height: 68px;
+  height: 24px;
 }
 
 .only-x-header {
-  height: 88px;
+  height: 44px;
   position: relative;
 }
 
@@ -393,13 +393,16 @@
 
 .search-input-con .input-right-x {
   position: absolute;
-  top: 15px;
+  display: flex;
+  align-items: center;
+  height: 100%;
   right: 15px;
+  top: 0;
 }
 
 .search-input-con input {
   width: 100%;
-  border: 1px solid var(--gray50);
+  border: 1px solid var(--border-gray50);
   border-radius: 22px;
   padding: 0px 44px;
   background-image: url('../img/search.png');
@@ -617,6 +620,7 @@
 .custom-calendar-wrap .react-calendar__tile.react-calendar__tile--active {
   background-color: var(--primary);
   color: white !important;
+  border: none !important;
 }
 
 .custom-calendar-wrap .react-calendar__tile.react-calendar__tile--rangeStart {
@@ -644,6 +648,10 @@
   flex-wrap: wrap;
 }
 
+.tag-wrap {
+  overflow: hidden;
+}
+
 .sqare-tab-con .sqare-tab {
   display: flex;
   align-items: center;
@@ -651,7 +659,9 @@
   width: 33.33333%;
   border: 1px solid var(--lightWite);
   box-sizing: border-box;
-  padding: 9px 0;
+  margin-top: -1px;
+  margin-left: -1px;
+  height: 35px;
 }
 
 .sqare-tab-con .sqare-tab p {
@@ -675,7 +685,7 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 13px;
-  border-bottom: 1px solid var(--border-gray2);
+  border-bottom: 1px solid var(--lightWite);
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -705,23 +715,6 @@
   border-radius: 5px;
 }
 
-.profile-con {
-  display: inline-block;
-  position: relative;
-}
-
-.profile-con::after {
-  content: '';
-  position: absolute;
-  background-image: url('../img/camera.png');
-  width: 36px;
-  height: 36px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  bottom: 0;
-  right: 0;
-}
-
 .member-row {
   padding: 15px 0px;
   display: flex;
@@ -735,9 +728,15 @@
   box-shadow: 3px 8px 22px 0 rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 20px 20px 45px 20px;
-  min-height: 227px;
+  height: 227px;
   position: relative;
   box-sizing: border-box;
+}
+
+.step-card .scroll-wrap {
+  display: block;
+  overflow-y: auto;
+  height: 100%;
 }
 
 .emigi-con {
@@ -775,4 +774,13 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.content-scroll-container {
+  height: calc(100vh - 230px);
+  overflow-y: auto;
+}
+
+.word-content-container {
+  width: calc(100% - 50px);
 }

@@ -15,9 +15,9 @@ export default function CardList(props) {
               <h5 className="small">{item.title}</h5>
               <p className="h7 color-gray">{item.desc}</p>
             </div>
-            <div className="arrow default-icon">
+            <button className="arrow default-icon">
               <img src={icCirArrow} alt="" />
-            </div>
+            </button>
           </div>
         ))}
       </div>

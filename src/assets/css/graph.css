@@ -72,7 +72,6 @@
 }
 
 .multi-bar-wrap {
-  display: flex;
   box-shadow: 3px 5px 22px rgba(0, 0, 0, 0.1);
   background-color: white;
   position: relative;
@@ -142,13 +141,26 @@
   background-color: var(--color-gray);
 }
 
+.bar-grap-container {
+  display: flex;
+}
+
 .multi-bar-title {
+  margin-top: 10px;
+  float: left;
+  width: 33.3333%;
   font-size: 12px;
   color: #565656;
-  bottom: -21px;
   position: relative;
-  left: -42px;
   font-weight: 400;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.title-wrap {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .multi-bar-title.disabled {

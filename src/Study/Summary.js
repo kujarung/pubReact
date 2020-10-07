@@ -47,10 +47,10 @@ export default function Summary() {
 
         <div className="shadow-box pt40 pb30 mb25">
           <div className="mb24 bothSpace">
-            <h6 className="weight400">리뷰 3회차 (2/3)</h6>
+            <h6 className="weight400">리뷰 2회차 (2/3)</h6>
           </div>
           <div>
-            <div className="d-flex x-eq link-line">
+            <div className="d-flex x-eq link-line y-center">
               <div className="d-flex y-center z-10">
                 <div className="mr8">
                   <img
@@ -68,7 +68,7 @@ export default function Summary() {
               </div>
             </div>
 
-            <div className="d-flex x-eq link-line">
+            <div className="d-flex x-eq link-line y-center">
               <div className="d-flex y-center z-10">
                 <div className="mr8" style={{ backgroundColor: 'white' }}>
                   <img
@@ -87,7 +87,7 @@ export default function Summary() {
               </div>
             </div>
 
-            <div className="d-flex x-eq link-line active">
+            <div className="d-flex x-eq link-line y-center active">
               <div className="d-flex y-center z-10">
                 <div className="mr8">
                   <div className="gray-circle-num">3</div>

@@ -11,20 +11,22 @@ export default function DeletableList(props) {
             <div
               className={isDelete ? 'horiz-inner pos-delete' : 'horiz-inner'}
             >
-              <div className="horiz-top">
-                <div className="horiz-ima-box">
-                  <img src={img} alt="" />
-                </div>
-                <div className="">
-                  <div className="top-desc-con">
-                    <div className="top-icon h7 mr5">East Asia Pacific</div>
-                    <div className="top-icon h7">LV.30</div>
+              <a href="#">
+                <div className="horiz-top">
+                  <div className="horiz-ima-box">
+                    <img src={img} alt="" />
                   </div>
-                  <div className="list-content weight500">{contentTxt}</div>
+                  <div className="">
+                    <div className="top-desc-con">
+                      <div className="top-icon h7 mr5">East Asia Pacific</div>
+                      <div className="top-icon h7">LV.30</div>
+                    </div>
+                    <div className="list-content weight500">{contentTxt}</div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
-            {isDelete ? <div className="delete-item"></div> : ''}
+            {isDelete ? <button className="delete-item"></button> : ''}
           </div>
         );
       })}

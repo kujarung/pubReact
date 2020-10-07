@@ -1,8 +1,8 @@
-import React from "react";
-import BackBtn from "components/BackBtn";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper.scss";
-import { logoTxt, logoImg, icRest } from "components/ImgUtils";
+import React from 'react';
+import BackBtn from 'components/BackBtn';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.scss';
+import { logoTxt, logoImg, icRest } from 'components/ImgUtils';
 
 export const Start = () => {
   const Main = () => (
@@ -48,7 +48,7 @@ export const Start = () => {
           </div>
           <div className="">
             <h6 className="weight100 line-h26">
-              인터넷 영어 <span className="weight500">콘텐츠</span>의 비율은 약{" "}
+              인터넷 영어 <span className="weight500">콘텐츠</span>의 비율은 약{' '}
               <span className="weight500">60%</span> 로<br />
               한국어보다 <span className="weight500">600배</span>나 많아요.
               <br />
@@ -83,10 +83,10 @@ export const Start = () => {
           </div>
           <div className="">
             <h6 className="weight100 line-h26">
-              <span className="weight500">영어 전문가</span>들은 다양한 원서를{" "}
+              <span className="weight500">영어 전문가</span>들은 다양한 원서를{' '}
               <span className="weight500">꾸준히</span>
               <br />
-              그리고 <span className="weight500">많이</span> 읽어야 한다고{" "}
+              그리고 <span className="weight500">많이</span> 읽어야 한다고{' '}
               <span className="weight500">조언</span>하고 있어요.
               <br />
               막상 해보면 정말 말처럼 쉽지만은 않아요. <br />
@@ -106,7 +106,7 @@ export const Start = () => {
         <h3 className="letter87 weight500 line-h38">
           내게 딱 맞는
           <br />
-          가장 <span className="txt-empasis">효과적</span>이고{" "}
+          가장 <span className="txt-empasis">효과적</span>이고{' '}
           <span className="txt-empasis">흥미로운</span>
           <br />
           학습 콘텐츠 <br />
@@ -126,7 +126,7 @@ export const Start = () => {
               <br />
               가장 빠르게 실력이 오르는 순서로
               <br />
-              내가 좋아하는 <span className="weight500">콘텐츠</span>를{" "}
+              내가 좋아하는 <span className="weight500">콘텐츠</span>를{' '}
               <span className="weight500">추천</span>합니다. <br />
             </h6>
           </div>
@@ -188,7 +188,7 @@ export const Start = () => {
             <h4 className="small fontAvenir line-h30">
               Just get on a rocket ship
               <br />
-              with{" "}
+              with{' '}
               <span className="primary-underline weight500">
                 READING PERCENT!
               </span>
@@ -199,8 +199,8 @@ export const Start = () => {
           </div>
           <div className="">
             <h6 className="weight100 line-h26">
-              더 많은 콘텐츠를 <span className="weight500">읽고</span>,{" "}
-              <span className="weight500">생각</span>하고,{" "}
+              더 많은 콘텐츠를 <span className="weight500">읽고</span>,{' '}
+              <span className="weight500">생각</span>하고,{' '}
               <span className="weight500">성장</span>하는
               <br />
               여러분을 <span className="weight500">응원</span>합니다.
@@ -217,7 +217,7 @@ export const Start = () => {
   return (
     <Swiper
       slidesPerView={1}
-      onSlideChange={() => console.log("slide change")}
+      onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>

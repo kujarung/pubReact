@@ -20,10 +20,15 @@ export default function Step2_2() {
             <img src={checkBig} alt="" style={{ width: '120px' }} />
           </div>
           <div className="tc">
-            <h5 className="fontAvenirBold">
-              STEP 1<br />
-              난이도 평가 <span className="step-underline">Done!</span>
-            </h5>
+            <div className="tc">
+              <h5 className="fontAvenirBold">
+                STEP 1<br />
+              </h5>
+              <h5 className="weight500">
+                난이도 평가{' '}
+                <span className="step-underline weight400">Done!</span>
+              </h5>
+            </div>
           </div>
         </div>
 
@@ -48,9 +53,9 @@ export default function Step2_2() {
                 <span className="color-primary">다른 콘텐츠</span>를 추천
                 받으시려면 오른쪽 버튼을 눌러주세요.
               </div>
-              <div className="ml30">
+              <button className="ml30">
                 <img src={icCirArrow} alt="" style={{ width: '30px' }} />
-              </div>
+              </button>
             </div>
           </h5>
         </div>
@@ -60,7 +65,7 @@ export default function Step2_2() {
             <img src={icRest} alt="ic-rest" />
           </div>
           <div className="mb20">
-            <h5 className="weight400 line-h26 small">
+            <h5 className="weight300 line-h26 small">
               결정하셨나요? <br />
               그럼 이제 화살표 버튼을 눌러
               <br />

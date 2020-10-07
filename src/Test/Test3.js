@@ -58,10 +58,14 @@ export default function Test3() {
           <div className="mb31 tc">
             <img src={checkBig} alt="" style={{ width: '120px' }} />
           </div>
+
           <div className="tc">
             <h5 className="fontAvenirBold">
               STEP 3<br />
-              테스트 <span className="step-underline">Completed!</span>
+            </h5>
+            <h5 className="weight500">
+              테스트{' '}
+              <span className="step-underline weight400">Completed!</span>
             </h5>
           </div>
         </div>

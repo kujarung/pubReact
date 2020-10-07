@@ -50,7 +50,9 @@ export default function GetAchievements(props) {
 
         <div className="title-container mb20">
           <h5 className="weight500">진행중 업적</h5>
-          <p className="smallFont weight500 primary-color">더보기</p>
+          <a href="#">
+            <p className="smallFont weight500 primary-color">더보기</p>
+          </a>
         </div>
 
         <div className="achievements-list mb50">
@@ -126,7 +128,9 @@ export default function GetAchievements(props) {
 
         <div className="title-container mb20">
           <h5 className="weight500">NEXT 업적</h5>
-          <p className="smallFont weight500 primary-color">더보기</p>
+          <a href="#">
+            <p className="smallFont weight500 primary-color">더보기</p>
+          </a>
         </div>
 
         <div className="achievements-list mb50">
@@ -202,7 +206,9 @@ export default function GetAchievements(props) {
 
         <div className="title-container mb20">
           <h5 className="weight500">획득한 업적</h5>
-          <p className="smallFont weight500 primary-color">더보기</p>
+          <a href="#">
+            <p className="smallFont weight500 primary-color">더보기</p>
+          </a>
         </div>
 
         <div className="achievements-list mb50">

@@ -5,6 +5,9 @@ import {
   signup,
   interest1,
   interest2,
+  interest3,
+  interest4,
+  interest5,
   recommend,
   pretestIntro,
   pretest1,
@@ -146,6 +149,36 @@ export default function Guide() {
             </div>
 
             <h3 className="">3.7_interest2</h3>
+          </Link>
+        </section>
+
+        <section className="">
+          <Link to="/interest3">
+            <div className="mb30">
+              <img src={interest3} alt="" />
+            </div>
+
+            <h3 className="">3.7_interest3</h3>
+          </Link>
+        </section>
+
+        <section className="">
+          <Link to="/interest4">
+            <div className="mb30">
+              <img src={interest4} alt="" />
+            </div>
+
+            <h3 className="">3.7_interest4</h3>
+          </Link>
+        </section>
+
+        <section className="">
+          <Link to="/interest5">
+            <div className="mb30">
+              <img src={interest5} alt="" />
+            </div>
+
+            <h3 className="">3.7_interest5</h3>
           </Link>
         </section>
 

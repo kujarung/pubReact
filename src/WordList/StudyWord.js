@@ -47,7 +47,6 @@ export default function StudyWord(props) {
           <ImageCardItem
             hasInfo
             round={'norounded'}
-            size={'middle'}
             key={imgList[0].id}
             content={imgList[0].content}
             imgPath={imgList[0].imgPath}

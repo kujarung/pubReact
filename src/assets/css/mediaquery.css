@@ -1,0 +1,43 @@
+@media (max-height: 700px) {
+  .one-line-elis {
+    max-width: 250px;
+  }
+}
+
+@media (max-height: 680px) {
+  .small-minus-letter {
+    letter-spacing: -0.07rem;
+  }
+
+  .h-100vh.small-no-100vh {
+    height: 100%;
+  }
+
+  .mb-small-30 {
+    margin-bottom: 30px;
+  }
+
+  .mt-small-30 {
+    margin-top: 30px;
+  }
+
+  .multi-bar-wrap {
+    padding: 80px 10px 60px 10px;
+  }
+
+  .pos-bottom.small-no-absol-bottom {
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .pos-bottom.small-no-absol {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

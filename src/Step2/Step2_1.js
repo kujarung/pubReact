@@ -35,7 +35,7 @@ export default function Step2_1() {
         </div>
       </div>
 
-      <div className="pos-bottom">
+      <div className="pos-bottom small-no-absol">
         <div className="has-check mb20">
           <AnserBtn btnTxt={'거의 모르겠어요'} />
           <AnserBtn btnTxt={'반은 읽을 수 있었어요'} />

@@ -16,23 +16,23 @@ export default function Ranking(props) {
       <StackHeader />
       <div className="bothSpace mt29">
         <div className="d-flex x-eq y-center mb25">
-          <div className="">
+          <button className="">
             <img
               src={arrLeft}
               alt=""
               style={{ width: '24px', height: '24px' }}
             />
-          </div>
+          </button>
           <div className="">
             <h3 className="weight500">2020년 4월</h3>
           </div>
-          <div className="">
+          <button className="">
             <img
               src={arrRight}
               alt=""
               style={{ width: '24px', height: '24px' }}
             />
-          </div>
+          </button>
         </div>
 
         <div className="desc-info-box mb60">

@@ -136,13 +136,13 @@ export default function MypageMypercent(props) {
           </div>
 
           <div className="info-box mb50">
-            <div className="pos-info-icon">
+            <button className="pos-info-icon">
               <img
                 src={info}
                 alt=""
                 style={{ width: '15px', height: '15px' }}
               />
-            </div>
+            </button>
             <div className="mb12 pos-rel">
               <CircleProgress width={'82'} percent={'42'} small={true} />
               <div className="circle-label-con">
@@ -174,7 +174,9 @@ export default function MypageMypercent(props) {
               </div>
               <div className="d-flex x-center">
                 <div className="tag-item no-margin">
-                  <p className="tag-txt color-primary">자세히보기</p>
+                  <a href="#">
+                    <p className="tag-txt color-primary">자세히보기</p>
+                  </a>
                 </div>
               </div>
             </div>

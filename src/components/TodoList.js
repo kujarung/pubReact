@@ -13,13 +13,13 @@ export default function TodoList(props) {
               <p className="h7 color-gray">{item.desc}</p>
             </div>
             {isComplete ? (
-              <div className="default-icon">
+              <button className="default-icon">
                 <img src={icCirCheck} alt="" />
-              </div>
+              </button>
             ) : (
-              <div className="default-icon">
+              <button className="default-icon">
                 <img src={icCirArrow} alt="" />
-              </div>
+              </button>
             )}
           </div>
         ))}

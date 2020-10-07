@@ -17,7 +17,7 @@ export default function OverRayList(props) {
               <div className="mb7">
                 <h6 className="d-flex weight500">
                   {item.contentTxt}{' '}
-                  <span className="inner-empty color-checkgray pl3 pr3">
+                  <span className="inner-empty gray color-checkgray pl3 pr3">
                     text
                   </span>
                   .

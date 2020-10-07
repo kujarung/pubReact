@@ -22,7 +22,10 @@ export default function Step1_1() {
           <div className="tc">
             <h5 className="fontAvenirBold">
               STEP 1<br />
-              원문 읽기 <span className="step-underline">Finished!</span>
+            </h5>
+            <h5 className="weight500">
+              원문 읽기{' '}
+              <span className="step-underline weight400">Finished!</span>
             </h5>
           </div>
         </div>

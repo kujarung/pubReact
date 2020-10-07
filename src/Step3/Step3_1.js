@@ -36,7 +36,7 @@ export default function Step3_1() {
         </div>
       </div>
 
-      <div className="pos-bottom">
+      <div className="pos-bottom small-no-absol">
         <div className="has-check mb20">
           <AnserBtn btnTxt={'모든 단어 리뷰하기'} />
           <AnserBtn btnTxt={'미학습 단어만 리뷰하기'} active />
@@ -46,7 +46,9 @@ export default function Step3_1() {
           <BackBtn btnTxt="다음" />
         </div>
         <div className="tc">
-          <span class="primary-underline color-primary h7">단어장 보기</span>
+          <a href="#">
+            <span class="primary-underline color-primary h7">단어장 보기</span>
+          </a>
         </div>
       </div>
     </div>

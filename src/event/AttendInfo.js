@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
-import { arrLeft, arrRight, info, grayX } from "components/ImgUtils";
-import CustomCalendar from "components/CustomCalendar";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
+import { arrLeft, arrRight, info, grayX } from 'components/ImgUtils';
+import CustomCalendar from 'components/CustomCalendar';
 
 export default function DailyCheck(props) {
   return (
     <>
       <div className="popup-wrap small">
         <div className="inner-pop">
-          <div className="pop-x-btn-con">
+          <button className="pop-x-btn-con">
             <img src={grayX} alt="" />
-          </div>
+          </button>
           <div className="pl10 pr10 mb45">
             <div className="mb45">
               <h4 className="small weight500">출석 점수 산정</h4>
@@ -52,7 +52,7 @@ export default function DailyCheck(props) {
               <img
                 src={arrLeft}
                 alt=""
-                style={{ width: "24px", height: "24px" }}
+                style={{ width: '24px', height: '24px' }}
               />
             </div>
             <div className="">
@@ -62,7 +62,7 @@ export default function DailyCheck(props) {
               <img
                 src={arrRight}
                 alt=""
-                style={{ width: "24px", height: "24px" }}
+                style={{ width: '24px', height: '24px' }}
               />
             </div>
           </div>
@@ -85,7 +85,7 @@ export default function DailyCheck(props) {
               <img
                 src={info}
                 alt=""
-                style={{ width: "15px", height: "15px" }}
+                style={{ width: '15px', height: '15px' }}
               />
             </div>
           </div>

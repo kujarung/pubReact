@@ -18,21 +18,21 @@ export default function StackHeaderWhite(props) {
         </div>
       </Link>
       {rightItem === 'info' ? (
-        <div className="icon-img-con">
+        <button className="icon-img-con">
           <img src={infoWhite} alt="" />
-        </div>
+        </button>
       ) : rightItem === 'hasX' ? (
-        <div className="icon-img-con">
+        <button className="icon-img-con">
           <img src={whiteX} alt="" />
-        </div>
+        </button>
       ) : (
         <div className="d-flex x-eq">
-          <div className="icon-img-con">
+          <button className="icon-img-con">
             <img src={heart} alt="" />
-          </div>
-          <div className="icon-img-con">
+          </button>
+          <button className="icon-img-con">
             <img src={imgEx} alt="" />
-          </div>
+          </button>
         </div>
       )}
     </div>

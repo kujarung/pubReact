@@ -1,7 +1,7 @@
-import React from "react";
-import StackHeader from "components/StackHeader";
-import { icCirArrow } from "components/ImgUtils";
-import BackBtn from "components/BackBtn";
+import React from 'react';
+import StackHeader from 'components/StackHeader';
+import { icCirArrow } from 'components/ImgUtils';
+import BackBtn from 'components/BackBtn';
 
 export default function SettingRepeat(props) {
   return (
@@ -24,9 +24,9 @@ export default function SettingRepeat(props) {
                 <div className="h7 color-gray">총 3회 학습</div>
               </div>
 
-              <div className="">
-                <img src={icCirArrow} alt="" style={{ width: "30px" }} />
-              </div>
+              <button className="">
+                <img src={icCirArrow} alt="" style={{ width: '30px' }} />
+              </button>
             </div>
           </div>
         </div>
@@ -43,9 +43,9 @@ export default function SettingRepeat(props) {
                 <div className="h7 color-gray">+1일 후 복습</div>
               </div>
 
-              <div className="">
-                <img src={icCirArrow} alt="" style={{ width: "30px" }} />
-              </div>
+              <button className="">
+                <img src={icCirArrow} alt="" style={{ width: '30px' }} />
+              </button>
             </div>
 
             <div className="repeact-row">
@@ -54,9 +54,9 @@ export default function SettingRepeat(props) {
                 <div className="h7 color-gray">+2일 후 복습</div>
               </div>
 
-              <div className="">
-                <img src={icCirArrow} alt="" style={{ width: "30px" }} />
-              </div>
+              <button className="">
+                <img src={icCirArrow} alt="" style={{ width: '30px' }} />
+              </button>
             </div>
 
             <div className="repeact-row">
@@ -65,16 +65,16 @@ export default function SettingRepeat(props) {
                 <div className="h7 color-gray">+3일 후 복습</div>
               </div>
 
-              <div className="">
-                <img src={icCirArrow} alt="" style={{ width: "30px" }} />
-              </div>
+              <button className="">
+                <img src={icCirArrow} alt="" style={{ width: '30px' }} />
+              </button>
             </div>
           </div>
         </div>
       </div>
 
       <div className="pos-bottom">
-        <BackBtn btnTxt={"초기값으로 설정"} />
+        <BackBtn btnTxt={'초기값으로 설정'} />
       </div>
     </div>
   );

@@ -10,6 +10,7 @@
   --gray: #333333;
   --check-gray: #777777;
   --border-gray: #c1c0c8;
+  --border-gray50: rgba(193, 192, 200, 0.5);
   --border-gray2: #979797;
   --fontgray2: #6c6c6c;
   --like-white: #070606;
@@ -21,6 +22,7 @@
   --gray-back: #fcfcfc;
   --borderGrayReal: #d8d8d8;
   --lightWite: #f5f6fa;
+  --lightWite50: rgba(245, 246, 250, 0.5);
   --realGray: #90919a;
   --navy: #002872;
   --skyBlue: #9abeff;

@@ -1,22 +1,22 @@
 import React from 'react';
-import { blueArrRight, mix, blueArrLeft } from 'components/ImgUtils';
+import { leftWhiteArr, mix, rightWhiteArr } from 'components/ImgUtils';
 
 export default function MixBtnGrup() {
   return (
     <div className="d-flex">
       <div className="">
-        <img src={blueArrRight} alt="" style={{ height: '58px' }} />
+        <button className="blue-arr left" />
       </div>
-      <div className="mix-btn-con d-flex xy-center">
-        <div className="d-flex">
+      <button className="mix-btn-con d-flex xy-center">
+        <div className="d-flex xy-center">
           <div className="mr14">
             <img src={mix} alt="" style={{ height: '24px' }} />
           </div>
           <h6 className="color-primary">카드 섞기</h6>
         </div>
-      </div>
+      </button>
       <div className="">
-        <img src={blueArrLeft} alt="" style={{ height: '58px' }} />
+        <button className="blue-arr right" />
       </div>
     </div>
   );

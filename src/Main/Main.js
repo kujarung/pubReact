@@ -96,15 +96,15 @@ export default function Main(props) {
   };
   return (
     <>
-      <Header openDrawer={openDrawer} />
+      <Header openDrawer={openDrawer} isFixed />
       <div className="main-content">
         <div className="title-container bothSpace mb25">
           <div>
             <h2 className="samll fontAvenirBold">Contents</h2>
           </div>
-          <div className="title-help-icon">
+          <button className="title-help-icon">
             <img src={icPercent} alt="percent-img" />
-          </div>
+          </button>
         </div>
 
         <div className="tab-wrap">
@@ -124,7 +124,9 @@ export default function Main(props) {
             <div className="">
               <div className="title-container bothSpace">
                 <h5 className="weight500">최근 본 컨텐츠</h5>
-                <p className="smallFont weight500 primary-color">더보기</p>
+                <a href="#">
+                  <p className="smallFont weight500 primary-color">더보기</p>
+                </a>
               </div>
               {<VerticalList verticalList={verticalList} />}
             </div>
@@ -132,7 +134,9 @@ export default function Main(props) {
             <div className="">
               <div className="title-container bothSpace">
                 <h5 className="weight500">추천 콘텐츠</h5>
-                <p className="smallFont weight500 primary-color">더보기</p>
+                <a href="#">
+                  <p className="smallFont weight500 primary-color">더보기</p>
+                </a>
               </div>
               {<HorizList horzList={horzList} />}
             </div>

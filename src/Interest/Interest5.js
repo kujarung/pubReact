@@ -2,32 +2,27 @@ import React, { useState } from 'react';
 import StackHeader from 'components/StackHeader';
 import BackBtn from 'components/BackBtn';
 
-export default function Interest1() {
+export default function Interest5() {
   const [tagList, setTageList] = useState([
     {
       id: 1,
       active: false,
-      txt: '정치',
+      txt: '남성',
     },
     {
       id: 2,
       active: false,
-      txt: '경제',
+      txt: '여성',
     },
     {
       id: 3,
       active: true,
-      txt: '소프트웨어개발',
+      txt: 'LGBTQIA',
     },
     {
       id: 4,
       active: true,
-      txt: '사회',
-    },
-    {
-      id: 5,
-      active: true,
-      txt: '문화',
+      txt: '선택안함',
     },
   ]);
 
@@ -47,7 +42,7 @@ export default function Interest1() {
       <StackHeader />
       <div className="pt15 bothSpace">
         <div className="mb36">
-          <h5 className="weight500">관심사는 무엇인가요?</h5>
+          <h5 className="weight500">나의 젠더</h5>
         </div>
         <div className="content-scroll-container">
           {tagList.map((tag) => (
@@ -61,7 +56,7 @@ export default function Interest1() {
           ))}
         </div>
         <div className="pos-bottom">
-          <BackBtn btnTxt="다음" />
+          <BackBtn btnTxt="설문조사 완료" />
         </div>
       </div>
     </div>

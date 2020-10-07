@@ -11,13 +11,13 @@ export default function Step3_3_pop1() {
     <>
       <div className="popup-wrap">
         <div className="inner-pop">
-          <div className="pop-x-btn-con tpye2">
+          <button className="pop-x-btn-con tpye2">
             <img
               src={blackX}
               alt=""
               style={{ width: '16px', height: '16px' }}
             />
-          </div>
+          </button>
           <div className="mb38 pl10 pr10">
             <h4 className="small weight500">카드섞기</h4>
           </div>

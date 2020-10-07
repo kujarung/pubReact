@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
-import { arrLeft, arrRight, info } from "components/ImgUtils";
-import CustomCalendar from "components/CustomCalendar";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
+import { arrLeft, arrRight, info } from 'components/ImgUtils';
+import CustomCalendar from 'components/CustomCalendar';
 
 export default function DailyCheck(props) {
   return (
@@ -9,23 +9,23 @@ export default function DailyCheck(props) {
       <StackHeader />
       <div className="bothSpace mt29">
         <div className="d-flex x-eq y-center mb25">
-          <div className="">
+          <button className="">
             <img
               src={arrLeft}
               alt=""
-              style={{ width: "24px", height: "24px" }}
+              style={{ width: '24px', height: '24px' }}
             />
-          </div>
+          </button>
           <div className="">
             <h3 className="weight500">2020년 4월</h3>
           </div>
-          <div className="">
+          <button className="">
             <img
               src={arrRight}
               alt=""
-              style={{ width: "24px", height: "24px" }}
+              style={{ width: '24px', height: '24px' }}
             />
-          </div>
+          </button>
         </div>
 
         <div className="desc-info-box mb36">
@@ -42,9 +42,9 @@ export default function DailyCheck(props) {
 
         <div className="d-flex x-eq mb22">
           <h5 className="weight500">출석 기록</h5>
-          <div className="">
-            <img src={info} alt="" style={{ width: "15px", height: "15px" }} />
-          </div>
+          <button className="">
+            <img src={info} alt="" style={{ width: '15px', height: '15px' }} />
+          </button>
         </div>
 
         <div className="">
