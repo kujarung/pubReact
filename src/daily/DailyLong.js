@@ -1,33 +1,33 @@
-import React from "react";
-import ImageCardItem from "components/ImageCardItem";
-import Header from "components/Header";
-import { base, base2, base3 } from "components/ImgUtils";
+import React from 'react';
+import ImageCardItem from 'components/ImageCardItem';
+import Header from 'components/Header';
+import { base, base2, base3 } from 'components/ImgUtils';
 
 export default function DailyLong(props) {
   const { openDrawer } = props;
 
   const imgList = [
     {
-      id: "abc1",
+      id: 'abc1',
       imgPath: base,
-      content: "At least 50 people burned to death in a bus collision in Ghana",
+      content: 'At least 50 people burned to death in a bus collision in Ghana',
     },
     {
-      id: "xcvxcv",
+      id: 'xcvxcv',
       imgPath: base2,
-      content: "At least 50 people burned to death in a bus collision in Ghana",
+      content: 'At least 50 people burned to death in a bus collision in Ghana',
     },
     {
-      id: "xcvxcv",
+      id: 'xcvxcv',
       imgPath: base3,
       content:
-        "At sdfdsleast 50 people burned to vxcvdeath in a buzxcvzxcs colvlision in Ghana",
+        'At sdfdsleast 50 people burned to vxcvdeath in a buzxcvzxcs colvlision in Ghana',
     },
   ];
 
   return (
     <>
-      <Header openDrawer={openDrawer} />
+      <Header openDrawer={openDrawer} isFixed />
       <div className="main-content">
         <div className="title-container bothSpace mb21">
           <div>
@@ -37,7 +37,7 @@ export default function DailyLong(props) {
         <div className="bothSpace">
           {imgList.map((imgInfo) => (
             <ImageCardItem
-              size={"long"}
+              size={'long'}
               key={imgInfo.id}
               content={imgInfo.content}
               imgPath={imgInfo.imgPath}

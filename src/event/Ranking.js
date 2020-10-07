@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
-import Checkbox from "components/Checkbox";
-import BackBtn from "components/BackBtn";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
+import Checkbox from 'components/Checkbox';
+import BackBtn from 'components/BackBtn';
 import {
   arrLeft,
   arrRight,
   people1,
   people2,
   people3,
-} from "components/ImgUtils";
+} from 'components/ImgUtils';
 
 export default function Ranking(props) {
   return (
@@ -20,7 +20,7 @@ export default function Ranking(props) {
             <img
               src={arrLeft}
               alt=""
-              style={{ width: "24px", height: "24px" }}
+              style={{ width: '24px', height: '24px' }}
             />
           </div>
           <div className="">
@@ -30,7 +30,7 @@ export default function Ranking(props) {
             <img
               src={arrRight}
               alt=""
-              style={{ width: "24px", height: "24px" }}
+              style={{ width: '24px', height: '24px' }}
             />
           </div>
         </div>
@@ -46,10 +46,10 @@ export default function Ranking(props) {
         <div className="top-ranking-con mb30">
           <div className="top-ranking-card two">
             <div className="mb10">
-              <img src={people1} alt="" style={{ width: "58px" }} />
+              <img src={people1} alt="" style={{ width: '58px' }} />
             </div>
 
-            <div className="">
+            <div className="tc">
               <h6 className="weight500">닐라닐라</h6>
               <div className="h7 color-gray">58,325</div>
             </div>
@@ -57,10 +57,10 @@ export default function Ranking(props) {
 
           <div className="top-ranking-card one">
             <div className="mb10">
-              <img src={people2} alt="" style={{ width: "58px" }} />
+              <img src={people2} alt="" style={{ width: '58px' }} />
             </div>
 
-            <div className="">
+            <div className="tc">
               <h6 className="weight500">민초</h6>
               <div className="h7 color-gray">58,325</div>
             </div>
@@ -68,10 +68,10 @@ export default function Ranking(props) {
 
           <div className="top-ranking-card three">
             <div className="mb10">
-              <img src={people3} alt="" style={{ width: "58px" }} />
+              <img src={people3} alt="" style={{ width: '58px' }} />
             </div>
 
-            <div className="">
+            <div className="tc">
               <h6 className="weight500">바닐라</h6>
               <div className="h7 color-gray">58,325</div>
             </div>
@@ -88,13 +88,15 @@ export default function Ranking(props) {
 
                 <div className="d-flex y-center ranking-content">
                   <div className="mr6">
-                    <img src={people1} alt="" style={{ width: "39px" }} />
+                    <img src={people1} alt="" style={{ width: '39px' }} />
                   </div>
 
                   <h6 className="weight500">닐라 닐라</h6>
                 </div>
 
-                <div className="h7 color-gray ranking-score">58,325</div>
+                <div className="h7 color-gray ranking-score weight500">
+                  58,325
+                </div>
               </div>
             ))}
           </div>

@@ -77,10 +77,10 @@ export default function Nosubscribe(props) {
                 <div className="cupon-content">
                   <div className="h7 ">월 3개 콘텐츠 무제한 학습</div>
                   <div className="">
-                    <div className="h7 color-primary fontAvenirBold">
+                    <div className="h7 color-primary fontAvenir">
                       월간 11,000원
                     </div>
-                    <div className="h7 color-primary fontAvenirBold">
+                    <div className="h7 color-primary fontAvenir">
                       연간 <span className="del-txt">112,000원</span> →
                       110,000원
                     </div>
@@ -105,10 +105,10 @@ export default function Nosubscribe(props) {
                 <div className="cupon-content">
                   <div className="h7 ">월 3개 콘텐츠 무제한 학습</div>
                   <div className="">
-                    <div className="h7 color-primary fontAvenirBold">
+                    <div className="h7 color-primary fontAvenir">
                       월간 11,000원
                     </div>
-                    <div className="h7 color-primary fontAvenirBold">
+                    <div className="h7 color-primary fontAvenir">
                       연간 <span className="del-txt">112,000원</span> →
                       110,000원
                     </div>

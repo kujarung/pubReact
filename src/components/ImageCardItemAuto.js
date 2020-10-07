@@ -5,7 +5,7 @@ export default function ImageCardItem(props) {
   const { size, round, hasInfo } = props;
   return (
     <div
-      className={`img-list-container ${size} ${round}`}
+      className={`img-list-container auto ${size} ${round}`}
       style={{
         backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.2) 100%), 
         url(${props.imgPath})`,

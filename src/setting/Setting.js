@@ -1,5 +1,5 @@
-import React from "react";
-import StackHeader from "components/StackHeader";
+import React from 'react';
+import StackHeader from 'components/StackHeader';
 
 export default function Setting(props) {
   return (
@@ -56,7 +56,7 @@ export default function Setting(props) {
           <div className="setting-title">앱정보</div>
           <div className="item-list-row">
             <p className="txt">버전</p>
-            <p className="txt color-gray mr25">2020.01.01</p>
+            <h7 className="txt right color-gray mr25 ">2020.01.01</h7>
           </div>
           <div className="item-list-row">
             <p className="txt">서비스 이용약관</p>

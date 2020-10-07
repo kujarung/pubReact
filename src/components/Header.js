@@ -1,12 +1,12 @@
-import React from "react";
-import { sidelist, activity, search } from "components/ImgUtils";
+import React from 'react';
+import { sidelist, activity, search } from 'components/ImgUtils';
 
 export default function Header(props) {
-  const { openDrawer } = props;
+  const { openDrawer, isFixed } = props;
 
   return (
     <>
-      <div className="header">
+      <div className={isFixed ? 'header fixed' : 'header'}>
         <div className="icon-img-con" onClick={() => openDrawer()}>
           <img src={sidelist} alt="sidelist" />
         </div>

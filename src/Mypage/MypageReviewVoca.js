@@ -181,7 +181,7 @@ export default function MypageReview(props) {
         </div>
 
         <div className="title-container bothSpace">
-          <h5 className="weight500">오답 단어 목록</h5>
+          <h5 className="weight500">록</h5>
           <p className="smallFont weight500 primary-color">더보기</p>
         </div>
 
@@ -204,12 +204,12 @@ export default function MypageReview(props) {
 
                 <div className="label-item navy">
                   <div className="label-title ">리뷰중</div>
-                  <div className="label-desc">100개</div>
+                  <div className="label-desc">66개</div>
                 </div>
 
                 <div className="label-item sky">
                   <div className="label-title">오답</div>
-                  <div className="label-desc">100개</div>
+                  <div className="label-desc">14개</div>
                 </div>
               </div>
             </div>

@@ -1,9 +1,9 @@
-import React from "react";
-import { clock } from "components/ImgUtils";
+import React from 'react';
+import { clock } from 'components/ImgUtils';
 
 export default function Barchart(props) {
   const { percentList, title } = props;
-  const titleList = ["월", "화", "수", "목", "금", "토", "일"];
+  const titleList = ['월', '화', '수', '목', '금', '토', '일'];
   return (
     <div className="bar-wrap">
       <div className="bar-title">
@@ -18,7 +18,7 @@ export default function Barchart(props) {
       <div className="bar-content">
         {percentList.map((percent, index) => {
           return (
-            <div key={`bar-key-${index}`}>
+            <div className="bar" key={`bar-key-${index}`}>
               <div className="bar-container mb10">
                 <div
                   className="inner-percent"

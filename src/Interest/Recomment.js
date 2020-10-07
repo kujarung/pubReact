@@ -1,65 +1,57 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
-import RenderTab from "components/RenderTab";
-import HorizList from "components/HorizList";
-import BackBtn from "components/BackBtn";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
+import RenderTab from 'components/RenderTab';
+import HorizList from 'components/HorizList';
+import BackBtn from 'components/BackBtn';
 import {
   icRest,
   tempback1,
   tempback2,
   tempbak2,
   tempbak1,
-} from "components/ImgUtils";
+} from 'components/ImgUtils';
 
 export default function Recomment() {
   const [tabList, setTabList] = useState([
-    { id: 1, title: "정치", active: true },
-    { id: 2, title: "경제", active: false },
-    { id: 3, title: "사회", active: false },
-    { id: 4, title: "문화", active: false },
-    { id: 5, title: "예술", active: false },
-    { id: 6, title: "IT", active: false },
-    { id: 7, title: "Smart", active: false },
-    { id: 8, title: "언택트", active: false },
+    { id: 1, title: '정치', active: true },
+    { id: 2, title: '경제', active: false },
+    { id: 3, title: '사회', active: false },
+    { id: 4, title: '문화', active: false },
+    { id: 5, title: '예술', active: false },
+    { id: 6, title: 'IT', active: false },
+    { id: 7, title: 'Smart', active: false },
+    { id: 8, title: '언택트', active: false },
   ]);
 
   const horzList = [
     {
       id: 112,
       imgPath: tempbak2,
-      date: "Apr 18, 2020",
+      date: 'Apr 18, 2020',
       content:
-        "At least 50 people burned to death in a b… At least 50 people burned to death in a b…",
-      type: "hashTag",
+        'At least 50 people burned to death in a b… At least 50 people burned to death in a b…',
+      type: 'hashTag',
     },
     {
       id: 2321,
       imgPath: tempbak1,
-      date: "Apr 18, 2020",
+      date: 'Apr 18, 2020',
       content:
-        "At least 50 people burned to death in a b… At least 50 people burned to death in a b…",
-      type: "hashTag",
+        'At least 50 people burned to death in a b… At least 50 people burned to death in a b…',
+      type: 'hashTag',
     },
     {
       id: 3,
       imgPath: tempback1,
-      date: "Apr 18, 2020",
+      date: 'Apr 18, 2020',
       content:
-        "At least 50 people burned to death in a b… At least 50 people burned to death in a b…",
-      type: "hashTag",
-    },
-    {
-      id: 4,
-      imgPath: tempback2,
-      date: "Apr 18, 2020",
-      content:
-        "At least 50 people burned to death in a b… At least 50 people burned to death in a b…",
-      type: "hashTag",
+        'At least 50 people burned to death in a b… At least 50 people burned to death in a b…',
+      type: 'hashTag',
     },
   ];
   const clickTab = (id) => {
     const resultTab = tabList.map((tab) =>
-      tab.id === id ? { ...tab, active: true } : { ...tab, active: false }
+      tab.id === id ? { ...tab, active: true } : { ...tab, active: false },
     );
     setTabList(resultTab);
   };
@@ -78,7 +70,7 @@ export default function Recomment() {
             <h6 className="weight100 line-h26">
               약 <span className="weight500">42%</span>,의 콘텐츠들 중에서
               <br />
-              닉네임님께서{" "}
+              닉네임님께서{' '}
               <span className="weight500">좋아하실 만한 학습 콘텐츠</span>를
               골라봤어요. <br />이 중 하나를 선택해서 학습을 시작해 보세요.
             </h6>
@@ -88,7 +80,7 @@ export default function Recomment() {
 
       <div className="tab-wrap">
         <div className="bothSpace mb23">
-          <h5 className="weight500">최근 본 컨텐츠</h5>
+          <h5 className="weight500">추천 콘텐츠</h5>
         </div>
 
         <RenderTab tabList={tabList} clickTab={clickTab} />

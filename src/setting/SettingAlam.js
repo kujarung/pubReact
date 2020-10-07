@@ -1,8 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import StackHeader from 'components/StackHeader';
 import Swich from 'components/Swich';
+import SettingRowWithSwich from 'components/SettingRowWithSwich';
 
 export default function SettingAlam(props) {
+  const [settingRow, setSettingRow] = useState([
+    {
+      settingTitle: '푸쉬알림',
+      item: [
+        {
+          id: 1,
+          title: '반복주기 알림',
+          desc: '반복주기가 되면 푸쉬 알림으로 받을 수 있습니다.',
+          currentActive: true,
+        },
+        {
+          id: 2,
+          title: '야간 알림',
+          desc: '9시 이후에도 푸쉬 알림 수신에 동의합니다.',
+          currentActive: false,
+        },
+      ],
+    },
+    {
+      settingTitle: '마케팅 메시지 수신 동의',
+      item: [
+        {
+          id: 3,
+          title: '이메일',
+          desc: '추천 및 이벤트 소식을 받습니다.',
+          currentActive: false,
+        },
+        {
+          id: 4,
+          title: 'SMS 알림',
+          desc: '문자 메시지로 소식을 받습니다.',
+          currentActive: true,
+        },
+        {
+          id: 5,
+          title: '푸시 알림',
+          desc: '푸시 알림으로 이벤트/마케팅 소식을 받습니다.',
+          currentActive: true,
+        },
+      ],
+    },
+  ]);
+
   return (
     <>
       <StackHeader />
@@ -12,69 +56,18 @@ export default function SettingAlam(props) {
 
       <div className="item-list-wrap no-arr">
         <div className="item-list-con">
-          <div className="setting-title">푸쉬알림</div>
-          <div className="item-list-row">
-            <p className="txt">
-              공지/이벤트
-              <p className="h7 color-gray mt6">
-                공지/이벤트 정보를 푸쉬 알림으로 받을 수 있습니다.
-              </p>
-            </p>
-            <Swich active />
-          </div>
-
-          <div className="item-list-row inactive">
-            <p className="txt">
-              반복주기 알림
-              <p className="h7 color-gray mt6">
-                반복주기가 되면 푸쉬 알림으로 받을 수 있습니다.
-              </p>
-            </p>
-            <Swich />
-          </div>
-
-          <div className="item-list-row inactive">
-            <p className="txt">
-              야간 알림
-              <p className="h7 color-gray mt6">
-                9시 이후에도 푸쉬 알림 수신에 동의합니다.
-              </p>
-            </p>
-            <Swich />
-          </div>
-        </div>
-
-        <div className="item-list-con">
-          <div className="setting-title">마케팅 메시지 수신 동의</div>
-          <div className="item-list-row inactive">
-            <p className="txt">
-              이메일
-              <p className="h7 color-gray mt6">
-                추천 및 이벤트 소식을 받습니다.
-              </p>
-            </p>
-            <Swich />
-          </div>
-
-          <div className="item-list-row">
-            <p className="txt">
-              SMS 알림
-              <p className="h7 color-gray mt6">
-                문자 메시지로 소식을 받습니다.
-              </p>
-            </p>
-            <Swich active />
-          </div>
-
-          <div className="item-list-row">
-            <p className="txt">
-              푸시 알림
-              <p className="h7 color-gray mt6">
-                푸시 알림으로 이벤트/마케팅 소식을 받습니다.
-              </p>
-            </p>
-            <Swich active />
-          </div>
+          {settingRow.map((rows) => (
+            <div className="item-list-con">
+              <div className="setting-title">{rows.settingTitle}</div>
+              {rows.item.map((val) => (
+                <SettingRowWithSwich
+                  title={val.title}
+                  desc={val.desc}
+                  currentActive={val.currentActive}
+                />
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </>

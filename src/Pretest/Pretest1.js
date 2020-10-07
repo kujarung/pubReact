@@ -50,12 +50,8 @@ export default function Pretest1() {
 
         <div className="">
           <h5 className="weight500 line-h30">
-            <div className="d-flex y-center">
-              There is a way to <span className="inner-empty" />
-              with
-            </div>
-
-            <div className="">an English children’s book.</div>
+            There is a way to <span className="inner-empty" />
+            with an English children’s book.
           </h5>
         </div>
       </div>

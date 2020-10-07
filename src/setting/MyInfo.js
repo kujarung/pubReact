@@ -1,7 +1,7 @@
-import React from "react";
-import StackHeader from "components/StackHeader";
-import BackBtn from "components/BackBtn";
-import { camera, profile, pen } from "components/ImgUtils";
+import React from 'react';
+import StackHeader from 'components/StackHeader';
+import BackBtn from 'components/BackBtn';
+import { camera, profile, pen } from 'components/ImgUtils';
 
 export default function MyInfo() {
   return (
@@ -15,14 +15,14 @@ export default function MyInfo() {
         <div className="shadow-box pt30 pb25">
           <div className="mb20 tc">
             <div className="profile-con">
-              <img src={profile} alt="" style={{ width: "100px" }} />
+              <img src={profile} alt="" style={{ width: '100px' }} />
             </div>
           </div>
 
-          <div className="d-flex xy-center mb45">
+          <div className="d-flex xy-center mb45 ">
             <h6 className="mr6 weight500">닐라닐라</h6>
             <div className="">
-              <img src={pen} alt="" style={{ width: "12px" }} />
+              <img src={pen} alt="" style={{ width: '12px' }} />
             </div>
           </div>
 
@@ -40,7 +40,7 @@ export default function MyInfo() {
       </div>
 
       <div className="pos-bottom">
-        <BackBtn btnTxt={"수정"} />
+        <BackBtn btnTxt={'수정'} />
       </div>
     </div>
   );

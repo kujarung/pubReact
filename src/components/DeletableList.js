@@ -1,5 +1,5 @@
-import React from "react";
-import { trash } from "components/ImgUtils";
+import React from 'react';
+import { trash } from 'components/ImgUtils';
 export default function DeletableList(props) {
   const { deletableList } = props;
   return (
@@ -7,9 +7,9 @@ export default function DeletableList(props) {
       {deletableList.map((list) => {
         const { img, contentTxt, id, isDelete } = list;
         return (
-          <div key={id} className={"horiz-item type-delete"}>
+          <div key={id} className={'horiz-item type-delete'}>
             <div
-              className={isDelete ? "horiz-inner pos-delete" : "horiz-inner"}
+              className={isDelete ? 'horiz-inner pos-delete' : 'horiz-inner'}
             >
               <div className="horiz-top">
                 <div className="horiz-ima-box">
@@ -17,20 +17,14 @@ export default function DeletableList(props) {
                 </div>
                 <div className="">
                   <div className="top-desc-con">
-                    <div className="top-icon h7 mr5">LV.30</div>
+                    <div className="top-icon h7 mr5">East Asia Pacific</div>
                     <div className="top-icon h7">LV.30</div>
                   </div>
                   <div className="list-content weight500">{contentTxt}</div>
                 </div>
               </div>
             </div>
-            {isDelete ? (
-              <div className="delete-item">
-                <img src={trash} alt="" />
-              </div>
-            ) : (
-              ""
-            )}
+            {isDelete ? <div className="delete-item"></div> : ''}
           </div>
         );
       })}

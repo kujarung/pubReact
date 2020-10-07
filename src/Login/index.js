@@ -1,12 +1,12 @@
-import React from "react";
-import SNSBtn from "components/SNSBtn";
-import { logoImg } from "components/ImgUtils";
+import React from 'react';
+import SNSBtn from 'components/SNSBtn';
+import { logoImg } from 'components/ImgUtils';
 
 export default function Login() {
-  const snsList = ["naver", "kakako", "fb", "google"];
+  const snsList = ['naver', 'kakako', 'fb', 'google'];
   return (
     <div className="h-100vh">
-      <div className="bothSpace">
+      <div className="bothSpace mb30">
         <div className="mb84 pt77">
           <div className="img-logo big tc">
             <img src={logoImg} alt="logo-img" />
@@ -33,8 +33,10 @@ export default function Login() {
           ))}
         </div>
         <div className="h7 weight300 tc">
-          아직 리딩퍼센트의 회원이 아니신가요?{" "}
-          <span className="primary-underline color-primary">그냥 둘러보기</span>
+          아직 리딩퍼센트의 회원이 아니신가요?{' '}
+          <a href="#" className="primary-underline color-primary">
+            그냥 둘러보기
+          </a>
         </div>
       </div>
     </div>

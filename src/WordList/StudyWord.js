@@ -40,7 +40,7 @@ export default function StudyWord(props) {
     <>
       <StackHeader />
       <div className="mt29 mb20 bothSpace">
-        <h5 className="weight500">단어 학습</h5>
+        <h3 className="weight500">단어 학습</h3>
       </div>
       <div className="mb50">
         <div className="pos-rel">

@@ -9,7 +9,7 @@ export default function Subscribing(props) {
       <div className="mt29 mb30 title-container bothSpace">
         <h3 className="weight500">나의 구독</h3>
         <div className="tag-item small no-margin">
-          <p className="tag-txt color-primary">이용권 쿠폰 등록</p>
+          <p className="tag-txt color-primary">할인 쿠폰 등록</p>
         </div>
       </div>
 

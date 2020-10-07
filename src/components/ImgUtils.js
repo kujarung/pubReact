@@ -92,6 +92,7 @@ export const icPercent = require('../assets/img/ic_percent.png');
 export const icChecked = require('../assets/img/ic-checked.png');
 export const icEmptyCheck = require('../assets/img/ic-empty-check.png');
 export const icCirCheck = require('../assets/img/ic_cir_check.png');
+export const lightColorCheck = require('../assets/img/content-check.png');
 export const icRest = require('../assets/img/ic-rest.png');
 export const iconFacebook = require('../assets/img/icon-facebook.png');
 export const iconGoogle = require('../assets/img/icon-google.png');

@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 export default function RenderTab(props) {
   const { tabList, clickTab, isFull } = props;
   return (
     <div
       className={
-        isFull ? "tab-container bothSpace full" : "tab-container bothSpace"
+        isFull ? 'tab-container bothSpace full' : 'tab-container bothSpace'
       }
     >
       {tabList.map((tab) => (
@@ -13,13 +13,13 @@ export default function RenderTab(props) {
           style={
             isFull
               ? {
-                  width: `calc(${100 / tabList.length}% - 20px)`,
-                  textAlign: "center",
+                  width: `calc(${100 / tabList.length}% - 40px)`,
+                  textAlign: 'center',
                 }
               : {}
           }
           key={tab.id}
-          className={tab.active ? "tab active" : "tab"}
+          className={tab.active ? 'tab active' : 'tab'}
           onClick={() => clickTab(tab.id)}
         >
           <p>{tab.title}</p>
