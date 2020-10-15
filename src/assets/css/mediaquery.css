@@ -52,4 +52,12 @@
 		font-size: 13px;
 		line-height: 18px;
 	}
+
+	.logo-txt img {
+		height: 35px;
+	}
+
+	.card-container .card-bottom-txt .sm-small {
+		font-size: 20px;
+	}
 }
