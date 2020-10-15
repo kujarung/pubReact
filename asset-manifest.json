@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/pubReact/static/css/main.96b96a39.chunk.css",
-    "main.js": "/pubReact/static/js/main.da4cef3e.chunk.js",
-    "main.js.map": "/pubReact/static/js/main.da4cef3e.chunk.js.map",
+    "main.css": "/pubReact/static/css/main.6a1bbd73.chunk.css",
+    "main.js": "/pubReact/static/js/main.eecc3a89.chunk.js",
+    "main.js.map": "/pubReact/static/js/main.eecc3a89.chunk.js.map",
     "runtime-main.js": "/pubReact/static/js/runtime-main.76f84a07.js",
     "runtime-main.js.map": "/pubReact/static/js/runtime-main.76f84a07.js.map",
-    "static/css/2.9caa258a.chunk.css": "/pubReact/static/css/2.9caa258a.chunk.css",
-    "static/js/2.53d17e2f.chunk.js": "/pubReact/static/js/2.53d17e2f.chunk.js",
-    "static/js/2.53d17e2f.chunk.js.map": "/pubReact/static/js/2.53d17e2f.chunk.js.map",
+    "static/css/2.20eb72d4.chunk.css": "/pubReact/static/css/2.20eb72d4.chunk.css",
+    "static/js/2.183d4962.chunk.js": "/pubReact/static/js/2.183d4962.chunk.js",
+    "static/js/2.183d4962.chunk.js.map": "/pubReact/static/js/2.183d4962.chunk.js.map",
     "index.html": "/pubReact/index.html",
-    "precache-manifest.a654436f27392e9f441cc3153a600098.js": "/pubReact/precache-manifest.a654436f27392e9f441cc3153a600098.js",
+    "precache-manifest.b8fbd94ac305a1665329fcc1007496f6.js": "/pubReact/precache-manifest.b8fbd94ac305a1665329fcc1007496f6.js",
     "service-worker.js": "/pubReact/service-worker.js",
-    "static/css/2.9caa258a.chunk.css.map": "/pubReact/static/css/2.9caa258a.chunk.css.map",
-    "static/css/main.96b96a39.chunk.css.map": "/pubReact/static/css/main.96b96a39.chunk.css.map",
-    "static/js/2.53d17e2f.chunk.js.LICENSE.txt": "/pubReact/static/js/2.53d17e2f.chunk.js.LICENSE.txt",
+    "static/css/2.20eb72d4.chunk.css.map": "/pubReact/static/css/2.20eb72d4.chunk.css.map",
+    "static/css/main.6a1bbd73.chunk.css.map": "/pubReact/static/css/main.6a1bbd73.chunk.css.map",
+    "static/js/2.183d4962.chunk.js.LICENSE.txt": "/pubReact/static/js/2.183d4962.chunk.js.LICENSE.txt",
     "static/media/AgreeMarketing.png": "/pubReact/static/media/AgreeMarketing.8e92fdb9.png",
     "static/media/Alam.png": "/pubReact/static/media/Alam.86ff06c5.png",
     "static/media/AttendInfo.png": "/pubReact/static/media/AttendInfo.336d7de1.png",
@@ -134,9 +134,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.76f84a07.js",
-    "static/css/2.9caa258a.chunk.css",
-    "static/js/2.53d17e2f.chunk.js",
-    "static/css/main.96b96a39.chunk.css",
-    "static/js/main.da4cef3e.chunk.js"
+    "static/css/2.20eb72d4.chunk.css",
+    "static/js/2.183d4962.chunk.js",
+    "static/css/main.6a1bbd73.chunk.css",
+    "static/js/main.eecc3a89.chunk.js"
   ]
 }
