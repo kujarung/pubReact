@@ -1,43 +1,55 @@
 @media (max-height: 700px) {
-  .one-line-elis {
-    max-width: 250px;
-  }
+	.one-line-elis {
+		max-width: 250px;
+	}
 }
 
 @media (max-height: 680px) {
-  .small-minus-letter {
-    letter-spacing: -0.07rem;
-  }
+	.mt-small-0 {
+		margin-top: 0 !important;
+	}
 
-  .h-100vh.small-no-100vh {
-    height: 100%;
-  }
+	.mt-small-50 {
+		margin-top: 50px;
+	}
+	.small-minus-letter {
+		letter-spacing: -0.07rem;
+	}
 
-  .mb-small-30 {
-    margin-bottom: 30px;
-  }
+	.h-100vh.small-no-100vh {
+		height: 100%;
+	}
 
-  .mt-small-30 {
-    margin-top: 30px;
-  }
+	.mb-small-30 {
+		margin-bottom: 30px;
+	}
 
-  .multi-bar-wrap {
-    padding: 80px 10px 60px 10px;
-  }
+	.mt-small-30 {
+		margin-top: 30px;
+	}
 
-  .pos-bottom.small-no-absol-bottom {
-    position: static;
-    width: 100%;
-    box-sizing: border-box;
-  }
+	.multi-bar-wrap {
+		padding: 80px 10px 60px 10px;
+	}
 
-  .pos-bottom.small-no-absol {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    position: static;
-    width: 100%;
-    box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+	.pos-bottom.small-no-absol-bottom {
+		position: static;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.pos-bottom.small-no-absol {
+		margin-top: 50px;
+		margin-bottom: 20px;
+		position: static;
+		width: 100%;
+		box-sizing: border-box;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.info-box-wrap.type2 .info-box .info-desc {
+		font-size: 13px;
+		line-height: 18px;
+	}
 }
