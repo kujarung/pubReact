@@ -3,7 +3,6 @@ import Steps from 'components/Steps';
 import StackHeader from 'components/StackHeader';
 import BackBtn from 'components/BackBtn';
 import AnserBtn from 'components/AnserBtn';
-import { icRest } from 'components/ImgUtils';
 
 export default function Test2_1() {
 	return (

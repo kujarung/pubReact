@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import StackHeader from 'components/StackHeader';
-import { avatar, tempback1, tempback2 } from 'components/ImgUtils';
 import RenderTab from 'components/RenderTab';
 import WrongAnserList from 'components/WrongAnserList';
 import BackBtn from 'components/BackBtn';
@@ -8,19 +7,19 @@ import ImageCardItem from '../components/ImageCardItem';
 import { hand } from '../components/ImgUtils';
 
 export default function StudyWord(props) {
-  const wrongAnserList = [
-    {
-      id: 1,
-      contentTxt:
-        'Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…',
-      img: hand,
-    },
-  ];
+	const wrongAnserList = [
+		{
+			id: 1,
+			contentTxt:
+				'Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…',
+			img: hand,
+		},
+	];
 
-  const [selectTab, setSelectTab] = useState([
-    { id: 112, title: '예문', active: true },
-    { id: 224, title: '단어뜻', active: false },
-  ]);
+	const [selectTab, setSelectTab] = useState([
+		{ id: 112, title: '예문', active: true },
+		{ id: 224, title: '단어뜻', active: false },
+	]);
 
   const clickTab = (id) => {
     const resultTab = selectTab.map((tab) =>
@@ -61,13 +60,13 @@ export default function StudyWord(props) {
         <RenderTab tabList={selectTab} clickTab={clickTab} isFull={true} />
       </div>
 
-      <div className="">
-        <WrongAnserList wrongAnserList={wrongAnserList} isProbleam />
-      </div>
+			<div className="">
+				<WrongAnserList wrongAnserList={wrongAnserList} isProbleam />
+			</div>
 
-      <div className="bothSpace mb17">
-        <BackBtn btnTxt="학습 시작하기" />
-      </div>
-    </>
-  );
+			<div className="bothSpace mb17">
+				<BackBtn btnTxt="학습 시작하기" />
+			</div>
+		</>
+	);
 }

@@ -5,31 +5,31 @@ import RenderTab from 'components/RenderTab';
 import WrongAnserList from 'components/WrongAnserList';
 import BackBtn from 'components/BackBtn';
 export default function WordList1(props) {
-  const wrongAnserList = [
-    {
-      id: 1,
-      contentTxt:
-        'Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…',
-      img: tempback1,
-    },
-    {
-      id: 2,
-      contentTxt:
-        'Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…',
-      img: tempback2,
-      isDelete: true,
-    },
-    {
-      id: 3,
-      contentTxt: 'Mauritius Copes With Copes WithCopes WithCopes With',
-      img: avatar,
-    },
-  ];
+	const wrongAnserList = [
+		{
+			id: 1,
+			contentTxt:
+				'Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…',
+			img: tempback1,
+		},
+		{
+			id: 2,
+			contentTxt:
+				'Mauritius Copes With Split Japanese Ship That Spil…Mauritius Copes With Split Japanese Ship That Spil…',
+			img: tempback2,
+			isDelete: true,
+		},
+		{
+			id: 3,
+			contentTxt: 'Mauritius Copes With Copes WithCopes WithCopes With',
+			img: avatar,
+		},
+	];
 
-  const [selectTab, setSelectTab] = useState([
-    { id: 112, title: '예문', active: false },
-    { id: 224, title: '단어뜻', active: true },
-  ]);
+	const [selectTab, setSelectTab] = useState([
+		{ id: 112, title: '예문', active: false },
+		{ id: 224, title: '단어뜻', active: true },
+	]);
 
   const clickTab = (id) => {
     const resultTab = selectTab.map((tab) =>
@@ -49,13 +49,13 @@ export default function WordList1(props) {
         <RenderTab tabList={selectTab} clickTab={clickTab} isFull={true} />
       </div>
 
-      <div className="mb80">
-        <WrongAnserList wrongAnserList={wrongAnserList} />
-      </div>
+			<div className="mb80">
+				<WrongAnserList wrongAnserList={wrongAnserList} />
+			</div>
 
-      <div className="bottom-fixed">
-        <BackBtn btnTxt="오답 학습하기" />
-      </div>
-    </>
-  );
+			<div className="bottom-fixed">
+				<BackBtn btnTxt="오답 학습하기" />
+			</div>
+		</>
+	);
 }

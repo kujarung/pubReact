@@ -26,32 +26,24 @@ export default function FAQ(props) {
         <h3 className="weight500">자주 묻는 질문</h3>
       </div>
 
-      <div className="bothSpace mb17">
-        <SerchInput placeholder="검색어를 입력해주세요" hasX />
-      </div>
+			<div className="mb30">
+				<RenderTab tabList={tabList} isFull clickTab={clickTab} />
+			</div>
 
-      <div className="mb30">
-        <RenderTab tabList={tabList} isFull clickTab={clickTab} />
-      </div>
+			<div className="bothSpace mb11">
+				<div className="h7">
+					결제이용방법 관련 질문 <span className="color-primary">4건</span>
+				</div>
+			</div>
 
-      <div className="bothSpace mb17">
-        <SqareTab />
-      </div>
-
-      <div className="bothSpace mb11">
-        <div className="h7">
-          결제이용방법 관련 질문 <span className="color-primary">4건</span>
-        </div>
-      </div>
-
-      <div className="">
-        <Accordion />
-        <Accordion />
-        <Accordion />
-        <Accordion />
-        <Accordion />
-        <Accordion />
-      </div>
-    </>
-  );
+			<div className="">
+				<Accordion />
+				<Accordion />
+				<Accordion />
+				<Accordion />
+				<Accordion />
+				<Accordion />
+			</div>
+		</>
+	);
 }

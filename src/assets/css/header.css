@@ -11,6 +11,12 @@
   box-sizing: border-box;
 }
 
+.header.defalut {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
 .header.fixed {
   position: fixed;
   width: 100%;
