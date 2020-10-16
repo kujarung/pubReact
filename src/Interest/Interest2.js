@@ -37,7 +37,7 @@ export default function Interest1() {
 		<div className="h-100vh">
 			<StackHeader />
 			<div className="pt15 bothSpace">
-				<div className="mb36">
+				<div className="mb36 stack-content">
 					<h5 className="weight500">관심사는 해시태그는 무엇인가요?</h5>
 				</div>
 				<div className="">

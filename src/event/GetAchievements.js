@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
-import StackHeader from 'components/StackHeader';
+import React, { useState } from "react";
+import StackHeader from "components/StackHeader";
 import {
   arrLeft,
   arrRight,
   circleLock,
-  lightColorCheck,
-} from 'components/ImgUtils';
+  lightColorCheck
+} from "components/ImgUtils";
 
 export default function GetAchievements(props) {
   return (
     <>
       <StackHeader />
-      <div className="bothSpace mt29">
+      <div className="bothSpace pt29 stack-content">
         <div className="d-flex x-eq y-center mb25">
           <div className="">
             <img
               src={arrLeft}
               alt=""
-              style={{ width: '24px', height: '24px' }}
+              style={{ width: "24px", height: "24px" }}
             />
           </div>
           <div className="">
@@ -27,7 +27,7 @@ export default function GetAchievements(props) {
             <img
               src={arrRight}
               alt=""
-              style={{ width: '24px', height: '24px' }}
+              style={{ width: "24px", height: "24px" }}
             />
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function GetAchievements(props) {
 
               <div className="self-t-end">
                 <h4 className="weight400">
-                  {' '}
+                  {" "}
                   10 <span className="h7">p</span>
                 </h4>
               </div>
@@ -95,7 +95,7 @@ export default function GetAchievements(props) {
 
               <div className="self-t-end">
                 <h4 className="weight400">
-                  {' '}
+                  {" "}
                   10 <span className="h7">p</span>
                 </h4>
               </div>
@@ -118,7 +118,7 @@ export default function GetAchievements(props) {
 
               <div className="self-t-end">
                 <h4 className="weight400">
-                  {' '}
+                  {" "}
                   10 <span className="h7">p</span>
                 </h4>
               </div>
@@ -138,7 +138,7 @@ export default function GetAchievements(props) {
             <div className="d-flex x-eq mb10">
               <h6 className="weight500">입문 챌린저</h6>
               <div className="">
-                <img src={circleLock} alt="" style={{ width: '20px' }} />
+                <img src={circleLock} alt="" style={{ width: "20px" }} />
               </div>
             </div>
 
@@ -150,7 +150,7 @@ export default function GetAchievements(props) {
 
               <div className="self-t-end">
                 <h4 className="weight400">
-                  {' '}
+                  {" "}
                   10 <span className="h7">p</span>
                 </h4>
               </div>
@@ -161,7 +161,7 @@ export default function GetAchievements(props) {
             <div className="d-flex x-eq mb10">
               <h6 className="weight500">능숙한 챌린저</h6>
               <div className="">
-                <img src={circleLock} alt="" style={{ width: '20px' }} />
+                <img src={circleLock} alt="" style={{ width: "20px" }} />
               </div>
             </div>
 
@@ -173,7 +173,7 @@ export default function GetAchievements(props) {
 
               <div className="self-t-end">
                 <h4 className="weight400">
-                  {' '}
+                  {" "}
                   10 <span className="h7">p</span>
                 </h4>
               </div>
@@ -184,7 +184,7 @@ export default function GetAchievements(props) {
             <div className="d-flex x-eq mb10">
               <h6 className="weight500">신규 챌린저의 등장</h6>
               <div className="">
-                <img src={circleLock} alt="" style={{ width: '20px' }} />
+                <img src={circleLock} alt="" style={{ width: "20px" }} />
               </div>
             </div>
 
@@ -196,7 +196,7 @@ export default function GetAchievements(props) {
 
               <div className="self-t-end">
                 <h4 className="weight400">
-                  {' '}
+                  {" "}
                   10 <span className="h7">p</span>
                 </h4>
               </div>
@@ -216,7 +216,7 @@ export default function GetAchievements(props) {
             <div className="d-flex x-eq mb10">
               <h6 className="weight500">입문 챌린저</h6>
               <div className="">
-                <img src={lightColorCheck} alt="" style={{ width: '20px' }} />
+                <img src={lightColorCheck} alt="" style={{ width: "20px" }} />
               </div>
             </div>
 
@@ -228,7 +228,7 @@ export default function GetAchievements(props) {
 
               <div className="self-t-end">
                 <h4 className="weight400">
-                  {' '}
+                  {" "}
                   10 <span className="h7">p</span>
                 </h4>
               </div>
@@ -239,7 +239,7 @@ export default function GetAchievements(props) {
             <div className="d-flex x-eq mb10">
               <h6 className="weight500">능숙한 챌린저</h6>
               <div className="">
-                <img src={lightColorCheck} alt="" style={{ width: '20px' }} />
+                <img src={lightColorCheck} alt="" style={{ width: "20px" }} />
               </div>
             </div>
 
@@ -251,7 +251,7 @@ export default function GetAchievements(props) {
 
               <div className="self-t-end">
                 <h4 className="weight400">
-                  {' '}
+                  {" "}
                   10 <span className="h7">p</span>
                 </h4>
               </div>
@@ -262,7 +262,7 @@ export default function GetAchievements(props) {
             <div className="d-flex x-eq mb10">
               <h6 className="weight500">신규 챌린저의 등장</h6>
               <div className="">
-                <img src={lightColorCheck} alt="" style={{ width: '20px' }} />
+                <img src={lightColorCheck} alt="" style={{ width: "20px" }} />
               </div>
             </div>
 
@@ -274,7 +274,7 @@ export default function GetAchievements(props) {
 
               <div className="self-t-end">
                 <h4 className="weight400">
-                  {' '}
+                  {" "}
                   10 <span className="h7">p</span>
                 </h4>
               </div>

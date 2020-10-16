@@ -61,12 +61,12 @@
 }
 
 .tab-container.full .tab p:after {
-  content: '';
+  content: "";
   width: 0;
 }
 
 .tab-container.full .tab.active p:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0px;
@@ -87,19 +87,19 @@
 }
 
 .tab-container .tab p {
-  content: '';
+  content: "";
   position: relative;
   padding-bottom: 8px;
 }
 
 .tab-container .tab p:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
 }
 
 .tab-container .tab.active p:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0px;
@@ -283,7 +283,7 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  background-image: url('../img/trash.png');
+  background-image: url("../img/trash.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px;
@@ -380,7 +380,7 @@
 }
 
 .circle-label-info .label-item .label-title::after {
-  content: '';
+  content: "";
   position: absolute;
   left: -20px;
   width: 10px;
@@ -412,7 +412,7 @@
   border: 1px solid var(--border-gray50);
   border-radius: 22px;
   padding: 0px 44px;
-  background-image: url('../img/search.png');
+  background-image: url("../img/search.png");
   background-size: 16px;
   background-repeat: no-repeat;
   background-position: left 16px center;
@@ -441,23 +441,23 @@
 }
 
 .default-icon.bck.aa {
-  background-image: url('../img/aa.png');
+  background-image: url("../img/aa.png");
 }
 
 .default-icon.bck.clock {
-  background-image: url('../img/clock.png');
+  background-image: url("../img/clock.png");
 }
 
 .default-icon.bck.book {
-  background-image: url('../img/book.png');
+  background-image: url("../img/book.png");
 }
 
 .default-icon.bck.glass {
-  background-image: url('../img/glass.png');
+  background-image: url("../img/glass.png");
 }
 
 .default-icon.bck.goal {
-  background-image: url('../img/goal.png');
+  background-image: url("../img/goal.png");
 }
 
 .default-icon img {
@@ -495,7 +495,7 @@
 }
 
 .lock:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -504,7 +504,7 @@
   top: 0;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  background-image: url('../img/lock.png');
+  background-image: url("../img/lock.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 54px;
@@ -543,7 +543,7 @@
 
 .dot-wrap .dot-desc-con .dot-font {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--color-gray);
   padding: 15px;
   letter-spacing: -0.05rem;
@@ -551,7 +551,7 @@
 
 .dot-wrap .dot-desc-con .dot-font:hover,
 .dot-wrap .dot-desc-con .dot-font.active {
-	background-color: var(--lightWite50);
+  background-color: var(--lightWite50);
 }
 
 .dim {
@@ -740,10 +740,36 @@
   box-sizing: border-box;
 }
 
+.step-card.width-icon {
+  padding: 20px 10px 45px 20px;
+}
+
 .step-card .scroll-wrap {
   display: block;
   overflow-y: auto;
   height: 100%;
+}
+
+.step-card .scroll-wrap .left-content {
+  width: calc(100% - 60px);
+}
+
+.sound-icon-con {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.sound-icon.absol {
+  position: absolute;
+  z-index: 2;
+  margin: 10px;
+  right: 0px;
+  top: 0px;
+}
+
+.sound-icon.absol.type2 {
+  right: -20px;
 }
 
 .emigi-con {
@@ -762,7 +788,7 @@
   display: flex;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../img/right-blue-arr.png');
+  background-image: url("../img/right-blue-arr.png");
   background-size: 16px;
 }
 
@@ -789,10 +815,10 @@
 }
 
 .content-scroll-container.type2 {
-  height: calc(100vh - 130px);
+  height: calc(100vh - 90px);
   overflow-y: auto;
 }
 
 .word-content-container {
-  width: calc(100% - 50px);
+  width: calc(100% - 60px);
 }

@@ -5,8 +5,8 @@ export default function PrivatePolicy(props) {
   return (
     <>
       <StackHeader />
-      <div className="bothSpace mt29 mb30">
-        <div className="mb30">
+      <div className="bothSpace pt29 mb30">
+        <div className="mb30 stack-content">
           <h3 className="weight500">개인정보처리방침 </h3>
         </div>
 

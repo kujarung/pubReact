@@ -41,7 +41,7 @@ export default function Interest5() {
 		<div className="h-100vh">
 			<StackHeader />
 			<div className="pt15 bothSpace">
-				<div className="mb36">
+				<div className="mb36 stack-content">
 					<h5 className="weight500">나의 젠더</h5>
 				</div>
 				<div className="content-scroll-container">

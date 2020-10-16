@@ -1,24 +1,24 @@
-import React from 'react';
-import StackHeader from 'components/StackHeader';
-import { blackX } from 'components/ImgUtils';
-import BackBtn from 'components/BackBtn';
+import React from "react";
+import StackHeader from "components/StackHeader";
+import { blackX } from "components/ImgUtils";
+import BackBtn from "components/BackBtn";
 
 export default function HelpPop(props) {
   return (
     <>
       <div className="popup-wrap">
-        <div className="inner-pop">
+        <div className="inner-pop static small">
           <button className="pop-x-btn-con tpye2">
             <img
               src={blackX}
               alt=""
-              style={{ width: '16px', height: '16px' }}
+              style={{ width: "16px", height: "16px" }}
             />
           </button>
-          <div className="mb38">
+          <div className="title">
             <h4 className="small weight500">초기화 확인</h4>
           </div>
-          <div className="mb38">
+          <div className="content">
             <h6 className="weight400">
               모든 도움말 상자를
               <br />
@@ -26,7 +26,7 @@ export default function HelpPop(props) {
             </h6>
           </div>
 
-          <div className="d-flex x-end">
+          <div className="d-flex x-end ontinue-btn">
             <BackBtn btnTxt="확인" isSmall />
           </div>
         </div>

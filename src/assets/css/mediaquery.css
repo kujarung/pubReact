@@ -1,63 +1,75 @@
 @media (max-height: 700px) {
-	.one-line-elis {
-		max-width: 250px;
-	}
+  .one-line-elis {
+    max-width: 250px;
+  }
 }
 
 @media (max-height: 680px) {
-	.mt-small-0 {
-		margin-top: 0 !important;
-	}
+  .mt-small-0 {
+    margin-top: 0 !important;
+  }
 
-	.mt-small-50 {
-		margin-top: 50px;
-	}
-	.small-minus-letter {
-		letter-spacing: -0.07rem;
-	}
+  .mt-small-50 {
+    margin-top: 50px;
+  }
+  .small-minus-letter {
+    letter-spacing: -0.07rem;
+  }
 
-	.h-100vh.small-no-100vh {
-		height: 100%;
-	}
+  .h-100vh.small-no-100vh {
+    height: 100%;
+  }
 
-	.mb-small-30 {
-		margin-bottom: 30px;
-	}
+  .mb-small-30 {
+    margin-bottom: 30px;
+  }
 
-	.mt-small-30 {
-		margin-top: 30px;
-	}
+  .mt-small-30 {
+    margin-top: 30px;
+  }
 
-	.multi-bar-wrap {
-		padding: 80px 10px 60px 10px;
-	}
+  .multi-bar-wrap {
+    padding: 80px 10px 60px 10px;
+  }
 
-	.pos-bottom.small-no-absol-bottom {
-		position: static;
-		width: 100%;
-		box-sizing: border-box;
-	}
+  .pos-bottom.small-no-absol-bottom {
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-	.pos-bottom.small-no-absol {
-		margin-top: 50px;
-		margin-bottom: 20px;
-		position: static;
-		width: 100%;
-		box-sizing: border-box;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+  .pos-bottom.small-no-absol {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-	.info-box-wrap.type2 .info-box .info-desc {
-		font-size: 13px;
-		line-height: 18px;
-	}
+  .info-box-wrap.type2 .info-box .info-desc {
+    font-size: 13px;
+    line-height: 18px;
+  }
 
-	.logo-txt img {
-		height: 35px;
-	}
+  .logo-txt img {
+    height: 35px;
+  }
 
-	.card-container .card-bottom-txt .sm-small {
-		font-size: 20px;
-	}
+  .card-container .card-bottom-txt .sm-small {
+    font-size: 20px;
+  }
+}
+
+@media (max-height: 500px) {
+  .popup-wrap .inner-pop.static {
+    height: 80%;
+  }
+}
+
+@media (max-height: 260px) {
+  .popup-wrap .inner-pop.static.small {
+    height: 80%;
+  }
 }

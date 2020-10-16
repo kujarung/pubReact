@@ -290,7 +290,7 @@ export default function Interest4() {
 		<div className="h-100vh">
 			<StackHeader />
 			<div className="pt15 bothSpace">
-				<div className="mb36">
+				<div className="mb36 stack-content">
 					<h5 className="weight500">현재 직업은 무엇인가요</h5>
 				</div>
 				<div className="">

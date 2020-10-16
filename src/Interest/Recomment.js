@@ -52,7 +52,8 @@ export default function Recomment() {
 	return (
 		<>
 			<StackHeader />
-			<div className="bothSpace mt21 mb22">
+			<div className="mt82">
+			<div className="bothSpace mb22">
 				<div className="mb25">
 					<h2 className="small fontAvenirBold">Result</h2>
 				</div>
@@ -98,6 +99,8 @@ export default function Recomment() {
 					<BackBtn btnTxt="홈화면으로 가기" />
 				</div>
 			</div>
+			</div>
+
 		</>
 	);
 }

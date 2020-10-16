@@ -29,6 +29,38 @@
   padding: 40px 20px 29px 20px;
 }
 
+.popup-wrap .inner-pop.static {
+  height: 408px;
+}
+
+.popup-wrap .inner-pop.static.small {
+  height: 260px;
+}
+
+.popup-wrap .inner-pop.static .title {
+  height: 71px;
+}
+
+.popup-wrap .inner-pop.static .content {
+  height: calc(100% - 115px);
+  margin-bottom: 0;
+  overflow-y: scroll;
+}
+
+.popup-wrap .inner-pop.static .content.type2 {
+  height: calc(100% - 140px);
+  margin-bottom: 0;
+  overflow-y: scroll;
+}
+
+.popup-wrap .inner-pop.static .continue-btn {
+  height: 44px;
+}
+
+.popup-wrap .inner-pop.static .continue-btn.width-a {
+  height: 71px;
+}
+
 .pop-x-btn-con {
   position: absolute;
   top: 15px;

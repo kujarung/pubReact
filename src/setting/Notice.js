@@ -1,12 +1,12 @@
-import React from 'react';
-import StackHeader from 'components/StackHeader';
+import React from "react";
+import StackHeader from "components/StackHeader";
 
 export default function Notice(props) {
   return (
     <>
       <StackHeader />
-      <div className="bothSpace mt29">
-        <h3 className="weight500">공지사항</h3>
+      <div className="bothSpace pt29">
+        <h3 className="weight500 stack-content">공지사항</h3>
       </div>
 
       <div className="item-list-wrap no-arr all-border">

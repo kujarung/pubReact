@@ -1,34 +1,34 @@
-import React from 'react';
-import Steps from 'components/Steps';
-import StackHeader from 'components/StackHeader';
-import MixBtnGrup from 'components/MixBtnGrup';
-import DotSeletor from 'components/DotSeletor';
+import React from "react";
+import Steps from "components/Steps";
+import StackHeader from "components/StackHeader";
+import MixBtnGrup from "components/MixBtnGrup";
+import DotSeletor from "components/DotSeletor";
 
 export default function Step3_2() {
   const dotList = [
     {
-      title: '다른 예문 보기',
-      active: false,
+      title: "다른 예문 보기",
+      active: false
     },
     {
-      title: '구글 번역 (새창)',
-      active: true,
+      title: "구글 번역 (새창)",
+      active: true
     },
     {
-      title: '파파고 번역 (새창)',
-      active: false,
-    },
+      title: "파파고 번역 (새창)",
+      active: false
+    }
   ];
 
   return (
     <div className="h-100vh">
       <StackHeader />
-      <div className="bothSpace mt10">
-        <div className="mb30">
+      <div className="bothSpace pt10">
+        <div className="mb30 stack-content">
           <Steps steps={3} activeStep={2} />
         </div>
 
-        <div className="step-card">
+        <div className="step-card width-icon">
           <div className="scroll-wrap">
             <div className="d-flex x-eq mb20">
               <div className="word-content-container">
@@ -37,7 +37,9 @@ export default function Step3_2() {
                 </h2>
               </div>
 
-              <button className="sound-icon" />
+              <div className="sound-icon-con">
+                <button className="sound-icon absol" />
+              </div>
             </div>
             <div className="d-flex y-center">
               <div className="voca-type-btn mr3">noun</div>

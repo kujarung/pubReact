@@ -14,7 +14,9 @@
 .header.defalut {
 	position: fixed;
 	top: 0;
-	width: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 19;
 }
 
 .header.fixed {
@@ -31,6 +33,10 @@
   position: absolute;
   box-sizing: border-box;
   width: 100%;
+}
+
+.stack-content {
+  margin-top: 61px;
 }
 
 .header.stack {

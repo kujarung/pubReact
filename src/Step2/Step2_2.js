@@ -1,23 +1,23 @@
-import React from 'react';
-import Steps from 'components/Steps';
-import StackHeader from 'components/StackHeader';
-import BackBtn from 'components/BackBtn';
-import AnserBtn from 'components/AnserBtn';
-import { icRest, checkBig, icCirArrow } from 'components/ImgUtils';
-import HorizontalBar from '../components/HorizontalBar';
+import React from "react";
+import Steps from "components/Steps";
+import StackHeader from "components/StackHeader";
+import BackBtn from "components/BackBtn";
+import AnserBtn from "components/AnserBtn";
+import { icRest, checkBig, icCirArrow } from "components/ImgUtils";
+import HorizontalBar from "../components/HorizontalBar";
 
 export default function Step2_2() {
   return (
     <>
       <StackHeader />
-      <div className="bothSpace mt10">
-        <div className="mb55">
+      <div className="bothSpace pt10">
+        <div className="mb55 stack-content">
           <Steps steps={4} activeStep={4} />
         </div>
 
         <div className="mb52">
           <div className="mb31 tc">
-            <img src={checkBig} alt="" style={{ width: '120px' }} />
+            <img src={checkBig} alt="" style={{ width: "120px" }} />
           </div>
           <div className="tc">
             <div className="tc">
@@ -25,7 +25,7 @@ export default function Step2_2() {
                 STEP 1<br />
               </h5>
               <h5 className="weight500">
-                난이도 평가{' '}
+                난이도 평가{" "}
                 <span className="step-underline weight400">Done!</span>
               </h5>
             </div>
@@ -42,7 +42,7 @@ export default function Step2_2() {
           </div>
 
           <h5 className="line-h26 weight300 small">
-            학습자님께 <span className="color-primary">도전적인 콘텐츠</span>{' '}
+            학습자님께 <span className="color-primary">도전적인 콘텐츠</span>{" "}
             군요! <br />
             <br />
             독해 가능 정도가 <span className="color-primary">80%</span> 정도인
@@ -54,7 +54,7 @@ export default function Step2_2() {
                 받으시려면 오른쪽 버튼을 눌러주세요.
               </div>
               <button className="ml30">
-                <img src={icCirArrow} alt="" style={{ width: '30px' }} />
+                <img src={icCirArrow} alt="" style={{ width: "30px" }} />
               </button>
             </div>
           </h5>
@@ -79,7 +79,7 @@ export default function Step2_2() {
         </div>
 
         <div className="mb20">
-          <AnserBtn btnTxt={'학습 요약'} active />
+          <AnserBtn btnTxt={"학습 요약"} active />
         </div>
       </div>
     </>

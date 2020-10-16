@@ -1,24 +1,24 @@
-import React from 'react';
-import StackHeader from 'components/StackHeader';
-import { icCirArrow, blackX } from 'components/ImgUtils';
-import BackBtn from 'components/BackBtn';
+import React from "react";
+import StackHeader from "components/StackHeader";
+import { icCirArrow, blackX } from "components/ImgUtils";
+import BackBtn from "components/BackBtn";
 
 export default function SettingRepeatPop(props) {
   return (
     <>
       <div className="popup-wrap">
-        <div className="inner-pop">
+        <div className="inner-pop static small">
           <div className="pop-x-btn-con tpye2">
             <img
               src={blackX}
               alt=""
-              style={{ width: '16px', height: '16px' }}
+              style={{ width: "16px", height: "16px" }}
             />
           </div>
-          <div className="mb38">
+          <div className="title">
             <h4 className="small weight500">확인</h4>
           </div>
-          <div className="mb38">
+          <div className="content">
             <h6 className="weight400">
               현재 설정이 54% 기본 값과 다릅니다.
               <br />
@@ -26,12 +26,12 @@ export default function SettingRepeatPop(props) {
             </h6>
           </div>
 
-          <div className="d-flex x-end">
+          <div className="d-flex x-end continue-btn">
             <BackBtn btnTxt="확인" isSmall />
           </div>
         </div>
       </div>
-      <div className="h-100vh">
+      <div className="h-100vh no-scroll">
         <StackHeader />
         <div className="bothSpace mt29 mb40">
           <h3 className="weight500">복습주기 설정</h3>
@@ -51,7 +51,7 @@ export default function SettingRepeatPop(props) {
                 </div>
 
                 <div className="">
-                  <img src={icCirArrow} alt="" style={{ width: '30px' }} />
+                  <img src={icCirArrow} alt="" style={{ width: "30px" }} />
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function SettingRepeatPop(props) {
                 </div>
 
                 <div className="">
-                  <img src={icCirArrow} alt="" style={{ width: '30px' }} />
+                  <img src={icCirArrow} alt="" style={{ width: "30px" }} />
                 </div>
               </div>
 
@@ -81,7 +81,7 @@ export default function SettingRepeatPop(props) {
                 </div>
 
                 <div className="">
-                  <img src={icCirArrow} alt="" style={{ width: '30px' }} />
+                  <img src={icCirArrow} alt="" style={{ width: "30px" }} />
                 </div>
               </div>
 
@@ -92,7 +92,7 @@ export default function SettingRepeatPop(props) {
                 </div>
 
                 <div className="">
-                  <img src={icCirArrow} alt="" style={{ width: '30px' }} />
+                  <img src={icCirArrow} alt="" style={{ width: "30px" }} />
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function SettingRepeatPop(props) {
         </div>
 
         <div className="pos-bottom">
-          <BackBtn btnTxt={'초기값으로 설정'} />
+          <BackBtn btnTxt={"초기값으로 설정"} />
         </div>
       </div>
     </>

@@ -8,8 +8,8 @@ export default function Withdrawal(props) {
   return (
     <div className="h-100vh">
       <StackHeader />
-      <div className="bothSpace mt29 mb30">
-        <h3 className="weight500">회원 탈퇴</h3>
+      <div className="bothSpace pt29 mb30 ">
+        <h3 className="weight500 stack-content">회원 탈퇴</h3>
       </div>
 
       <div className="bothSpace mb20">
@@ -27,7 +27,7 @@ export default function Withdrawal(props) {
         </h6>
       </div>
 
-      <div className="pos-bottom middle">
+      <div className="pos-bottom middle small-no-absol">
         <div className="mb20">
           <Checkbox
             checkbox={{ id: 1, txt: "모든 내용을 삭제하는 것에 동의합니다." }}

@@ -43,7 +43,7 @@ export default function Pretest1() {
 		<div className="h-100vh">
 			<StackHeader />
 			<div className="bothSpace pt21">
-				<div className="bottom-small-line mb25">
+				<div className="bottom-small-line mb25 stack-content">
 					<h2 className="small fontAvenirBold">Q1</h2>
 				</div>
 

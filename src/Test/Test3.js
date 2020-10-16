@@ -41,7 +41,7 @@ export default function Test3() {
 	return (
 		<>
 			<StackHeader />
-			<div className="bothSpace mt10">
+			<div className="bothSpace pt71">
 				<div className="mb55">
 					<Steps steps={3} activeStep={3} />
 				</div>

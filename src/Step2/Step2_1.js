@@ -1,16 +1,31 @@
-import React from 'react';
-import Steps from 'components/Steps';
-import StackHeader from 'components/StackHeader';
-import BackBtn from 'components/BackBtn';
-import AnserBtn from 'components/AnserBtn';
-import { icRest } from 'components/ImgUtils';
+import React, { useState } from "react";
+import Steps from "components/Steps";
+import StackHeader from "components/StackHeader";
+import BackBtn from "components/BackBtn";
+import AnserBtn from "components/AnserBtn";
+import { icRest } from "components/ImgUtils";
 
 export default function Step2_1() {
+  const [anser, setAnser] = useState({
+    one: true,
+    two: false,
+    three: false,
+    four: false,
+    five: false
+  });
+
+  const clickSelectItem = id => {
+    Object.keys(anser).map(item =>
+      item === id ? (anser[item] = true) : (anser[item] = false)
+    );
+    console.log(anser);
+    setAnser({ ...anser });
+  };
   return (
     <div className="h-100vh">
       <StackHeader />
-      <div className="bothSpace mt10">
-        <div className="mb30">
+      <div className="bothSpace pt10">
+        <div className="mb30 stack-content">
           <Steps steps={4} activeStep={3} />
         </div>
 
@@ -37,11 +52,36 @@ export default function Step2_1() {
 
       <div className="pos-bottom small-no-absol">
         <div className="has-check mb20">
-          <AnserBtn btnTxt={'거의 모르겠어요'} />
-          <AnserBtn btnTxt={'반은 읽을 수 있었어요'} />
-          <AnserBtn btnTxt={'조금 읽을 수 있었어요'} active />
-          <AnserBtn btnTxt={'반 이상 읽을 수 있었어요'} />
-          <AnserBtn btnTxt={'거의 읽을 수 있었어요'} />
+          <AnserBtn
+            btnTxt={"거의 모르겠어요"}
+            active={anser["one"]}
+            clickSelectItem={clickSelectItem}
+            id={"one"}
+          />
+          <AnserBtn
+            btnTxt={"반은 읽을 수 있었어요"}
+            active={anser["two"]}
+            clickSelectItem={clickSelectItem}
+            id={"two"}
+          />
+          <AnserBtn
+            btnTxt={"조금 읽을 수 있었어요"}
+            active={anser["three"]}
+            clickSelectItem={clickSelectItem}
+            id={"three"}
+          />
+          <AnserBtn
+            btnTxt={"반 이상 읽을 수 있었어요"}
+            active={anser["four"]}
+            clickSelectItem={clickSelectItem}
+            id={"four"}
+          />
+          <AnserBtn
+            btnTxt={"거의 읽을 수 있었어요"}
+            active={anser["five"]}
+            clickSelectItem={clickSelectItem}
+            id={"five"}
+          />
         </div>
         <BackBtn btnTxt="다음" />
       </div>

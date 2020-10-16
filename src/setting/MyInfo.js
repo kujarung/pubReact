@@ -1,14 +1,14 @@
-import React from 'react';
-import StackHeader from 'components/StackHeader';
-import BackBtn from 'components/BackBtn';
-import { camera, profile, pen } from 'components/ImgUtils';
+import React from "react";
+import StackHeader from "components/StackHeader";
+import BackBtn from "components/BackBtn";
+import { camera, profile, pen } from "components/ImgUtils";
 
 export default function MyInfo() {
   return (
     <div className="h-100vh">
       <StackHeader />
-      <div className="bothSpace mt29 mb15">
-        <h3 className="weight500">내 정보 설정</h3>
+      <div className="bothSpace pt29 mb15 ">
+        <h3 className="weight500 stack-content">내 정보 설정</h3>
       </div>
 
       <div className="bothSpace">
@@ -17,7 +17,7 @@ export default function MyInfo() {
             <div className="profile-con">
               <div class="filebox mb6 person-circle">
                 <label for="file">
-                  <img src={profile} alt="" style={{ width: '100px' }} />
+                  <img src={profile} alt="" style={{ width: "100px" }} />
                   <img src={camera} alt="" className="left-camea" />
                 </label>
                 <input type="file" id="file" />
@@ -29,7 +29,7 @@ export default function MyInfo() {
             <div className="wi140 tc d-flex x-center y-center">
               <h6 className="mr6 weight500 word-break-all">닐라 닐라</h6>
               <div className="">
-                <img src={pen} alt="" style={{ width: '12px' }} />
+                <img src={pen} alt="" style={{ width: "12px" }} />
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function MyInfo() {
       </div>
 
       <div className="pos-bottom">
-        <BackBtn btnTxt={'수정'} />
+        <BackBtn btnTxt={"수정"} />
       </div>
     </div>
   );

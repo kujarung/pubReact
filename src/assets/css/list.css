@@ -246,7 +246,7 @@
 .cupon.nouse::after {
   top: 0;
   left: 20px;
-  content: '';
+  content: "";
   position: absolute;
   width: calc(100% - 40px);
   height: 100%;
@@ -275,13 +275,13 @@
 
 .top-ranking-con .top-ranking-card:after {
   font-size: 12px;
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
   top: -10px;
   right: -10px;
-  font-family: 'Avenir-Black';
+  font-family: "Avenir-Black";
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -296,21 +296,21 @@
 }
 
 .top-ranking-con .top-ranking-card.one:after {
-  content: '1';
+  content: "1";
   background-color: #f6d99f;
   color: #ce9a34;
   border-color: #edc066;
 }
 
 .top-ranking-con .top-ranking-card.two::after {
-  content: '2';
+  content: "2";
   border-color: #b8b8bb;
   background-color: #ceced2;
   color: #9696a3;
 }
 
 .top-ranking-con .top-ranking-card.three::after {
-  content: '3';
+  content: "3";
   border-color: #baa780;
   background-color: #ddcaa4;
   color: #8c7e61;
@@ -391,7 +391,7 @@
 }
 
 .repeact-con.alam .repeact-row {
-  padding: 20px;
+  padding: 20px 69px 20px 20px;
   justify-content: flex-start;
 }
 
@@ -404,10 +404,10 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(193, 192, 200, 0.3);
+  background-color: rgba(193, 192, 200, 0.2);
   top: 0;
   left: 0;
-  content: '';
+  content: "";
 }
 
 .repeact-con.alam.read .alam-img-con {
@@ -523,7 +523,7 @@
   height: 15px;
   border-radius: 50%;
   margin-left: 5px;
-  background-image: url('../img/N.png');
+  background-image: url("../img/N.png");
   background-size: 5px 7px;
   background-repeat: no-repeat;
   background-position: center;
@@ -593,6 +593,11 @@
 .study-wrap .study-img {
   position: relative;
   height: calc(100vh - 178px);
+}
+
+.study-wrap .study-img.back {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .study-wrap .study-desc {

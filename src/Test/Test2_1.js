@@ -1,14 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Steps from 'components/Steps';
 import StackHeader from 'components/StackHeader';
 import BackBtn from 'components/BackBtn';
 import AnserBtn from 'components/AnserBtn';
 
 export default function Test2_1() {
+	const [anser, setAnser] = useState({
+		one: true,
+		two: false,
+		three: false,
+		four: false,
+		five: false
+	})
+
+	const clickSelectItem = (id) => {
+		Object.keys(anser).map(item => item === id ? anser[item] = true :  anser[item] = false)
+		console.log(anser)
+		setAnser({...anser})
+	}	
 	return (
 		<div className="h-100vh">
 			<StackHeader />
-			<div className="bothSpace mt10">
+			<div className="bothSpace pt71">
 				<div className="mb30">
 					<Steps steps={3} activeStep={2} />
 				</div>
@@ -29,11 +42,11 @@ export default function Test2_1() {
 
 			<div className="pos-bottom small-no-absol">
 				<div className="has-check mb20">
-					<AnserBtn btnTxt={'gunman'} />
-					<AnserBtn btnTxt={'assailants'} />
-					<AnserBtn btnTxt={'carjacked'} active />
-					<AnserBtn btnTxt={'suspect'} />
-					<AnserBtn btnTxt={'robbers'} />
+					<AnserBtn btnTxt={'gunman'} active={anser["one"]}  clickSelectItem ={clickSelectItem} id={'one'} />
+					<AnserBtn btnTxt={'assailants'} active={anser["two"]} clickSelectItem ={clickSelectItem} id={'two'}/>
+					<AnserBtn btnTxt={'carjacked'} active={anser["three"]}  clickSelectItem ={clickSelectItem} id={'three'} />
+					<AnserBtn btnTxt={'suspect'} active={anser["four"]}  clickSelectItem ={clickSelectItem} id={'four'} />
+					<AnserBtn btnTxt={'robbers'} active={anser["five"]}  clickSelectItem ={clickSelectItem} id={'five'} />
 				</div>
 				<BackBtn btnTxt="다음" />
 			</div>

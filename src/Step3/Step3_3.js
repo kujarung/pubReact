@@ -1,29 +1,29 @@
-import React from 'react';
-import Steps from 'components/Steps';
-import StackHeader from 'components/StackHeader';
-import MixBtnGrup from 'components/MixBtnGrup';
-import DotSeletor from 'components/DotSeletor';
+import React from "react";
+import Steps from "components/Steps";
+import StackHeader from "components/StackHeader";
+import MixBtnGrup from "components/MixBtnGrup";
+import DotSeletor from "components/DotSeletor";
 
 export default function Step3_3() {
   const dotList = [
     {
-      title: '다른 예문 보기',
-      active: false,
+      title: "다른 예문 보기",
+      active: false
     },
     {
-      title: '구글 번역 (새창)',
-      active: true,
+      title: "구글 번역 (새창)",
+      active: true
     },
     {
-      title: '파파고 번역 (새창)',
-      active: false,
-    },
+      title: "파파고 번역 (새창)",
+      active: false
+    }
   ];
   return (
     <div className="h-100vh">
       <StackHeader />
-      <div className="bothSpace mt10">
-        <div className="mb30">
+      <div className="bothSpace pt10">
+        <div className="mb30 stack-content">
           <Steps steps={3} activeStep={1} />
         </div>
 

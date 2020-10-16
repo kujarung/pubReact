@@ -1,14 +1,14 @@
-import React from 'react';
-import Steps from 'components/Steps';
-import StackHeader from 'components/StackHeader';
-import BackBtn from 'components/BackBtn';
-import { icRest } from 'components/ImgUtils';
+import React from "react";
+import Steps from "components/Steps";
+import StackHeader from "components/StackHeader";
+import BackBtn from "components/BackBtn";
+import { icRest } from "components/ImgUtils";
 
 export default function Test1() {
   return (
     <div className="h-100vh">
       <StackHeader />
-      <div className="bothSpace mt10">
+      <div className="bothSpace pt71">
         <div className="mb30">
           <Steps steps={3} activeStep={1} />
         </div>
@@ -30,7 +30,7 @@ export default function Test1() {
               하나를 완료 할 수 있습니다.
               <br />
               <br />
-              <span className="weight500">원문 보기</span>와{' '}
+              <span className="weight500">원문 보기</span>와{" "}
               <span className="weight500">단어 리뷰</span>를 충분히 하셨나요?
               <br />
               <br />
@@ -40,7 +40,7 @@ export default function Test1() {
         </div>
       </div>
 
-      <div className="pos-bottom middle">
+      <div className="pos-bottom middle small-no-absol">
         <BackBtn btnTxt="다음" />
       </div>
     </div>

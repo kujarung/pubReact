@@ -1,39 +1,39 @@
-import React, { useState } from 'react';
-import StackHeader from 'components/StackHeader';
-import Checkbox from '../components/Checkbox';
-import BackBtn from 'components/BackBtn';
-import { icRest, blackX } from 'components/ImgUtils';
+import React from "react";
+import StackHeader from "components/StackHeader";
+import Checkbox from "../components/Checkbox";
+import BackBtn from "components/BackBtn";
+import { icRest, blackX } from "components/ImgUtils";
 
 export default function WithdrawalPop(props) {
   return (
     <>
       <div className="popup-wrap">
-        <div className="inner-pop bottom-small">
+        <div className="inner-pop bottom-small static small">
           <button className="pop-x-btn-con tpye2">
             <img
               src={blackX}
               alt=""
-              style={{ width: '16px', height: '16px' }}
+              style={{ width: "16px", height: "16px" }}
             />
           </button>
-          <div className="mb38">
+          <div className="title">
             <h4 className="small weight500">탈퇴 확인</h4>
           </div>
-          <div className="mb38">
+          <div className="content">
             <h6 className="weight400">
               정말 리딩퍼센트에서 탈퇴 하시겠습니까?
             </h6>
           </div>
 
-          <div className="d-flex x-end">
+          <div className="d-flex x-end continu-btn">
             <BackBtn btnTxt="확인" isGray />
           </div>
         </div>
       </div>
       <div className="h-100vh">
         <StackHeader />
-        <div className="bothSpace mt29 mb30">
-          <h3 className="weight500">회원 탈퇴</h3>
+        <div className="bothSpace pt29 mb30">
+          <h3 className="weight500 stack-content">회원 탈퇴</h3>
         </div>
 
         <div className="bothSpace mb20">
@@ -55,11 +55,11 @@ export default function WithdrawalPop(props) {
         <div className="pos-bottom middle">
           <div className="mb20">
             <Checkbox
-              checkbox={{ id: 1, txt: '모든 내용을 삭제하는 것에 동의합니다.' }}
+              checkbox={{ id: 1, txt: "모든 내용을 삭제하는 것에 동의합니다." }}
             />
           </div>
 
-          <BackBtn btnTxt={'탈퇴하기'} isGray />
+          <BackBtn btnTxt={"탈퇴하기"} isGray />
         </div>
       </div>
     </>
