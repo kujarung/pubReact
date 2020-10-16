@@ -27,7 +27,7 @@ export default function StackHeaderWhite(props) {
         </button>
       ) : (
         <div className="d-flex x-eq">
-          <button className="icon-img-con">
+          <button className="icon-img-con mr15">
             <img src={heart} alt="" />
           </button>
           <button className="icon-img-con">

@@ -7,14 +7,17 @@ export default function Header(props) {
   return (
     <>
       <div className={isFixed ? 'header fixed' : 'header'}>
-        <div className="icon-img-con x-start" onClick={() => openDrawer()}>
+        <button
+          className="icon-img-con slide-list"
+          onClick={() => openDrawer()}
+        >
           <img src={sidelist} alt="sidelist" />
-        </div>
+        </button>
         <div className="d-flex">
-          <button className="icon-img-con x-end">
+          <button className="icon-img-con mr15">
             <img src={activity} alt="activity" />
           </button>
-          <button className="icon-img-con x-end">
+          <button className="icon-img-con">
             <img src={search} alt="search" />
           </button>
         </div>

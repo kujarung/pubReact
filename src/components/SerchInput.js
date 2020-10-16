@@ -7,10 +7,11 @@ export default function SerchInput(props) {
     <div className="search-input-con">
       <input type="text" placeholder={placeholder ? placeholder : ''} />
       {hasX ? (
-        <button className="input-right-x">
-          {' '}
-          <img src={grayX} alt="" style={{ width: '12px' }} />
-        </button>
+        <div className="input-right-x">
+          <button>
+            <img src={grayX} alt="" style={{ width: '12px' }} />
+          </button>
+        </div>
       ) : null}
     </div>
   );

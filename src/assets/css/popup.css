@@ -18,6 +18,7 @@
   padding: 40px 20px;
   box-sizing: border-box;
   position: relative;
+  max-height: 480px;
 }
 
 .popup-wrap .inner-pop.bottom-small {

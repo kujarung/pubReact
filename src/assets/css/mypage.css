@@ -169,5 +169,5 @@
   background-color: var(--primary);
   width: 14px;
   height: 14px;
-  box-shadow: 3px 5px 22px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
 }

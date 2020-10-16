@@ -31,7 +31,7 @@ export default function ContentsList(props) {
     { id: 224, title: '학습 완료 콘테츠', active: false },
   ]);
 
-  const clickTab2 = (id) => {
+  const clickTab = (id) => {
     const resultTab = selectTab.map((tab) =>
       tab.id === id ? { ...tab, active: true } : { ...tab, active: false },
     );
@@ -49,7 +49,7 @@ export default function ContentsList(props) {
         <p className="smallFont weight500 primary-color">27개</p>
       </div>
       <div className="mb20">
-        <RenderTab tabList={selectTab} clickTab={selectTab} isFull={true} />
+        <RenderTab tabList={selectTab} clickTab={clickTab} isFull={true} />
       </div>
 
       <div className="">

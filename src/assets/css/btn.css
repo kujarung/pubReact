@@ -11,7 +11,7 @@
 }
 
 .main-back {
-  background: var(--primary);
+  background: var(--primary) !important;
 }
 
 .main-back.small {
@@ -132,6 +132,7 @@
 .btn-con.anser {
   border: 1px solid var(--border-gray);
   margin-bottom: 15px;
+  background-color: white;
 }
 
 .btn-con.anser:last-child {
@@ -144,9 +145,6 @@
 }
 .btn-con.anser.active {
   border-color: var(--primary);
-}
-
-.btn-con.anser.active .btn-font {
   color: var(--primary);
 }
 

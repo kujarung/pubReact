@@ -22,7 +22,7 @@ export default function StudyWord(props) {
     { id: 224, title: '단어뜻', active: false },
   ]);
 
-  const clickTab2 = (id) => {
+  const clickTab = (id) => {
     const resultTab = selectTab.map((tab) =>
       tab.id === id ? { ...tab, active: true } : { ...tab, active: false },
     );
@@ -58,7 +58,7 @@ export default function StudyWord(props) {
         <p className="smallFont weight500 primary-color">27개</p>
       </div>
       <div className="mb20">
-        <RenderTab tabList={selectTab} clickTab={selectTab} isFull={true} />
+        <RenderTab tabList={selectTab} clickTab={clickTab} isFull={true} />
       </div>
 
       <div className="">

@@ -24,9 +24,11 @@ export default function Search(props) {
                 <h6 className="">가나다</h6>
               </div>
 
-              <button className="d-flex y-center he20">
-                <img src={grayX} alt="" style={{ width: '12px' }} />
-              </button>
+              <div className="d-flex y-center he20">
+                <button>
+                  <img src={grayX} alt="" style={{ width: '12px' }} />
+                </button>
+              </div>
             </div>
 
             <div className="search-row d-flex x-eq y-center">

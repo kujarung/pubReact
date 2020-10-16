@@ -1,16 +1,23 @@
-import React, { useState } from "react";
-import StackHeader from "components/StackHeader";
-import RenderTab from "../components/RenderTab";
-import SerchInput from "../components/SerchInput";
-import SqareTab from "../components/SqareTab";
-import Accordion from "../components/Accordion";
+import React, { useState } from 'react';
+import StackHeader from 'components/StackHeader';
+import RenderTab from '../components/RenderTab';
+import SerchInput from '../components/SerchInput';
+import SqareTab from '../components/SqareTab';
+import Accordion from '../components/Accordion';
 
 export default function FAQ(props) {
   const [tabList, setTabList] = useState([
-    { id: 1, title: "대분류1", active: false },
-    { id: 2, title: "대분류2", active: false },
-    { id: 3, title: "대분류3", active: true },
+    { id: 1, title: '대분류1', active: false },
+    { id: 2, title: '대분류2', active: false },
+    { id: 3, title: '대분류3', active: true },
   ]);
+
+  const clickTab = (id) => {
+    const resultTab = tabList.map((tab) =>
+      tab.id === id ? { ...tab, active: true } : { ...tab, active: false },
+    );
+    setTabList(resultTab);
+  };
 
   return (
     <>
@@ -24,7 +31,7 @@ export default function FAQ(props) {
       </div>
 
       <div className="mb30">
-        <RenderTab tabList={tabList} isFull />
+        <RenderTab tabList={tabList} isFull clickTab={clickTab} />
       </div>
 
       <div className="bothSpace mb17">

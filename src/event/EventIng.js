@@ -8,6 +8,12 @@ export default function EventIng(props) {
     { id: 1, title: '진행중인 이벤트', active: true },
     { id: 2, title: '종료된 이벤트', active: false },
   ]);
+  const clickTab = (id) => {
+    const resultTab = tabList.map((tab) =>
+      tab.id === id ? { ...tab, active: true } : { ...tab, active: false },
+    );
+    setTabList(resultTab);
+  };
 
   return (
     <>
@@ -17,7 +23,7 @@ export default function EventIng(props) {
       </div>
 
       <div className="mb30">
-        <RenderTab tabList={tabList} isFull />
+        <RenderTab tabList={tabList} isFull clickTab={clickTab} />
       </div>
 
       <div className="">
