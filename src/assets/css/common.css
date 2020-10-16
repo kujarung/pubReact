@@ -544,7 +544,7 @@
 
 .dot-wrap .dot-desc-con .dot-font:hover,
 .dot-wrap .dot-desc-con .dot-font.active {
-	background-color: var(--lightWite);
+	background-color: var(--lightWite50);
 }
 
 .dim {

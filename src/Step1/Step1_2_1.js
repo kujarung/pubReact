@@ -4,7 +4,6 @@ import StackHeader from 'components/StackHeader';
 import BackBtn from 'components/BackBtn';
 import { icRest, checkBig } from 'components/ImgUtils';
 import BarWidthLineChart from '../components/BarWidthLineChart';
-import BottomSheet from '../components/BottomSheet';
 
 export default function Step1_1() {
 	return (

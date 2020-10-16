@@ -133,9 +133,9 @@ export default function Main(props) {
 					</div>
 				</div>
 			</div>
-			<div className="drawer-dim active" />
+			<div className="drawer-dim active h-100vh-i" />
 			<Header openDrawer={openDrawer} />
-			<div className="main-content">
+			<div className="main-content no-scroll">
 				<div className="title-container bothSpace mb25">
 					<div>
 						<h2 className="samll fontAvenirBold">Contents</h2>
