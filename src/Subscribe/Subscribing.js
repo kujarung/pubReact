@@ -4,15 +4,9 @@ import Checkbox from 'components/Checkbox';
 import BackBtn from 'components/BackBtn';
 export default function Subscribing(props) {
 	const { selectItem, setSelectItem } = useState({
-		one: {
-			isActive: true,
-		},
-		two: {
-			isActive: false,
-		},
-		three: {
-			isActive: true,
-		},
+		one: true,
+		two: false,
+		three: false,
 	});
 	return (
 		<>

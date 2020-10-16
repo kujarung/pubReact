@@ -3,7 +3,7 @@ import StackHeader from 'components/StackHeader';
 import RenderTab from 'components/RenderTab';
 import HorizList from 'components/HorizList';
 import BackBtn from 'components/BackBtn';
-import { icRest, tempback1, tempback2, tempbak2, tempbak1 } from 'components/ImgUtils';
+import { icRest, tempback1, tempbak2, tempbak1 } from 'components/ImgUtils';
 
 export default function Recomment() {
 	const [tabList, setTabList] = useState([
