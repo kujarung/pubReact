@@ -19,7 +19,7 @@ export default function MypageMypercent(props) {
     { id: 3, title: "리뷰", active: false }
   ]);
 
-  const [tabList2] = useState([
+  const [tabList2, setTabList2] = useState([
     { id: 10, title: "Level 20", active: true },
     { id: 20, title: "Level 30", active: false },
     { id: 30, title: "Level 30", active: false }
@@ -87,7 +87,12 @@ export default function MypageMypercent(props) {
     );
     setTabList(resultTab);
   };
-
+  const clickTab2 = id => {
+    const resultTab = tabList2.map(tab =>
+      tab.id === id ? { ...tab, active: true } : { ...tab, active: false }
+    );
+    setTabList2(resultTab);
+  };
   const hashList = [
     "#devleoper",
     "#design",
@@ -203,7 +208,12 @@ export default function MypageMypercent(props) {
           </div>
 
           <div className="mb30">
-            <RenderTab tabList={tabList2} clickTab={clickTab} isFull={true} />
+            <RenderTab
+              tabList={tabList2}
+              clickTab={clickTab}
+              isFull={true}
+              clickTab={clickTab2}
+            />
           </div>
 
           <div className="mb25 bothSpace">

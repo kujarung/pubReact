@@ -13,11 +13,10 @@ export default function MypageFree(props) {
     { id: 3, title: "리뷰", active: false }
   ]);
 
-  const [tabList2] = useState([
+  const [tabList2, setTabList2] = useState([
     { id: 10, title: "월", active: true },
     { id: 20, title: "화", active: false },
     { id: 30, title: "수", active: false },
-    { id: 40, title: "수", active: false },
     { id: 50, title: "목", active: false },
     { id: 60, title: "금", active: false },
     { id: 70, title: "토", active: false },
@@ -48,6 +47,13 @@ export default function MypageFree(props) {
       tab.id === id ? { ...tab, active: true } : { ...tab, active: false }
     );
     setTabList(resultTab);
+  };
+
+  const clickTab2 = id => {
+    const resultTab = tabList2.map(tab =>
+      tab.id === id ? { ...tab, active: true } : { ...tab, active: false }
+    );
+    setTabList2(resultTab);
   };
 
   const hashList = [
@@ -142,7 +148,7 @@ export default function MypageFree(props) {
         </div>
 
         <div className="mb25">
-          <RenderTab tabList={tabList2} isFull isSmall />
+          <RenderTab tabList={tabList2} isFull isSmall clickTab={clickTab2} />
         </div>
 
         <div className="d-flex x-eq pl33 pr33 pb20 pt10 mb30 lock">
