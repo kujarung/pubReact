@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   height: 62px;
-  padding-left: 20px;
+  padding-left: 15px;
   padding-right: 20px;
   z-index: 2;
   padding-bottom: 22px;
@@ -12,8 +12,8 @@
 }
 
 .header.defalut {
-	position: fixed;
-	top: 0;
+  position: fixed;
+  top: 0;
   width: 100%;
   background-color: white;
   z-index: 19;

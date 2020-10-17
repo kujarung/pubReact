@@ -26,18 +26,16 @@ export default function FAQ(props) {
         <h3 className="weight500 stack-content">자주 묻는 질문</h3>
       </div>
 
+      <div className="bothSpace mb17">
+        <SerchInput />
+      </div>
+
       <div className="mb30">
         <RenderTab tabList={tabList} isFull clickTab={clickTab} />
       </div>
 
-      <div className="bothSpace">
-        <div className="mb17">
-          <SerchInput />
-        </div>
-
-        <div className="mb17">
-          <SqareTab />
-        </div>
+      <div className="bothSpace mb17">
+        <SqareTab />
       </div>
       <div className="bothSpace mb8">
         <div className="h7">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { eventImg1, people3 } from "components/ImgUtils";
+import { people3, eventImg1 } from "components/ImgUtils";
 import StackHeader from "components/StackHeader";
 import RenderTab from "../components/RenderTab";
 
@@ -39,6 +39,30 @@ export default function EventIng(props) {
               <div class="tag-item small no-margin">
                 <p class="tag-txt color-primary">D-7</p>
               </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div className="event-item-con">
+        <a href="#">
+          <div className="event-img-wrap">
+            <div className="event-img-con">
+              <img src={eventImg1} alt="" />
+            </div>
+            <div className="img-desc-tag">
+              <div class="tag-item small no-margin">
+                <p class="tag-txt color-primary">D-7</p>
+              </div>
+            </div>
+          </div>
+          <div className="event-content">
+            <h6 className="weight500 mb11">
+              이벤트 제목 이벤트 제목 이벤트 제목 이벤트 제목 이벤트 제목 이벤트
+              제목
+            </h6>
+            <div className="smallFont color-gray">
+              2020.06.01(금) ~ 2020.06.30(토)
             </div>
           </div>
         </a>

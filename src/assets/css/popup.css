@@ -33,7 +33,7 @@
   height: 408px;
 }
 
-.popup-wrap .inner-pop.static.small {
+.popup-wrap .inner-pop.static.static-small {
   height: 260px;
 }
 
@@ -42,8 +42,8 @@
 }
 
 .popup-wrap .inner-pop.static .content {
-  height: calc(100% - 115px);
-  margin-bottom: 0;
+  height: calc(100% - 140px);
+  margin-bottom: 30px;
   overflow-y: scroll;
 }
 

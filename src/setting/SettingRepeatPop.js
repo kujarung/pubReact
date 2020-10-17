@@ -7,7 +7,7 @@ export default function SettingRepeatPop(props) {
   return (
     <>
       <div className="popup-wrap">
-        <div className="inner-pop static small">
+        <div className="inner-pop static static-small">
           <div className="pop-x-btn-con tpye2">
             <img
               src={blackX}

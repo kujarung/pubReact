@@ -8,7 +8,7 @@ export default function WithdrawalPop(props) {
   return (
     <>
       <div className="popup-wrap">
-        <div className="inner-pop bottom-small static small">
+        <div className="inner-pop bottom-small static static-small">
           <button className="pop-x-btn-con tpye2">
             <img
               src={blackX}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import StackHeader from "components/StackHeader";
 
 export default function PrivatePolicy(props) {

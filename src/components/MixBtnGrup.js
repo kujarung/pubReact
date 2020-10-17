@@ -1,5 +1,5 @@
-import React from 'react';
-import { leftWhiteArr, mix, rightWhiteArr } from 'components/ImgUtils';
+import React from "react";
+import { mix } from "components/ImgUtils";
 
 export default function MixBtnGrup() {
   return (
@@ -10,7 +10,7 @@ export default function MixBtnGrup() {
       <button className="mix-btn-con d-flex xy-center">
         <div className="d-flex xy-center">
           <div className="mr14">
-            <img src={mix} alt="" style={{ height: '24px' }} />
+            <img src={mix} alt="" style={{ height: "24px" }} />
           </div>
           <h6 className="color-primary">카드 섞기</h6>
         </div>

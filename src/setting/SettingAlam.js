@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import StackHeader from "components/StackHeader";
-import Swich from "components/Swich";
 import SettingRowWithSwich from "components/SettingRowWithSwich";
 
 export default function SettingAlam(props) {
-  const [settingRow, setSettingRow] = useState([
+  const [settingRow] = useState([
     {
       settingTitle: "푸쉬알림",
       item: [

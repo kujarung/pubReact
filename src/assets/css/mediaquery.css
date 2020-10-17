@@ -69,7 +69,7 @@
 }
 
 @media (max-height: 260px) {
-  .popup-wrap .inner-pop.static.small {
+  .popup-wrap .inner-pop.static.static-small {
     height: 80%;
   }
 }
